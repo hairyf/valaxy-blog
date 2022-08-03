@@ -1,0 +1,31 @@
+{
+  "name": "valaxy-blog",
+  "version": "0.10.3",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:spa",
+    "build:spa": "valaxy build",
+    "build:ssg": "valaxy build --ssg",
+    "dev": "valaxy",
+    "rss": "valaxy rss",
+    "serve": "vite preview"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "@types/react",
+        "react",
+        "vite",
+        "@types/markdown-it",
+        "vue",
+        "react-dom"
+      ]
+    }
+  },
+  "dependencies": {
+    "@iconify-json/material-symbols": "^1.1.13",
+    "valaxy": "0.10.3",
+    "valaxy-theme-hairy": "0.0.10"
+  }
+}
