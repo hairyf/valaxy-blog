@@ -210,3 +210,42 @@ f(); f()
 * 当给对象属性赋值时不会使用原型链, 而只是在当前对象中进行操作
 
 <HairyImage class="rounded" src="https://tva1.sinaimg.cn/large/006C2ocely8h4uwo1sq7rj30zk0p2mz6.jpg" />
+
+## 对象创建模式
+
+**对象字面量模式**
+
+```js
+var obj = {
+  name: 'Tom',
+  setName(name) { this.name = name }
+}
+```
+
+**构造函数模式**
+
+```js
+function Person(name, age) {
+  this.name = name
+  this.age = age
+  this.setName = function (name) { this.name = name }
+}
+const person = new Person('tom', 12)
+```
+
+**构造函数 + 原型的组合模式**
+
+```js
+function Person(name, age) {
+  this.name = name
+  this.age = age
+}
+Person.prototype.setName = function (name) { this.name = name }
+const person = new Person('tom', 12)
+```
+
+**new一个对象背后做了些什么?**
+
+- 创建一个空对象
+- 给对象设置__proto__, 值为构造函数对象的prototype属性值 `this.__proto__ = Fn.prototype`
+- 执行构造函数体(给对象添加属性/方法)
