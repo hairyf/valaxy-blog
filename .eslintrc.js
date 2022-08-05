@@ -11,6 +11,8 @@ module.exports = {
     'no-var': 'off',
     'no-template-curly-in-string': 'off',
     'no-eval': 'off',
+    'new-cap': 'off',
+    'no-const-assign': 'off',
   },
 }
 

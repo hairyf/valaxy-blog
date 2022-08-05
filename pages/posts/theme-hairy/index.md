@@ -1,5 +1,5 @@
 ---
-title: Valaxy 主题 Hairy 构建
+title: Valaxy 主题 Hairy
 categories: Valaxy Theme Hairy
 date: 2022-08-03 15:00:00
 tags:
