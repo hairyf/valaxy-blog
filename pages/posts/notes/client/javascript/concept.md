@@ -244,8 +244,92 @@ Person.prototype.setName = function (name) { this.name = name }
 const person = new Person('tom', 12)
 ```
 
-**new一个对象背后做了些什么?**
+**new 一个对象背后做了些什么?**
 
 - 创建一个空对象
 - 给对象设置__proto__, 值为构造函数对象的prototype属性值 `this.__proto__ = Fn.prototype`
 - 执行构造函数体(给对象添加属性/方法)
+
+## 构造函数继承(属性)
+
+- **关键**：在子类型构造函数中通用`super()`调用父类型构造函数
+- **目标**：让子函数使用父函数的属性
+
+```js
+function Parent(xxx) { this.xxx = xxx }
+Parent.prototype.test = function () {}
+function Child(xxx, yyy) {
+  // 借用构造函数   this.Parent(xxx)
+  Parent.call(this, xxx)
+}
+const child = new Child('a', 'b') // child.xxx为'a', 但child没有test()
+```
+
+### 原型链继承(得到方法)
+
+- **关键**：子类型的原型为父类型的一个实例对象
+- **目标**：使用子函数能调用父函数的方法
+- **实例**：让子函数的原型对象指向父元素的实例，在让子函数原型的 `constructor` 指向自己
+
+```js
+function Parent() {}
+function Child() {}
+Parent.prototype.test = function () {}
+Child.prototype.constructor = Child
+Child.prototype = new Parent() // 子类型的原型指向父类型实例
+const child = new Child() // 有test()
+```
+
+## 组合继承
+
+1. 利用原型链实现对父类型对象的方法继承
+2. 利用call()借用父类型构建函数初始化相同属性
+
+- **目标**：让子函数的原型对象指向父元素，并且子函数使用父函数的属性
+
+```js
+function Parent(xxx) { this.xxx = xxx }
+Parent.prototype.test = function () {}
+function Child(xxx, yyy) {
+  Parent.call(this, xxx)// 借用构造函数   this.Parent(xxx)
+}
+Child.prototype = new Parent() // 为了能看到父类型的方法
+Child.prototype.constructor = Child // 修正constructor属性
+const child = new Child() // child.xxx为'a', 也有test()
+```
+
+## 事件循环模型
+
+​	在`Javascript`执行引擎之外，有一个任务队列，当在代码中调用`setTimeout()`方法时，注册的延时方法会交由浏览器内核其他模块（以`webkit`为例，是`webcore`模块）处理，当延时方法到达触发条件，即到达设置的延时时间时，这一延时方法被添加至任务队列里。这一过程由浏览器内核其他模块处理，与执行引擎主线程独立，执行引擎在主线程方法执行完毕，到达空闲状态时，会从任务队列中顺序获取任务来执行，这一过程是一个不断循环的过程，称为事件循环模型。
+
+<HairyImageGroup row="48%">
+  <HairyImage src="https://pic.imgdb.cn/item/62ec7d7e8c61dc3b8e1f6546.png" />
+  <HairyImage src="https://pic.imgdb.cn/item/62ec7d898c61dc3b8e1f853b.png" />
+</HairyImageGroup>
+
+以图中代码为例，执行引擎开始执行上述代码时，相当于先讲一个main()方法加入执行栈。继续往下开始`console.log('Hi')`时，log('Hi')方法入栈，`console.log`方法是一个`webkit`内核支持的普通方法，而不是前面图中`WebAPIs`涉及的方法，所以这里log('Hi')方法立即出栈被引擎执行。
+
+<HairyImageGroup row="48%">
+  <HairyImage src="https://pic.imgdb.cn/item/62ec7d938c61dc3b8e1fac63.png" />
+  <HairyImage src="https://pic.imgdb.cn/item/62ec7d9d8c61dc3b8e1fd405.png" />
+</HairyImageGroup>
+
+执行引擎将`setTimeout`出栈执行时，将延时处理方法交由了`webkit timer`模块处理，然后立即继续往下处理后面代码，于是将`log('SJS')`加入执行栈，接下来`log('SJS')`出栈执行，输出`SJS`。而执行引擎在执行完`console.log('SJS')`后，程序处理完毕，`main()`方法也出栈。
+
+<HairyImageGroup row="30%">
+  <HairyImage src="https://pic.imgdb.cn/item/62ec7da58c61dc3b8e1feb3f.png" />
+  <HairyImage src="https://pic.imgdb.cn/item/62ec7dad8c61dc3b8e2007d6.png" />
+  <HairyImage src="https://pic.imgdb.cn/item/62ec7db48c61dc3b8e201db4.png" />
+</HairyImageGroup>
+
+这时在在setTimeout方法执行5秒后，timer模块检测到延时处理方法到达触发条件，于是将延时处理方法加入任务队列。而此时执行引擎的执行栈为空，所以引擎开始轮询检查任务队列是否有任务需要被执行，就检查到已经到达执行条件的延时方法，于是将延时方法加入执行栈。引擎发现延时方法调用了log()方法，于是又将log()方法入栈。然后对执行栈依次出栈执行，输出there，清空执行栈。
+
+清空执行栈后，执行引擎会继续去轮询任务队列，检查是否还有任务可执行。
+
+因为是这种执行模式，所以一旦有计算量大的代码就会阻塞定时器的执行。
+
+~~~js
+var arr = []
+for (let i = 0; i < 100000; i++) arr.push(i)
+setTimeout(() => { console.log('我执行了') }, 1000) // 远不止 1 秒
+~~~
