@@ -1,5 +1,5 @@
 ---
-title: HTTP 协议概述
+title: Ajax 异步数据传输
 categories:
   - notes
   - client
