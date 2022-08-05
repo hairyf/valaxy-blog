@@ -10,6 +10,7 @@ module.exports = {
     'no-constant-condition': 'off',
     'no-var': 'off',
     'no-template-curly-in-string': 'off',
+    'no-eval': 'off',
   },
 }
 
