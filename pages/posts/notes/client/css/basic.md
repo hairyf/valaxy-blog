@@ -20,9 +20,9 @@ tags:
 
 元素的类型和`display`属性，决定了这个Box的类型。不同类型的`Box`，会参与不同的`Formatting Context`（一个决定如何渲染文档的容器），因此Box内的元素会以不同的方式渲染
 
-- **block-level  box：** `display` 属性为 `block`、`list-item`、`table`的元素，会生成 `block-level-box`，并且参与 Formatting Context
+- **block-level  box**： `display` 属性为 `block`、`list-item`、`table`的元素，会生成 `block-level-box`，并且参与 Formatting Context
 
-- **inline-level box：** `display` 属性为 `inline`、`inline-table`的元素，会生成`block-level-box`。并且参与 Formatting Context
+- **inline-level box**： `display` 属性为 `inline`、`inline-table`的元素，会生成`block-level-box`。并且参与 Formatting Context
 
 `Formatting Context` 是 `W3C CSS2.1` 规范中的一个概念，他是页面中的一块渲染区域，并且有一套渲染规则，他决定了其子元素将如何定位，以及和其他元素的关系合互相作用。
 

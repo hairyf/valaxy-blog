@@ -56,7 +56,7 @@ document.getElementById('btn').onclick = function (event) {
 }
 ~~~
 
-**命令式：**命令程序执行的时候每一步都是按照自己的指令，更注重执行的过程
+**命令式**：命令程序执行的时候每一步都是按照自己的指令，更注重执行的过程
 
 ~~~js
 var arr = [1, 2, 3, 4, 5]
@@ -67,7 +67,7 @@ for (let i = 0; i < arr.length; i++) {
 }console.log(newArr)
 ~~~
 
-**声明式：**更注重执行的结果。
+**声明式**：更注重执行的结果。
 
 ~~~js
 var newArr2 = arr.map((item) => {

@@ -15,8 +15,8 @@ Git 中结合 Eslint。让代码在没有通过 Eslint 的情况下 禁止提交
 
 ## 2.安装eslint
 
-**创建项目：**`npm init`
-**本地安装：**`npm i eslint --save-dev`
+**创建项目**：`npm init`
+**本地安装**：`npm i eslint --save-dev`
 **设置启动命令(package.json)**
 
 ~~~json

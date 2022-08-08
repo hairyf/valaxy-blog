@@ -20,10 +20,10 @@ https方式clone一个repo或者pull和push到远端只需要根据提示提供�
 
 **配置仓库用户信息**
 
-**用户名称：**` git config user.name "[name]"` 
-**用户邮箱：**` git config user.email [email]`
-**检查已有的配置信息：**`git config --list`
-**删除配置信息：** `git config --unset user.email`
+**用户名称**：` git config user.name "[name]"` 
+**用户邮箱**：` git config user.email [email]`
+**检查已有的配置信息**：`git config --list`
+**删除配置信息**： `git config --unset user.email`
 
 `git add ./......git commit......`
 
@@ -67,7 +67,7 @@ https方式clone一个repo或者pull和push到远端只需要根据提示提供�
 
 ![add-ssh](images/Git/GitHub-SSH/add-ssh.jpg)
 
-**Git绑定连接：**`$ ssh -T git@github.com`
+**Git绑定连接**：`$ ssh -T git@github.com`
 
 ~~~
 // 无法确定主机真实性，密匙为......，是否继续连接
@@ -89,10 +89,10 @@ Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':[Type a passphrase
 
 **配置仓库用户信息**
 
-**用户名称：**` git config user.name "[name]"` 
-**用户邮箱：**` git config user.email [email]`
-**检查已有的配置信息：**`git config --list`
-**删除配置信息：** `git config --unset user.email`
+**用户名称**：` git config user.name "[name]"` 
+**用户邮箱**：` git config user.email [email]`
+**检查已有的配置信息**：`git config --list`
+**删除配置信息**： `git config --unset user.email`
 
 `git add ./......git commit......`
 
@@ -167,7 +167,7 @@ GitHub项目 >
 
 访问远程仓库，从中拉取所有你还没有的数据。 执行完后，远程分支就会出现新的内容！！
 ****它并不会自动合并或修改你当前的工作**。当准备好时你必须手动将其合并入你的工作。**
-**合并：**`git merge 远程分支`
+**合并**：`git merge 远程分支`
 
 `git fetch [remote-name]`
 
@@ -221,11 +221,11 @@ GitHub项目 >
 
 ## 删除远程分支
 
-**删除远程分支：**`git push origin --delete serverfix`
+**删除远程分支**：`git push origin --delete serverfix`
 
-**列出仍在远程跟踪但是远程已被删除的无用分支：**`git remote prune origin --dry-run` 
+**列出仍在远程跟踪但是远程已被删除的无用分支**：`git remote prune origin --dry-run` 
 
-**清除上面命令列出来的远程跟踪：**`git remote prune origin`
+**清除上面命令列出来的远程跟踪**：`git remote prune origin`
 
 
 
