@@ -13,6 +13,7 @@ module.exports = {
     'no-eval': 'off',
     'new-cap': 'off',
     'no-const-assign': 'off',
+    'no-prototype-builtins': 'off',
   },
 }
 
