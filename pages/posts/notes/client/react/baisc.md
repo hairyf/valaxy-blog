@@ -2,7 +2,9 @@
 title: React 基本应用
 date: 2020-11-01
 categories:
-  - 前端学习笔记
+  - notes
+  - client
+  - react
 tags: 
   - react
 ---
@@ -64,7 +66,6 @@ this.state = { pwd: '' }
 
 - getDerivedStageFromProps(): props 派生状态(state)
 - getSnapshotBBeforeUpdate(): 保存数据快照(列表保存滚动高度)
-
 ## React 事件
 
 React 元素的事件处理和 DOM 元素类似。但是有一点语法上的不同：
