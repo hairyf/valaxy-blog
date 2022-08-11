@@ -1,8 +1,8 @@
 ---
 title: CSS3 应用
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - css
 tags:
   - css

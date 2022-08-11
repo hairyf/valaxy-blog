@@ -1,8 +1,8 @@
 ---
 title: JavaScript HTML5
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - javascript
 tags: 
   - javascript

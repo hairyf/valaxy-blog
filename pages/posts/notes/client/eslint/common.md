@@ -1,8 +1,8 @@
 ---
 title: Eslint 常用规则
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - eslint
 tags:
   - eslint

@@ -1,8 +1,8 @@
 ---
 title: Ajax 异步数据传输
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - request
 tags:
   - ajax

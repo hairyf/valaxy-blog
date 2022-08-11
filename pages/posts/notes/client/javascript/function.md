@@ -1,8 +1,8 @@
 ---
 title: JavaScript 类型原型与方法
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - javascript
 tags:
   - javascript

@@ -1,8 +1,8 @@
 ---
 title: NPM 软件包管理工具
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - utils
 tags:
   - npm

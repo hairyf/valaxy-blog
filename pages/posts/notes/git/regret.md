@@ -2,7 +2,7 @@
 title: Git 回退与指针
 date: 2020-11-01
 categories:
-  - notes
+  - Notes
   - git
 tags: 
   - git

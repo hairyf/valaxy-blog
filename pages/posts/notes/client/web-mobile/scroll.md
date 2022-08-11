@@ -1,8 +1,8 @@
 ---
 title: H5 原生 Web 滚动方案
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - webMobile
 tags:
   - mobile

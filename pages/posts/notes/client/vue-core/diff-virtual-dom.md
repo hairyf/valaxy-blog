@@ -1,8 +1,8 @@
 ---
 title: Vue 源码之 Virtual DOM|diff
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - vueCore
 tags: 
   - vue

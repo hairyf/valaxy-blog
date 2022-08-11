@@ -2,8 +2,8 @@
 title: AngularJS 前端框架开发
 date: 2020-11-01
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - angular
 tags:
   - angularjs

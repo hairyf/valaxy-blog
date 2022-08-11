@@ -1,8 +1,8 @@
 ---
 title: Less 样式预处理语言
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - css
 tags:
   - css

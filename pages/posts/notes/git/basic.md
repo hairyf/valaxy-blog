@@ -2,7 +2,7 @@
 title: Git 基础概念应用
 date: 2020-11-01
 categories:
-  - notes
+  - Notes
   - git
 tags: 
   - git

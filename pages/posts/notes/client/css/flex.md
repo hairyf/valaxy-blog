@@ -1,8 +1,8 @@
 ---
 title: Flex Layout
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - css
 tags:
   - css

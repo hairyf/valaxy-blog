@@ -1,8 +1,8 @@
 ---
 title: Axios 接口请求工具库
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - request
 tags:
   - http

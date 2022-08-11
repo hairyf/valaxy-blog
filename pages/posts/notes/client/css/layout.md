@@ -1,8 +1,8 @@
 ---
 title: CSS 布局
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - css
 tags:
   - css

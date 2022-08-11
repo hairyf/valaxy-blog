@@ -1,8 +1,8 @@
 ---
 title: HTML 超文本标记语言
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - html
 tags:
   - html

@@ -2,8 +2,8 @@
 title: React 基本应用
 date: 2020-11-01
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - react
 tags: 
   - react

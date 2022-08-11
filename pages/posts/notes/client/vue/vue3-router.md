@@ -1,8 +1,8 @@
 ---
 title: Vue3 路由的变化
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - vue
 tags: 
   - vue

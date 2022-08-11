@@ -1,8 +1,8 @@
 ---
 title: Vue 源码之 mustache 模板引擎
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - vueCore
 tags: 
   - vue

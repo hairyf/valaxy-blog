@@ -1,8 +1,8 @@
 ---
 title: JavaScript 概念
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - javascript
 tags:
   - javascript

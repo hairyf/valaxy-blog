@@ -2,7 +2,7 @@
 title: Git 储存(store)
 date: 2020-11-01
 categories:
-  - notes
+  - Notes
   - git
 tags: 
   - git

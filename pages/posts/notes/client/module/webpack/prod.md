@@ -1,8 +1,8 @@
 ---
 title: Webpack 生产环境
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - webpack
 tags: 
   - webpack

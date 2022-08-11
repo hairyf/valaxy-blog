@@ -1,8 +1,8 @@
 ---
 title: JavasScript drag
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - html
 tags: 
   - javascript

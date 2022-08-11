@@ -1,8 +1,8 @@
 ---
 title: Vue3 内置组件 Suspense
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - vue
 tags: 
   - vue

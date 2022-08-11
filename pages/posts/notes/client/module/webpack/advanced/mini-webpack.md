@@ -1,8 +1,8 @@
 ---
 title: 实现迷你 webpack
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - webpack
 tags: 
   - webpack

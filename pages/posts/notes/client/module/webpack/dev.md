@@ -1,8 +1,8 @@
 ---
 title: Webpack 开发环境
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - webpack
 tags: 
   - webpack

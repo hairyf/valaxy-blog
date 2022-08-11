@@ -1,8 +1,8 @@
 ---
 title: CSS 基本概念
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - css
 tags:
   - css

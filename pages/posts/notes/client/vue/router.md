@@ -2,8 +2,8 @@
 title: Vue 面向路由编程
 date: 2020-11-01
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - vue
 tags: 
   - vue

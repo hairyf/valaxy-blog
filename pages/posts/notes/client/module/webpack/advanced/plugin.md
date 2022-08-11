@@ -1,8 +1,8 @@
 ---
 title: 自定义 webpack plugin
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - webpack
 tags: 
   - webpack

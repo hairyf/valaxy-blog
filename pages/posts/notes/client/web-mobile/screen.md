@@ -1,8 +1,8 @@
 ---
 title: H5 原生 Web 屏幕概念
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - webMobile
 tags:
   - mobile

@@ -1,8 +1,8 @@
 ---
 title: Grid Layout
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - css
 tags:
   - css

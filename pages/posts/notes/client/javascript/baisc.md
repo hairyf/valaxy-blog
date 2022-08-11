@@ -1,8 +1,8 @@
 ---
 title: JavaScript 基础应用
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - javascript
 tags:
   - javascript

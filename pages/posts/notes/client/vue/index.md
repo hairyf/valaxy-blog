@@ -1,8 +1,8 @@
 ---
 title: Vue 渐进式前端框架
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - vue
 tags: 
   - vue

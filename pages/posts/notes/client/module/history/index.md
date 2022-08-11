@@ -1,8 +1,8 @@
 ---
 title: JavaScript 模块化演进
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - Javascript Modules
 tags:
   - Javascript Modules

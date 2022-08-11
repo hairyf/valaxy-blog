@@ -1,8 +1,8 @@
 ---
 title: Vue3 组合式 API
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - vue
 tags: 
   - vue

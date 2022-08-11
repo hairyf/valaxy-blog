@@ -1,8 +1,8 @@
 ---
 title: JavaScript BOM
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - javascript
 tags:
   - javascript

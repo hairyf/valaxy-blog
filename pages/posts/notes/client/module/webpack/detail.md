@@ -1,8 +1,8 @@
 ---
 title: Webpack 详细配置
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - webpack
 tags: 
   - webpack

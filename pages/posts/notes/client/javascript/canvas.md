@@ -1,8 +1,8 @@
 ---
 title: JavaScript Canvas
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - javascript
 tags:
   - javascript

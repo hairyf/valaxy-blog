@@ -2,7 +2,7 @@
 title: Git 远程仓库(remote)
 date: 2020-11-01
 categories:
-  - notes
+  - Notes
   - git
 tags: 
   - git

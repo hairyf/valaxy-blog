@@ -1,8 +1,8 @@
 ---
 title: JavaScript Canvas Animation
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - javascript
 tags:
   - javascript

@@ -1,8 +1,8 @@
 ---
 title: HTML5 超文本语言规范
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - html
 tags:
   - html

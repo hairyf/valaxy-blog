@@ -2,8 +2,8 @@
 title: ECMAScript 标准化语言
 date: 2020-11-01
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - ecmascript
 tags: 
   - ecmascript

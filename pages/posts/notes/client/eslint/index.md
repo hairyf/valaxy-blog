@@ -1,8 +1,8 @@
 ---
 title: Eslint 代码检测工具
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - eslint
 tags:
   - eslint

@@ -2,7 +2,7 @@
 title: Git 文件忽略(gitignore)
 date: 2020-11-01
 categories:
-  - notes
+  - Notes
   - git
 tags: 
   - git

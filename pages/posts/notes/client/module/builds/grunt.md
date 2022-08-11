@@ -2,8 +2,8 @@
 title: Grunt 基本应用(1.x)
 date: 2020-11-01
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - bundler
 tags: 
   - grunt

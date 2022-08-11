@@ -2,7 +2,7 @@
 title: Git 标签(tag)
 date: 2020-11-01
 categories:
-  - notes
+  - Notes
   - git
 tags: 
   - git

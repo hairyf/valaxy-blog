@@ -2,8 +2,8 @@
 title: React 面向路由编程
 date: 2020-11-01
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - react
 tags: 
   - react

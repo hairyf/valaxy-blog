@@ -1,8 +1,8 @@
 ---
 title: 自定义 webpack loader
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - webpack
 tags: 
   - webpack

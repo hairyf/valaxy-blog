@@ -1,8 +1,8 @@
 ---
 title: AMD-RequireJS 模块化
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - Javascript Modules
 tags:
   - Javascript Modules

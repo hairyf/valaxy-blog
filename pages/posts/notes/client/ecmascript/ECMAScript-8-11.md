@@ -2,8 +2,8 @@
 title: ECMAScript 8~11
 date: 2020-11-01
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - ecmascript
 tags: 
   - ecmascript

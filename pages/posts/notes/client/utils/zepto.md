@@ -1,8 +1,8 @@
 ---
 title: JavaScript 工具库(Zepto)
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - utils
 tags:
   - javascript

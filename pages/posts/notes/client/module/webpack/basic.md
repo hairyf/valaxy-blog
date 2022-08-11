@@ -1,8 +1,8 @@
 ---
 title: Webpack 基本应用
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - webpack
 tags: 
   - webpack

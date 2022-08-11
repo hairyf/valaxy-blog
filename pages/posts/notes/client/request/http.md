@@ -1,8 +1,8 @@
 ---
 title: HTTP 协议概述
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - request
 tags:
   - http

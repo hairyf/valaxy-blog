@@ -1,8 +1,8 @@
 ---
 title: Vue3 新特性与更改
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - vue
 tags: 
   - vue

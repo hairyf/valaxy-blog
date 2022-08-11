@@ -1,8 +1,8 @@
 ---
 title: Vue 源码之 JavaScript 技术
 categories:
-  - notes
-  - client
+  - Notes
+  - Client
   - vueCore
 tags: 
   - vue
