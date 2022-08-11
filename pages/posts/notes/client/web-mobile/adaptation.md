@@ -1,5 +1,5 @@
 ---
-title: H5 原生 Web 屏幕适配
+title: H5 原生 Web 适配
 categories:
   - notes
   - client
@@ -9,127 +9,92 @@ tags:
   - html
 ---
 
-## 移动端屏幕基本概念
+## 利用 rem 适配
 
-- 屏幕尺寸
+**优点**：没有破坏完美视口，**缺点**：px值到rem的转换太复杂
 
-指屏幕的对角线的长度，单位是英尺，1英尺 = 2.54厘米
-常见的屏幕尺寸有 `2.4、2.8/3.5、3.7、、4.2、5.0、5.5、6.0` 等
-
-![](https://pic.imgdb.cn/item/62f233ba16f2c2beb1de1214.jpg)
-
-- 屏幕分辨率
-
-横纵向上物理像素的个数。设备出厂时，该款设备所包含的物理像素的点数和一个物理像素所占据的实际屏幕尺寸是包含变的，是固定的。
-
-- 屏幕密度
-
-每英寸上物理像素的个数，取决于屏幕是否是高清屏。
-
-## 移动端像素(pixel)
-
-桌面浏览器设计的网页中，css 的 1 个像素往往都是对应着电脑屏幕的1个物理像素，在移动设备上，一个像素并不一定对应着设备的1个物理像素。
-
-### 物理像素
-
-设备像素也被称为设备物理像素，他是显示设备中最微小的物理部件，**是设备呈像的最小单位**，也是屏幕分辨率。一个物理像素占据的实际屏幕尺寸在不同设备上是不一样的。
-
-### CSS像素
-
-CSS像素是一个抽象的单位，主要使用在浏览器上用来精确的度量(确定) web页面上的内容。它是为web开发者创造的，是在css或者javascript中使用的一个抽象的层，**是web开发中的最小单位**。一个css像素最终一定会转换为物理像素在屏幕中呈像。一个css像素占据多少个物理像素跟屏幕的特性(普通/高清屏 )，用户的缩放行为有关。
-
-例如：一个width为 `200px` 的元素，它占据了 200 个 css 像素，但 200 个 css 像素占据多少个物理像素取决于屏幕的特性(是否是高密度,即像素比)和用户的缩放行为。
-
-> 在苹果的视网膜屏幕上，视网膜的像素密度是普通屏幕的两倍，这个元素就跨越了 400 个设备像素。如果用户放大，它将跨越更多的设备像素。
-
-css 像素与物理像素的关系是靠浏览器厂商在维护，并不是设备厂商。css 像表是浏览器中特有的概念。
-
-### 位图像素
-
-一个位图像素**是图像最小的数据单元**。1个位图像素对应于1个物理像素，图片才能得到完美清晰的展示
-
-### 设备独立像素
-
-设备独立像素也是一个抽象的层，是**设备对接css像素的接口**。只有当浏览器厂商对接上设备独立像素时，浏览器厂商设计的移动端规则才能启作用，否则采取默认的规则。
-
-## 像素比的换算
-
+~~~css
+/* em  自身标签font-size的大小 */
+div{width: 10em;height: 10em;}
+/* rem 根标签的font-size的大小 */
+div{width: 10rem;height: 10rem;}
+/* 谷歌下字体的默认大小为16px */
+/* 谷歌下字体的最小大小为12px */
 ~~~
-物理像素 / 设备独立像素 = 2 
-
-一个方向上占据一块屏幕所需的物理像素个数 / 一个方向上占据一块屏幕所需的设备独立像素的个数
-
-当写上 meta 标签后，width=device-width， 使css像素与设备独立像素链接了起来，即css像素等同于设备独立像素。也就是一个 css 像素，就是 4 个物理像素
-
-由于物理像素，设备独立像素，像素比都是设备中的概念与浏览器没有一点关系，在设备出厂时这些参数就定了。所以在默认情况下，设备独立像素和像素比在 web 开发中亳无意义。
-
-为什么?
-因为默认情况下，设备独立像素，物理像素比跟测览器没有一点关系，都是设备的东西。
-~~~
-
-## 视口尺寸(viewport)
-
-<img src="http://images.cnitblog.com/blog/130623/201407/300958521655944.png" style="zoom:80%;" />
-<img src="http://images.cnitblog.com/blog/130623/201407/300958547434256.png" style="zoom:80%;" />
-
-### 布局视口(layout viewport)
-
-在移动端浏览器厂商面临着-个比较大的问题，他们如何将数以万计甚至可以说是数以亿计的pc端网页完整的呈现在移动端设备上，并且不会出现横向滚动条?
-
-这个时候，视口的宽度还是和浏览器窗口的宽度一致?我们都 知道pc端网页-般 都为960px或者1024px，
-那么要完整的放下它们，我们移动端测览器必须要有个容器放下它吧，而且只有有了这个容器我们才能很好的
-见定移动端的浏览器到底能放下多大的页面(可能大于960页可能大于1024) 。这个数值最好大于960，而
-且设备间的这个容器大小是没有太大差异的。**这个容器我们称为布局视口**。
-
-JavaScript 获取布局视口大小：`document.documentElement.clientWidth | document.body.clientWidth`；
-
-**浏览器的默认 layout viewport 的宽度**
-
-![布局视口尺寸](http://images.cnitblog.com/blog/130623/201407/300958475557219.png)
-
-### 视觉视口(visual viewport)
-
-用户正在看到的网页的区域。不管用户如何缩放，都不会影响到视觉视口的宽度，因为一个**视觉视口包含的物理像素的个数是确定的**（分辨率）
-
-JavaScript 获取视觉视口：`window.innerWidth`；
-
-### 理想视口(ideal viewport)
-
-我们分析知道: 布局视口的默认宽度并不是一个理想的宽度，对于我们移动设备来说，最理想的情况是用户刚进入页面时不再需要缩放。这就是为什么苹果和其他效仿苹果的浏览器厂商会引进理想视口。只有是专门为移动设备开发的网站，他才有理想视口这一说。而且只有当你在页面中加入viewport的meta标签，理想视口才会生效。
-
-JavaScript 获取理想视口：`window.screen.width`；
 
 ~~~html
-<meta name="viewport" content="width=device- width" />
+<script>
+var html = document.querySelector('html')
+// 将html的字体大小更改为视觉视口大小的宽度, 这样, 1rem就等于满屏
+html.style.fontSize = document.documentElement.clinetWidth + 'px'
+// 假如我们要在总宽750px的div上放一个200px宽高的盒子，也就是750px = 1rem，那么就是200 / 750 ≈0.26rem
+
+// 但是小数点并不方便计算，所以可以将满屏的宽度分成多个rem尺寸, 这里是16个rem等于满屏
+html.style.fontSize = document.documentElement.clinetWidth / 16 + 'px'
+// 假如我们要在总宽750px的div上放一个200px宽高的盒子，也就是750px = 16rem，那么就是(200 / 750) * 16 ≈ 4.26rem
+</script>
+
+<!-- 
+设置了html的字体大小，但子元素有权重问题，一旦以某种方式更改了字体覆盖了html的字体大小，那么适配将不起效果，
+所以要在适配标签中假如!important
+-->
+<script>
+(function(){
+    var styleNode = document.createElement("style");
+	var w = document.documentElement.clientWidth/16;
+	styleNode.innerHTML = "html{font-size:"+w+"px!important}";
+	document.head.appendChild(styleNode);
+})
+</script>
 ~~~
 
-这一行代码告诉我们，布局视口的宽度应该与理想视口的宽度一致理想视口包含的css像素的个数等于独立设备像素的值，定义理想视口是浏览器厂商的工作，而不是设备或操作系统的工作。因此同一设备上的不同浏览器拥有不同的理想视口。但是浏览器理想视口大小取决于设备。同一款浏览器在不同设备上拥有不同的理想视口。
+利用 less 简化计算 rem
 
-### 尺寸控制概念
-
-- **放大**：放大一个css像素的面积，视觉视口的尺寸变小，一个css像素包含的物理像素的个数变多
-- **缩小**：缩小一个css像素的面积，视觉视口的尺寸变大，一个css像素包含的物理像素的个数变少
-
-### 视口尺寸标签(meta viewport)
-
-meta viewport是专为移动设备下显示所设计的.只有检测到在移动设备上使用包含meta的文档时, meta标签才会起作用.
-
-~~~html
-<meta name="viewport" content="[Meta viewport]" />
+~~~less
+@rem: 设计图总宽/16rem // 每一rem对应多少px
+width: 70/@rem // css像素/rem值 = 则等于70对设计图总宽对应的rem值
 ~~~
 
-- width：控制 viewport 的大小，可以指定的一个值，如 600，或者特殊的值，如 device-width 为设备的宽度（单位为缩放为 100% 时的 CSS 的像素）。
-- height：和 width 相对应，指定高度。
-- initial-scale：初始缩放比例，也即是当页面第一次 load 的时候缩放比例。
-- maximum-scale：允许用户缩放到的最大比例。
-- minimum-scale：允许用户缩放到的最小比例。
-- user-scalable：用户是否可以手动缩放。
+## 利用 viewport 适配
 
-### 设置完美视口
+**优点**：方便,直接使用px值也可以等比，**缺点**：没有使用完美视口
 
-由于IOS不支持 `initial-scale` 属性，所以需要加上 `maximum-scale` 与 `minimum-scale=1`，设置最大与最小比例都为 1，则不能缩放。
+1. 将布局视口设置为设计图的宽度
+
+问题：安卓不支持`width=number`
 
 ~~~html
-<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
-<!-- css 像素与设备独立像素关联起来,将视觉与视口比例设置为1,禁止用户缩放行为,最大缩放比例为1,最小缩放比例为1 -->
+<!-- 将布局视口设置为设计图的宽度 -->
+<meta name="viewport" content="width=640">
+<!-- 将布局视口设置为设计图的宽度 -->
+~~~
+
+2. 调整视口放大比例为设计图宽度
+
+问题：`screen.width`兼容性太差
+
+~~~html
+<script>
+    var targetW = 750
+    // 视觉视口 / 设计图尺寸 = 一个视觉视口的px值 对应 一个设计图尺寸 的放大比例
+    var scale = screen.width/targetW
+    var meta = document.createElement('meta')
+    meta.name = "viewport"
+    meta.content = 'initial-scale='+scale+',maximum-scale='+scale+',minimum-scale='+scale+',user-scalable=no'
+    document.head.appendChild(meta)
+</script>
+~~~
+
+3. 根据完美视口调整放大比例
+
+~~~html
+<!-- 先设置为完美视口 -->
+<meta name="viewport" content="width=device-width">
+<script>
+    var targetW = 750
+    // 完美视口宽度 / 设计图宽度 = 一个视觉视口宽的px值 对应 一个设计图宽度 的放大比例
+    var scale = document.documentElement.clientWidth / targetW
+    var meta = document.querySelector("meta[name='viewport']")
+    meta.content = 'initial-scale='+scale+',maximum-scale='+scale+',minimum-scale='+scale+',user-scalable=no'
+</script>
 ~~~
