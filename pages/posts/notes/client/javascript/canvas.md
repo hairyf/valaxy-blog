@@ -3,9 +3,9 @@ title: JavaScript Canvas
 categories:
   - Notes
   - Client
-  - javascript
+  - JavaScript
 tags:
-  - javascript
+  - JavaScript
   - html
   - canvas
 ---

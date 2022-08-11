@@ -3,9 +3,9 @@ title: JavaScript 概念
 categories:
   - Notes
   - Client
-  - javascript
+  - JavaScript
 tags:
-  - javascript
+  - JavaScript
 ---
 
 ## 基本(值)类型

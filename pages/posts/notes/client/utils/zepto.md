@@ -5,7 +5,7 @@ categories:
   - Client
   - utils
 tags:
-  - javascript
+  - JavaScript
   - zepto
   - utils
 ---

@@ -3,9 +3,9 @@ title: ECMAScript6 模块化
 categories:
   - Notes
   - Client
-  - Javascript Modules
+  - JavaScript Modules
 tags:
-  - Javascript Modules
+  - JavaScript Modules
 ---
 
 在 ES6 模块化规范诞生之前，Javascript 社区已经尝试并提出了 AMD、CMD、CommonJS 等模块化规范。

@@ -3,9 +3,9 @@ title: AMD-RequireJS 模块化
 categories:
   - Notes
   - Client
-  - Javascript Modules
+  - JavaScript Modules
 tags:
-  - Javascript Modules
+  - JavaScript Modules
 ---
 
 

@@ -3,9 +3,9 @@ title: JavaScript HTML5
 categories:
   - Notes
   - Client
-  - javascript
+  - JavaScript
 tags: 
-  - javascript
+  - JavaScript
   - html5
 ---
 

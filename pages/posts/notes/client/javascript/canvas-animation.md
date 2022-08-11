@@ -3,9 +3,9 @@ title: JavaScript Canvas Animation
 categories:
   - Notes
   - Client
-  - javascript
+  - JavaScript
 tags:
-  - javascript
+  - JavaScript
 ---
 
 要实现 canvas 中的动画，本质上是通过储存|计算|处理，不断的绘制画面帧，从而实现动画的流程运行。

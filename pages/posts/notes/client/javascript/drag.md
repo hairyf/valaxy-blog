@@ -5,7 +5,7 @@ categories:
   - Client
   - html
 tags: 
-  - javascript
+  - JavaScript
   - html5
 ---
 

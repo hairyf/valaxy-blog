@@ -3,9 +3,9 @@ title: JavaScript BOM
 categories:
   - Notes
   - Client
-  - javascript
+  - JavaScript
 tags:
-  - javascript
+  - JavaScript
 ---
 
 浏览器对象模型(BOM)可以使我们通过JS来操作浏览器，以及获取浏览器信息。通常BOM对象在浏览器中都是作为window对象的属性保存的，可以通过window对象来使用，也可以直接使用。

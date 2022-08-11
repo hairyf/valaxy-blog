@@ -3,9 +3,9 @@ title: JavaScript 类型原型与方法
 categories:
   - Notes
   - Client
-  - javascript
+  - JavaScript
 tags:
-  - javascript
+  - JavaScript
 ---
 
 JavaScript 每个类型类提供了大量可用方法，在程序开发中是必须掌握的技巧。

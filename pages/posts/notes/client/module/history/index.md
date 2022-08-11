@@ -3,9 +3,9 @@ title: JavaScript 模块化演进
 categories:
   - Notes
   - Client
-  - Javascript Modules
+  - JavaScript Modules
 tags:
-  - Javascript Modules
+  - JavaScript Modules
 ---
 
 ES2015 在2015年6月正式发布，官方终于引入了对于模块的原生支持，如今 JS 的模块化开发非常的方便、自然，但这个新规范仅仅持续了3年。就在7年前，JS 的模块化还停留在运行时的支持；13年前，通过后端模版定义、注释定义模块依赖。对于经历过的人来说，历史的模块化方式还停留在脑海中，久久不能忘怀。

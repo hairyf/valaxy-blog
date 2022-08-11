@@ -3,9 +3,9 @@ title: JavaScript DOM
 categories:
   - Notes
   - Client
-  - javascript
+  - JavaScript
 tags:
-  - javascript
+  - JavaScript
 ---
 
 JavaScript 的核心 ECMAScript 描述了该语言的语法和基本对象， DOM 则描述了处理网页内容的方法和接口；
