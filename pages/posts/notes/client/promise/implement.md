@@ -1,6 +1,7 @@
 ---
 title: Promise 具体实现
 date: 2022-03-10 14:00:00
+categories:
   - Notes
   - Client
   - Promise

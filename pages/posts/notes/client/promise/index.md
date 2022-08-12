@@ -1,6 +1,7 @@
 ---
 title: Promise 异步解决方案
 date: 2022-03-08 14:00:00
+categories:
   - Notes
   - Client
   - Promise
