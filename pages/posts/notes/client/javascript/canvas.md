@@ -8,7 +8,7 @@ tags:
   - JavaScript
   - HTML
   - canvas
-date: 2019-07-27
+date: 2018-07-27
 ---
 
 Canvas API（画布）是在HTML5中新增的标签用于在网页实时生成图像，并且可以操作图像内容，基本上它是一个可以用JavaScript操作的位图（bitmap）。

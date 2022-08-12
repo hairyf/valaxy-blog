@@ -6,7 +6,7 @@ categories:
   - JavaScript
 tags:
   - JavaScript
-date: 2019-07-28
+date: 2018-07-28
 ---
 
 ## 基本(值)类型

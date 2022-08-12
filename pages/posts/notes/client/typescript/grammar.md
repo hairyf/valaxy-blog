@@ -1,6 +1,5 @@
 ---
 title: TypeScript 扩展语法
-date: 2020-11-01
 categories:
   - Notes
   - Client
@@ -12,9 +11,6 @@ date: 2020-08-05 14:00:00
 
 TypeScript 提供了很多另类的语法与字段，可以用于定义和声明类型。
 
-<!-- more -->
-
-
 ## 声明对象中某个属性
 
 ~~~ts
@@ -24,6 +20,8 @@ const obj = {
 }
 obj.age = '60'
 ~~~
+
+<!-- more -->
 
 ## type 定义类型
 

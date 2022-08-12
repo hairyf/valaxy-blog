@@ -1,6 +1,5 @@
 ---
 title: Git 分布式版本控制系统
-date: 2020-11-01
 categories:
   - Notes
   - Git

@@ -6,7 +6,7 @@ categories:
   - JavaScript
 tags:
   - JavaScript
-date: 2019-07-31
+date: 2018-07-31
 ---
 
 JavaScript 每个类型类提供了大量可用方法，在程序开发中是必须掌握的技巧。

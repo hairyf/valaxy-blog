@@ -1,16 +1,17 @@
 ---
 title: JavaScript 设计模式
-date: 2020-11-01
+date: 2020-08-21
 categories:
   - Notes
   - Client
   - JavaScript
 tags: 
   - JavaScript
-date: 2019-08-21
 ---
 
 JavaScript 是多模式混合的代码编程，面向对象的，以原型为基础的，拥有动态数据类型，一方面将函数看做是一等公民，允许函数是编程的风格，另一方面，不排斥传统的面向对象方式进行开发。
+
+<!-- more -->
 
 ## 面向对象
 

@@ -7,7 +7,7 @@ categories:
 tags: 
   - JavaScript
   - HTML5
-date: 2019-08-01
+date: 2018-08-01
 ---
 
 HTML5 实际上并没有多少与 HTML 有关，它其实就是 JavaScript。HTML 本身有什么变化?不过一些新标签而已， 况且哪个新标签都不难理解。HTML5的威力在于让你能用JavaScript来创建这些标签。假如没有后台代码通过 Canvas 来创建动画、游戏，或者 通过它来实现一些数据的可视化，这个标签也没有大用处。从浏览器开始支持 Canvas 开始，我已经看到了A steroids 的上百个实现，那都是开发人员为熟悉这个新特性所做的练习。有的比较粗糙一些，而有的则极其精美。这些完全都要归功于 JavaScript。

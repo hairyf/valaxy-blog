@@ -6,6 +6,7 @@ categories:
   - css
 tags:
   - css
+date: 2018-05-20
 ---
 
 层叠样式表 (`Cascading Style Sheets`，缩写为 `CSS`），是一种 [样式表](https://developer.mozilla.org/zh-CN/docs/Web/API/StyleSheet) 语言，用来描述 [HTML](https://developer.mozilla.org/zh-CN/docs/Web/HTML) 或 [XML](https://developer.mozilla.org/zh-CN/docs/Web/XML/XML_Introduction)（包括如 [SVG](https://developer.mozilla.org/zh-CN/docs/Web/SVG)、[MathML](https://developer.mozilla.org/zh-CN/docs/Web/MathML)、[XHTML](https://developer.mozilla.org/zh-CN/docs/Glossary/XHTML) 之类的 `XML` 分支语言）文档的呈现。[CSS](https://w3.org/Style/CSS/#specs) 描述了在屏幕、纸质、音频等其它媒体上的元素应该如何被渲染的问题。

@@ -8,7 +8,10 @@ tags:
   - Git
 ---
 
-Git 中结合 Eslint。让代码在没有通过 Eslint 的情况下 禁止提交。 **pre-commit 、husky、eslintignore**
+Git 中结合 Eslint。让代码在没有通过 Eslint 的情况下 禁止提交（pre-commit 、husky、eslintignore）
+
+<!-- more -->
+
 ## 1.初始化仓库
 
 `git init`

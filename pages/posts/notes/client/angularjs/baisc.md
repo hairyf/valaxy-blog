@@ -1,6 +1,6 @@
 ---
 title: AngularJS 基本应用
-date: 2020-11-01
+
 categories:
   - Notes
   - Client
