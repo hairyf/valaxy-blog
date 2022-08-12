@@ -1,8 +1,6 @@
 import { defineConfig } from 'valaxy'
 import type { HairyTheme } from 'valaxy-theme-hairy'
 
-
-
 /**
  * User Config
  */
@@ -14,7 +12,7 @@ export default defineConfig<HairyTheme>({
     name: '毛先生',
   },
   url: 'https://github.com/TuiMao233',
-  description: `Mao's Notes`,
+  description: 'Mao\'s Notes',
   theme: 'hairy',
   markdown: { theme: 'material-ocean' },
   themeConfig: {
@@ -46,24 +44,24 @@ export default defineConfig<HairyTheme>({
       {
         text: 'About',
         link: '/about',
-        icon: 'i-material-symbols-recent-actors-rounded'
+        icon: 'i-material-symbols-recent-actors-rounded',
       },
       {
         text: 'Posts',
         link: '/archives/',
-        icon: 'i-material-symbols-import-contacts-rounded'
+        icon: 'i-material-symbols-import-contacts-rounded',
       },
       {
         text: 'Github',
         link: 'https://github.com/TuiMao233/valaxy-theme-hairy',
-        icon: 'i-ri-github-fill'
+        icon: 'i-ri-github-fill',
       },
     ],
     meting: {
       auto: 'https://music.163.com/#/playlist?id=2043085869',
       autoplay: false,
       theme: 'var(--hy-c-primary)',
-      loop: 'all'
+      loop: 'all',
     },
   },
   social: [
