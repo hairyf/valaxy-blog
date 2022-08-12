@@ -6,6 +6,7 @@ categories:
   - request
 tags:
   - ajax
+date: 2019-08-02
 ---
 
 `Ajax`并不是一项新技术，它实际上是几种技术，每种技术各尽其职，以一种全新的方式聚合在一起。

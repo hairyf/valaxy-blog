@@ -6,6 +6,7 @@ categories:
   - JavaScript
 tags:
   - JavaScript
+date: 2019-07-24
 ---
 
 JavaScript（JS）是一种具有[函数优先](https://developer.mozilla.org/zh-CN/docs/Glossary/First-class_Function)特性的轻量级、解释型或者说[即时编译型](https://zh.wikipedia.org/wiki/%E5%8D%B3%E6%99%82%E7%B7%A8%E8%AD%AF)的编程语言。虽然作为 Web 页面中的脚本语言被人所熟知，但是它也被用到了很多[非浏览器环境](https://en.wikipedia.org/wiki/JavaScript#Other_usage)中，例如 [Node.js](https://developer.mozilla.org/zh-CN/docs/Glossary/Node.js)、[Apache CouchDB](https://couchdb.apache.org/)、[Adobe Acrobat](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/) 等。进一步说，JavaScript 是一种[基于原型](https://developer.mozilla.org/zh-CN/docs/Glossary/Prototype-based_programming)、多范式、单线程的动态语言，并且支持面向对象、命令式和声明式（如函数式编程）风格。

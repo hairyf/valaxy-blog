@@ -1,11 +1,11 @@
 ---
 title: Git 项目命令集
-date: 2020-11-01
+date: 2019-10-08 17:00:00
 categories:
   - Notes
-  - git
+  - Git
 tags: 
-  - git
+  - Git
 ---
 
 一般情况下，`git add`、`git commit` 其实都是一些基层指令的集合

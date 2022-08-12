@@ -1,12 +1,12 @@
 ---
 title: Gulp 基本应用(4.x)
-date: 2020-11-01
+date: 2019-08-08 18:00:00
 categories:
   - Notes
   - Client
-  - bundler
+  - Bundler
 tags: 
-  - grunt
+  - Gulp
 ---
 
 Gulp 是与 Grunt 功能类似的前端项目构建工具, 基于`Nodejs`的自动任务运行器，能自动化地完成 ` javascript/coffee/sass/less/html/image/css ` 等文件的合并、压缩、检查、监听文件变化、浏览器自动刷新、测试等任务，此外，Gulp 比 Grunt 更高效(异步多任务), 更易于使用, 插件也具有更高的质量。

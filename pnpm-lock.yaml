@@ -161,8 +161,8 @@ packages:
       yaml-eslint-parser: 1.1.0
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
-      - eslint-import-resolver-typescript
-      - eslint-import-resolver-webpack
+      - ESlint-import-resolver-typescript
+      - ESlint-import-resolver-webpack
       - supports-color
       - typescript
     dev: true
@@ -176,8 +176,8 @@ packages:
       eslint: 8.21.0
       eslint-plugin-react: 7.30.1_eslint@8.21.0
     transitivePeerDependencies:
-      - eslint-import-resolver-typescript
-      - eslint-import-resolver-webpack
+      - ESlint-import-resolver-typescript
+      - ESlint-import-resolver-webpack
       - supports-color
       - typescript
     dev: true
@@ -194,8 +194,8 @@ packages:
       eslint: 8.21.0
       typescript: 4.7.4
     transitivePeerDependencies:
-      - eslint-import-resolver-typescript
-      - eslint-import-resolver-webpack
+      - ESlint-import-resolver-typescript
+      - ESlint-import-resolver-webpack
       - supports-color
     dev: true
 
@@ -208,8 +208,8 @@ packages:
       eslint: 8.21.0
       eslint-plugin-vue: 9.3.0_eslint@8.21.0
     transitivePeerDependencies:
-      - eslint-import-resolver-typescript
-      - eslint-import-resolver-webpack
+      - ESlint-import-resolver-typescript
+      - ESlint-import-resolver-webpack
       - supports-color
       - typescript
     dev: true
@@ -236,8 +236,8 @@ packages:
       jsonc-eslint-parser: 2.1.0
       yaml-eslint-parser: 1.1.0
     transitivePeerDependencies:
-      - eslint-import-resolver-typescript
-      - eslint-import-resolver-webpack
+      - ESlint-import-resolver-typescript
+      - ESlint-import-resolver-webpack
       - supports-color
       - typescript
     dev: true
@@ -2154,7 +2154,7 @@ packages:
     dependencies:
       '@typescript-eslint/utils': 5.32.0_qugx7qdu5zevzvxaiqyxfiwquq
     transitivePeerDependencies:
-      - eslint
+      - ESlint
       - supports-color
       - typescript
     dev: true
@@ -2213,8 +2213,8 @@ packages:
       resolve: 1.22.1
       tsconfig-paths: 3.14.1
     transitivePeerDependencies:
-      - eslint-import-resolver-typescript
-      - eslint-import-resolver-webpack
+      - ESlint-import-resolver-typescript
+      - ESlint-import-resolver-webpack
       - supports-color
     dev: true
 

@@ -3,10 +3,11 @@ title: H5 原生 Web 适配
 categories:
   - Notes
   - Client
-  - webMobile
+  - Web Mobile
 tags:
-  - mobile
-  - html
+  - Mobile
+  - Html
+date: 2020-03-08 16:00:00
 ---
 
 ## 利用 rem 适配

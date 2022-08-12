@@ -1,6 +1,6 @@
 ---
 title: AngularJS 控制器
-date: 2020-11-01
+date: 2019-08-05 15:00:00
 categories:
   - Notes
   - Client

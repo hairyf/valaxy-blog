@@ -1,6 +1,6 @@
 ---
 title: ESBuild 基于 GO 的 JS|TS 编译器
-date: 2020-11-01
+date: 2021-06-29
 categories:
   - Notes
   - Client

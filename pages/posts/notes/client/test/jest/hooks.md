@@ -1,6 +1,6 @@
 ---
 title: Jest 自动化部署测试钩子
-date: 2020-11-01
+date: 2021-06-12 17:00:00
 categories:
   - Notes
   - Client

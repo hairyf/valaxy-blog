@@ -1,11 +1,11 @@
 ---
 title: Git 标签(tag)
-date: 2020-11-01
+date: 2019-10-07 18:00:00
 categories:
   - Notes
-  - git
+  - Git
 tags: 
-  - git
+  - Git
 ---
 
 Git 可以给历史中的某一个提交打上标签，以示重要。 比较有代表性的是人们会 使用这个功能来标记发布结点（v1.0 等等）。

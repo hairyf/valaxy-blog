@@ -1,6 +1,6 @@
 ---
-title: TypeScript 接口(Generic)
-date: 2020-11-01
+title: TypeScript 泛型(Generic)
+date: 2020-08-04 15:00:00
 categories:
   - Notes
   - Client

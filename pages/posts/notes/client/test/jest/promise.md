@@ -1,6 +1,6 @@
 ---
 title: Jest 自动化部署异步测试
-date: 2020-11-01
+date: 2021-06-12 16:00:00
 categories:
   - Notes
   - Client

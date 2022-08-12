@@ -6,6 +6,7 @@ categories:
   - webpack
 tags: 
   - webpack
+date: 2019-11-10 14:00:00
 ---
 
 webpack作为前端项目的打包工具，具有很好的学习价值。Loader 可以帮助 webpack 将不同类型的文件转换为 webpack 可识别的模块。

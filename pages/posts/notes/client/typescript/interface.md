@@ -1,6 +1,6 @@
 ---
 title: TypeScript 接口(Interface)
-date: 2020-11-01
+date: 2020-08-04 14:00:00
 categories:
   - Notes
   - Client

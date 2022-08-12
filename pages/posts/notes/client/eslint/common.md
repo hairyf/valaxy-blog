@@ -1,11 +1,12 @@
 ---
-title: Eslint 常用规则
+title: ESlint 常用规则
 categories:
   - Notes
   - Client
-  - eslint
+  - ESlint
 tags:
-  - eslint
+  - ESlint
+date: 2019-09-04 16:00:00
 ---
 
 `object-shorthand`

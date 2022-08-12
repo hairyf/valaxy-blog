@@ -7,6 +7,7 @@ categories:
   - TypeScript
 tags: 
   - TypeScript
+date: 2020-08-05 14:00:00
 ---
 
 TypeScript 提供了很多另类的语法与字段，可以用于定义和声明类型。

@@ -6,6 +6,7 @@ categories:
   - vue
 tags: 
   - vue
+date: 2021-03-25 16:00:00
 ---
 
 Suspense 组件用于在等待某个异步组件解析时显示后备内容。

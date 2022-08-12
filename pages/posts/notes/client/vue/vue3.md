@@ -6,6 +6,7 @@ categories:
   - vue
 tags: 
   - vue
+date: 2021-03-24 16:00:00
 ---
 
 Vue3 在 2020年9月18日，官方正式将其取名为 Vue3 One Piece。新版本的Vue提供了更好的性能，更小的打包体积，更好的TypeScript支持，还有一些新的API。

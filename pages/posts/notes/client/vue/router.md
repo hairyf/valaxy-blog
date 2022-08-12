@@ -1,12 +1,12 @@
 ---
 title: Vue 面向路由编程
-date: 2020-11-01
 categories:
   - Notes
   - Client
   - vue
 tags: 
   - vue
+date: 2020-03-07 14:00:00
 ---
 
 Vue Router 是 [Vue.js](http://cn.vuejs.org/) 官方的路由管理器。它和 Vue.js 的核心深度集成，让构建单页面应用变得易如反掌！！！

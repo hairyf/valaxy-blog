@@ -6,6 +6,7 @@ categories:
   - request
 tags:
   - http
+date: 2020-03-07 16:00:00
 ---
 
 Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中。

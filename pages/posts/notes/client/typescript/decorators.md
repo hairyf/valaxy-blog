@@ -1,6 +1,6 @@
 ---
 title: TypeScript 装饰器(Decorators)
-date: 2020-11-01
+date: 2020-08-05 10:00:00
 categories:
   - Notes
   - Client

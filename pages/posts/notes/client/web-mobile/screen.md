@@ -3,10 +3,11 @@ title: H5 原生 Web 屏幕概念
 categories:
   - Notes
   - Client
-  - webMobile
+  - Web Mobile
 tags:
-  - mobile
-  - html
+  - Mobile
+  - Html
+date: 2020-03-08 14:00:00
 ---
 
 ## 移动端屏幕基本概念

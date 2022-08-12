@@ -1,11 +1,11 @@
 ---
 title: Git 高级概念应用(CRUD)
-date: 2020-11-01
+date: 2019-10-07 14:00:00
 categories:
   - Notes
-  - git
+  - Git
 tags: 
-  - git
+  - Git
 ---
 
 ## 初始化仓库:`git init`（初始化）

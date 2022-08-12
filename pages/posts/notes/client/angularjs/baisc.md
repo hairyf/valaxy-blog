@@ -7,6 +7,7 @@ categories:
   - angularjs
 tags:
   - angularjs
+date: 2019-08-05 13:00:00
 ---
 
 ## ng-app（指令）

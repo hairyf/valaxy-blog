@@ -1,6 +1,6 @@
 ---
 title: TypeScript 命名空间(Namespace)
-date: 2020-11-01
+date: 2020-08-04 16:00:00
 categories:
   - Notes
   - Client

@@ -1,11 +1,11 @@
 ---
 title: Git 统一代码风格(eslint)
-date: 2020-11-01
+date: 2019-10-08 14:00:00
 categories:
   - Notes
-  - git
+  - Git
 tags: 
-  - git
+  - Git
 ---
 
 Git 中结合 Eslint。让代码在没有通过 Eslint 的情况下 禁止提交。 **pre-commit 、husky、eslintignore**

@@ -6,6 +6,7 @@ categories:
   - JavaScript Modules
 tags:
   - JavaScript Modules
+date: 2019-08-08 16:00:00
 ---
 
 在 ES6 模块化规范诞生之前，Javascript 社区已经尝试并提出了 AMD、CMD、CommonJS 等模块化规范。

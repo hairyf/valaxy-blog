@@ -6,6 +6,7 @@ categories:
   - webpack
 tags: 
   - webpack
+date: 2019-10-09 15:00:00
 ---
 
 用于在 dev 模式中的配置（loader、plugin）提供开发服务器、HOT 热更新、编译捆绑 less、css、javascript 或其他资源。

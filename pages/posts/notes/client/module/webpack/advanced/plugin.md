@@ -6,6 +6,7 @@ categories:
   - webpack
 tags: 
   - webpack
+date: 2019-11-10 15:00:00
 ---
 
 plugin(插件)是 webpack 的几大要素之一，plugin的目的在于在 webpack 构建打包生命周期中中执行一些可扩展性功能。它可以在 webpack 运行到某个时刻帮你做一些事情。plugin会在webpack初始化时,给相应的生命周期函数绑定监听事件，直至webpack执行到对应的那个生命周期函数,plugin绑定的事件就会触发。

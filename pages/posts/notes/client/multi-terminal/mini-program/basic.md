@@ -1,12 +1,12 @@
 ---
 title: 微信小程序开发基础
-date: 2020-11-01
 categories:
   - Notes
   - Client
   - Mini Program
 tags: 
   - Mini Program
+date: 2020-04-01 15:00:00
 ---
 
 ## 事件绑定

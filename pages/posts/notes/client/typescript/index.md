@@ -1,6 +1,6 @@
 ---
 title: TypeScript 基础应用
-date: 2020-11-01
+date: 2020-08-03 14:00:00
 categories:
   - Notes
   - Client

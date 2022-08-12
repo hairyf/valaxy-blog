@@ -3,9 +3,10 @@ title: Eslint 代码检测工具
 categories:
   - Notes
   - Client
-  - eslint
+  - ESlint
 tags:
-  - eslint
+  - ESlint
+date: 2019-09-04 15:00:00
 ---
 
 `ESLint` 是一个**开源的 JavaScript 代码检查工具**，由 `Nicholas C. Zakas` 于 2013 年 6 月 创建。代码检查是一种静态的分析，常用于寻找有问题的模式或者代码，并且不依赖于具体 的编码风格。对大多数编程语言来说都会有代码检查，一般来说编译程序会内置检查工具。

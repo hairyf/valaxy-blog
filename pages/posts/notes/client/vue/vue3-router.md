@@ -6,6 +6,7 @@ categories:
   - vue
 tags: 
   - vue
+date: 2021-03-25 14:00:00
 ---
 
 Vue Router 4.0 提供了 Vue 3 支持， 虽然 vue-router 4 大多数 API 保持不变，但是在 vue3 中以插件形式存在，所以在使用时有一定的变化。

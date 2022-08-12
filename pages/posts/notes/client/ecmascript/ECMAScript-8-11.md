@@ -1,12 +1,12 @@
 ---
 title: ECMAScript 8~11
-date: 2020-11-01
+date: 2020-04-07
 categories:
   - Notes
   - Client
-  - ecmascript
+  - ECMAScript
 tags: 
-  - ecmascript
+  - ECMAScript
   - ES6
 ---
 

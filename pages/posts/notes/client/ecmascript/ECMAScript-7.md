@@ -1,12 +1,12 @@
 ---
 title: ECMAScript 7
-date: 2020-11-01
+date: 2019-08-07
 categories:
   - Notes
   - Client
-  - ecmascript
+  - ECMAScript
 tags: 
-  - ecmascript
+  - ECMAScript
   - ES6
 ---
 

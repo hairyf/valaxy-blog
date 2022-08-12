@@ -3,10 +3,11 @@ title: JavasScript drag
 categories:
   - Notes
   - Client
-  - html
+  - HTML
 tags: 
   - JavaScript
-  - html5
+  - HTML5
+date: 2019-07-30
 ---
 
 拖拽功能的实现主要依靠3个事件，分别是 onousedown 鼠标按下、onmousemove 鼠标移动和 onmouseup 鼠标抬起。

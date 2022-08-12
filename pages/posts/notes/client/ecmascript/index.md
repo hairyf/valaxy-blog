@@ -1,12 +1,12 @@
 ---
 title: ECMAScript 标准化语言
-date: 2020-11-01
+date: 2019-08-05 16:00:00
 categories:
   - Notes
   - Client
-  - ecmascript
+  - ECMAScript
 tags: 
-  - ecmascript
+  - ECMAScript
 ---
 
 ECMAScript是一种由 Ecma 国际（前身为欧洲计算机制造商协会，European Computer Manufacturers Association）通过ECMA-262标准化的脚本程序设计语言。这种语言在万维网上应用广泛，它往往被称为JavaScript或JScript，所以它可以理解为是JavaScript的一个标准,但实际上后两者是ECMA-262标准的实现和扩展。

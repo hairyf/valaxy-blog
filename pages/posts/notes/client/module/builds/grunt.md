@@ -1,12 +1,12 @@
 ---
 title: Grunt 基本应用(1.x)
-date: 2020-11-01
+date: 2019-08-08 17:00:00
 categories:
   - Notes
   - Client
-  - bundler
+  - Bundler
 tags: 
-  - grunt
+  - Grunt
 ---
 
 Grunt 是一套前端自动化构建工具，基于 nodeJs 的命令行工具，它是一个任务运行器, 配合其丰富强大的插件(plugins)系统。基于插件，它可以实现：

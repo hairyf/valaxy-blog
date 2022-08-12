@@ -7,6 +7,7 @@ categories:
   - JavaScript
 tags: 
   - JavaScript
+date: 2019-08-21
 ---
 
 JavaScript 是多模式混合的代码编程，面向对象的，以原型为基础的，拥有动态数据类型，一方面将函数看做是一等公民，允许函数是编程的风格，另一方面，不排斥传统的面向对象方式进行开发。
@@ -122,7 +123,7 @@ baogongtou.jianfangzi(gongren)
 const myfangzi = gongren.jiaofang()
 ~~~
 
-~~~js
+~~~javascript
 function Candidate(param) {
   const _candidate = new Person(param)
   _candidate.name = new CreateName(param.name)
@@ -316,7 +317,7 @@ macroCommand.execute()
 
 观察者模式又叫发布订阅和消息模式。是设计模式中非常著名也是非常重要的一种模式。这种模式一般会定义一个主题和众多个个体，这里主题可以想象为一个消息中心，里面有各种各样的消息，众多个体可以订阅不同的消息，当未来消息中心发布某条消息的时候，订阅过他的个体就会得到通知。
 
-~~~js
+~~~javascript
 /** 观察者构造函数;
   * 观察者模式又叫发布订阅和消息模式。是设计模式中非常著名也是非常重要的一种模式。
   * 这种模式一般会定义一个主题和众多个个体，这里主题可以想象为一个消息中心，里面有各种各样的消息，
@@ -362,7 +363,7 @@ class Watcher {
 
   // 订阅消息, 返回订阅者
   subscribe(type, execute, _isInit = true) {
-    if (!type || !typeof execute == 'function')
+    if (!type || !typeof execute === 'function')
       return
 
     const _observe = new this.Observe(type, execute)

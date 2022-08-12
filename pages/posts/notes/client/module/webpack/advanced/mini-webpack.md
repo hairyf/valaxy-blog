@@ -6,6 +6,7 @@ categories:
   - webpack
 tags: 
   - webpack
+date: 2019-11-10 17:00:00
 ---
 
 其实 webpack 早期时候并不是用来当做一个脚手架来用的（loader，plugin 是后人慢慢加进去的功能），它只是一个把 es6 或者 commonJs 转换成浏览器可识别脚本的工具。而 mini webpack 就是对这一基本功能的实现。

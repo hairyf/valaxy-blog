@@ -1,6 +1,6 @@
 ---
 title: TypeScript 编写规范
-date: 2021-08-17
+date: 2022-03-05
 categories:
   - standard
 tags: 

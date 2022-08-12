@@ -1,12 +1,12 @@
 ---
 title: 微信小程序组件开发
-date: 2020-11-01
 categories:
   - Notes
   - Client
   - Mini Program
 tags: 
   - Mini Program
+date: 2020-04-01 16:00:00
 ---
 
 我们知道了微信小程序的视图层，而视图层还包括了组件。以下，总结微信小程序的常用组件，并自定义自己的组件。

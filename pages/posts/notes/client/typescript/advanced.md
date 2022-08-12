@@ -1,6 +1,6 @@
 ---
 title: TypeScript 高级类型
-date: 2020-11-01
+date: 2021-04-05
 categories:
   - Notes
   - Client

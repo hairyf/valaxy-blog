@@ -1,11 +1,11 @@
 ---
 title: Git 基础概念应用
-date: 2020-11-01
+date: 2019-10-06 17:00:00
 categories:
   - Notes
-  - git
+  - Git
 tags: 
-  - git
+  - Git
 ---
 
 git 地址 : https://git-scm.com/download/win，下载完安装包之后，双击 exe 安装包，可以看到如下图窗口界面，一直点击下一步，就安装完成了。

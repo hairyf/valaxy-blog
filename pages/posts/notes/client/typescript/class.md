@@ -1,6 +1,6 @@
 ---
 title: TypeScript 类(Class)
-date: 2020-11-01
+date: 2020-08-04 11:00:00
 categories:
   - Notes
   - Client

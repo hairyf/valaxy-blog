@@ -8,6 +8,7 @@ tags:
   - JavaScript
   - zepto
   - utils
+date: 2019-08-04
 ---
 
 Zepto是一个轻量级的、针对现代高级浏览器的JavaScript工具库, 它兼容jQuery的API。Zepto是一款开源软件, 它采用的是对开发者和商业都很友好的开源协议--MIT license, 并具有以下特点：

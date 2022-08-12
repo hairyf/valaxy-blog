@@ -6,6 +6,7 @@ categories:
   - utils
 tags:
   - npm
+date: 2019-08-03
 ---
 
 `CommonJS`包规范是理论，`NPM (Node Package Manager)` 是其中一种实践。对于`Node`而言，`NPM`帮助其完成了第三方模块的发布、安装和依赖等。借助`NPM`，`Node`与第三方模块之间形成了很好的一个生态系统。
