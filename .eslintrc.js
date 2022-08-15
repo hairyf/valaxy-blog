@@ -14,6 +14,7 @@ module.exports = {
     'new-cap': 'off',
     'no-const-assign': 'off',
     'no-prototype-builtins': 'off',
+    'no-caller': 'off',
   },
 }
 
