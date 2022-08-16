@@ -35,7 +35,7 @@ tags:
 ```json
 {
   "layout": "image:slice:reverse",
-   // posts image 数量需要达到 6 个以上才会生效
+  // posts image 数量需要达到 6 个以上才会生效
   "images": [/* your image urls */]
 }
 ```
