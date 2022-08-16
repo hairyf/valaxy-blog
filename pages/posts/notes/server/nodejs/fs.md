@@ -67,12 +67,12 @@ fs.open('input.txt', 'r+', (err, fd) => {
 
 fs 中提供了四种不同的方式将数据写入文件：
 
-- 简单文件写入
-- 同步文件写入
-- 异步文件写入
-- 流式文件写入
+- 简单写入
+- 同步写入
+- 异步写入
+- 流式写入
 
-### 简单文件写入
+### 简单写入
 
 - `fs.writeFile(file, data[, options], callback)`
 - `fs.writeFileSync(file, data[, options])`
@@ -90,18 +90,18 @@ fs.writeFile('hello.txt', '这是通过writeFile写入的内容', { flag: 'w' },
 })
 ~~~
 
-### 同步文件写入
+### 同异写入
 
 - `fs.writeSync(fd, buffer, offset, length[, position])`
 - `fs.writeSync(fd, data[, position[, encoding]])`
 
 要完成同步写入文件，先需要通过 `openSync()` 打开文件来获取一个文件描述符，然后在通过 `writeSync()` 写入文件。
 
-- **fd **：文件描述符，通过 `openSync()` 获取
-- **data **：被写入的内容，可以是String或Buffer。
+- **fd**：文件描述符，通过 `openSync()` 获取
+- **data**：被写入的内容，可以是String或Buffer。
 - **offset**： buffer写入的偏移量
-- **length **：写入的长度
-- **position **：写入的起始位置
+- **length**：写入的长度
+- **position**：写入的起始位置
 - **encoding**：写入编码
 
 ~~~js
@@ -114,27 +114,14 @@ fs.writeSync(fsTxt, '今天天气真不错~~~~', 2, 'utf-8')
 fs.closeSync(fsTxt)
 ~~~
 
-### 异步文件写入
-
-- `fs.write(fd, buffer, offset, length[, position], callback)`
-- `fs.write(fd, data[, position[, encoding]], callback)`
-
-要使用异步写入文件，先需要通过 `open()` 打开文件，然后在回调函数中通过 `write()` 写入。
-
-- **fd **：文件描述符，通过 `openSync()` 获取
-- **data **：被写入的内容，可以是 String 或 Buffer。
-- **offset**： `buffer` 写入的偏移量
-- **length **：写入的长度
-- **position **：写入的起始位置
-- **encoding**：写入编码
-- **callback**：回调函数
+异步读取基本相同，但通过函数回调获取结果：
 
 ~~~js
 // 打开文件
 var fd = fs.open('hello.txt', 'w', (err, fd) => {
   if (!err) { // 判断是否出错
   // 如果没有出错，则对文件进入写入
-    fs.write(fd, '这是异步写入的内容', (err) => { // 文件写入
+    fs.write(fd, '这是异步写入的内容', (err) => { // 写入
       if (!err)
         console.log('写入成功')
       fs.close(fd, () => { console.log('文件已关闭') })// 关闭文件
@@ -145,7 +132,7 @@ var fd = fs.open('hello.txt', 'w', (err, fd) => {
 })// 如果出错则弹出错误
 ~~~
 
-### 流式文件写入
+### 流式写入
 
 往一个文件中写入大量数据时，最好的方法之一是使用流，若要将数据异步传送到文件，首需要使用以下语法创建一个 Writable 对象：
 
@@ -184,6 +171,95 @@ ws.write('清清真漂亮')
 ~~~js
 ws.end()
 ~~~
+
+## 读取文件
+
+fs 中提供了四种读取文件的方式
+
+- 简单文件读取
+- 同步文件读取
+- 异步文件读取
+- 流式文件读取
+
+### 简单读取
+
+- `fs.readFile(file[, options], callback)`
+- `fs.readFileSync(file[, options])`
+
+- **file**：文件的路径。
+- **options**：对象，包含属性（encoding、mode、flag）
+- **callback**：回调函数，带有两个参数如：callback(err, fd)。
+
+~~~js
+fs.readFile('派大星.jpg', (err, data) => {
+  if (!err) { // 读取文件
+    fs.writeFile('成了.jpg', data, (err) => { console.log(!err ? '成功' : '失败') })// 写入文件
+  }
+  else { console.log('读取出错') }
+})
+~~~
+
+### 同异读取
+
+- `fs.readSync(fd, buffer, offset, length, position)`
+
+- **fd**：文件描述符，通过 `openSync()` 获取
+- **buffer**：读取文件的缓冲区
+- **offset**：buffer的开始写入的位置
+- **length**：要读取的字节数
+- **position**：写入的起始位置
+
+~~~js
+fs.open('123.txt', 'r', (err, fd) => { // 读取文件
+  if (err) { console.error(err); return }
+  const buf = Buffer.alloc(8)
+  const readFile = fs.readSync(fd, buf, 0, 8, null) // 返回读取的字节数
+})
+~~~
+
+异步读取基本相同，但通过函数回调获取结果：
+
+~~~js
+fs.open('123.txt', 'r', (err, fd) => { // 读取文件
+  if (err) { console.error(err); return }
+  const buf = Buffer.alloc(8)
+  fs.read(fd, buf, 0, 8, 0, (readfile) => {
+    console.log(readfile) // 返回读取的字节数
+  })
+})
+~~~
+
+### 流式文件读取
+
+从一个文件中读取大量的数据时，最好的方法之一就是流式读取，这样将把一个文件作为 `Readable` 流的形式打开。
+要从异步从文件传输数据，首先需要通过以下语法创建一个 `Readable` 流对象：`fs.createReadStream(path[, options])`
+
+- **path**：文件路径
+- **options**：`{ encoding: string, mode: string, flag: string }`
+
+当你打开 `Readable` 文件流以后，可以通过 `readable` 事件和 `read()` 请求，或通过 `data` 事件处理程序可以轻松地从它读出。
+
+~~~js
+var rs = fs.createReadStream('test.mp4')
+var ws = fs.createWriteStream('HuoGuoP.mp4')
+// 监听流的开启和关闭
+rs.once('open', () => { console.log('读取流打开了~~~~') })
+// 数据读取完毕，关闭可写流
+rs.once('close', () => { console.log('读取流关闭了~~~~'); ws.end() })
+// 如果要读取一个可读流中的数据，必须要为可读流绑定一个data事件
+rs.on('data', (data) => { // data事件绑定完毕，它会自动开始读取数据
+  ws.write(data) // 写入文件
+})
+~~~
+
+`pipe()` 方法将可读流内容直接输出到可写流中，并且自动关闭：
+
+~~~js
+var rs = fs.createReadStream('test.mp4')
+var ws = fs.createWriteStream('HuoGuoP.mp4')
+rs.pipe(ws)
+~~~
+
 
 ## 其他操作
 

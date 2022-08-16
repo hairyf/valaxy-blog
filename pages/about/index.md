@@ -28,3 +28,14 @@ waline: true
 - `2021-06`，为了方便浏览，使用 [vuepress](https://www.vuepress.cn/) 与主题构建, 使用 `gitee page` 自动部署
 - `2022-07`，构建项目冗余，文档杂乱，使用 [valaxy](https://valaxy.site/) 进行重构与自定义美化
 - `2022-08`，花了一个多月时间，制作与使用了 [valaxy-theme-hairy](https://github.com/TuiMao233/valaxy-theme-hairy) 初版
+
+## 指标
+
+在每天忙碌的日子，也不要忘记了好好生活。
+
+:::tip
+- 好好吃饭
+- 按时睡觉
+- 不要太累
+- 每周至少运动一次
+:::

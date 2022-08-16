@@ -1,6 +1,6 @@
 ---
 title: NodeJS 缓冲区（Buffer）
-date: 2020-05-03 15:00:00
+date: 2020-05-03 14:30:00
 categories:
   - Server
   - NodeJS

@@ -15,6 +15,8 @@ module.exports = {
     'no-const-assign': 'off',
     'no-prototype-builtins': 'off',
     'no-caller': 'off',
+    'n/no-path-concat': 'off',
+    'n/handle-callback-err': 'off',
   },
 }
 
