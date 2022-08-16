@@ -26,7 +26,7 @@
   "dependencies": {
     "@iconify-json/material-symbols": "^1.1.13",
     "valaxy": "0.10.3",
-    "valaxy-theme-hairy": "0.0.10"
+    "valaxy-theme-hairy": "0.0.11"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",

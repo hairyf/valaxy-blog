@@ -67,7 +67,7 @@ https方式clone一个repo或者pull和push到远端只需要根据提示提供�
 
 **4. 打开`C:/Users/Administrator/.ssh/id_rsa.pub`，将其添加到GitHub的SSH密匙中**
 
-![add-ssh](images/Git/GitHub-SSH/add-ssh.jpg)
+![add-ssh](https://pic.imgdb.cn/item/62fb4d8d16f2c2beb1ed39e2.jpg)
 
 **Git绑定连接**：`$ ssh -T git@github.com`
 
@@ -103,7 +103,7 @@ Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':[Type a passphrase
 ### 2. 配置远程仓库别名
 
 `git remote add <shortname> <url>`
-![ssh-url](images/Git/GitHub-SSH/ssh-url.jpg)
+![ssh-url](https://pic.imgdb.cn/item/62fb4d9816f2c2beb1ed475c.jpg)
 
 **显示远程仓库使用的 Git 别名与其对应的 URL**
 `git remote –v`
@@ -138,7 +138,7 @@ Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':[Type a passphrase
 
 `git clone [远程仓库url]（克隆时不需要 git init）`
 
-![git-add-url](images/GitHub-add/git-add-url.jpg)
+![git-add-url](https://pic.imgdb.cn/item/62fb4dac16f2c2beb1ed6036.jpg)
 
 **默认克隆时为远程仓库起的别名为 origin。**
 `$ git remote > [origin]`

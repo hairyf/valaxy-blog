@@ -6,12 +6,12 @@ specifiers:
   eslint: ^8.21.0
   typescript: ^4.7.4
   valaxy: 0.10.3
-  valaxy-theme-hairy: 0.0.10
+  valaxy-theme-hairy: 0.0.11
 
 dependencies:
   '@iconify-json/material-symbols': 1.1.13
   valaxy: 0.10.3_typescript@4.7.4
-  valaxy-theme-hairy: 0.0.10
+  valaxy-theme-hairy: 0.0.11
 
 devDependencies:
   '@antfu/eslint-config': 0.25.2_qugx7qdu5zevzvxaiqyxfiwquq
@@ -161,8 +161,8 @@ packages:
       yaml-eslint-parser: 1.1.0
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
-      - ESlint-import-resolver-typescript
-      - ESlint-import-resolver-webpack
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
       - supports-color
       - typescript
     dev: true
@@ -176,8 +176,8 @@ packages:
       eslint: 8.21.0
       eslint-plugin-react: 7.30.1_eslint@8.21.0
     transitivePeerDependencies:
-      - ESlint-import-resolver-typescript
-      - ESlint-import-resolver-webpack
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
       - supports-color
       - typescript
     dev: true
@@ -194,8 +194,8 @@ packages:
       eslint: 8.21.0
       typescript: 4.7.4
     transitivePeerDependencies:
-      - ESlint-import-resolver-typescript
-      - ESlint-import-resolver-webpack
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
       - supports-color
     dev: true
 
@@ -208,8 +208,8 @@ packages:
       eslint: 8.21.0
       eslint-plugin-vue: 9.3.0_eslint@8.21.0
     transitivePeerDependencies:
-      - ESlint-import-resolver-typescript
-      - ESlint-import-resolver-webpack
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
       - supports-color
       - typescript
     dev: true
@@ -236,8 +236,8 @@ packages:
       jsonc-eslint-parser: 2.1.0
       yaml-eslint-parser: 1.1.0
     transitivePeerDependencies:
-      - ESlint-import-resolver-typescript
-      - ESlint-import-resolver-webpack
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
       - supports-color
       - typescript
     dev: true
@@ -2154,7 +2154,7 @@ packages:
     dependencies:
       '@typescript-eslint/utils': 5.32.0_qugx7qdu5zevzvxaiqyxfiwquq
     transitivePeerDependencies:
-      - ESlint
+      - eslint
       - supports-color
       - typescript
     dev: true
@@ -2213,8 +2213,8 @@ packages:
       resolve: 1.22.1
       tsconfig-paths: 3.14.1
     transitivePeerDependencies:
-      - ESlint-import-resolver-typescript
-      - ESlint-import-resolver-webpack
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
       - supports-color
     dev: true
 
@@ -4830,7 +4830,7 @@ packages:
     dependencies:
       '@vueuse/core': 8.9.4
       lodash: 4.17.21
-      vue-demi: 0.13.6
+      vue-demi: 0.13.7
     dev: false
 
   /unplugin-vue-components/0.21.2_vite@2.9.14+vue@3.2.37:
@@ -4905,8 +4905,8 @@ packages:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
     dev: true
 
-  /valaxy-theme-hairy/0.0.10:
-    resolution: {integrity: sha512-aS2f39EsSAIJQugUaD+RY94dtF/wXNHFksz0G8HnOfIkgJGT8rZauTiaSVjJe/k0NQOZYwLuGCfcfIGmdaf0Ww==}
+  /valaxy-theme-hairy/0.0.11:
+    resolution: {integrity: sha512-89BlwczEHDeYdQnTO6Y7QP4nuIzmM+6I9AmGZC7k36+FWMYuGkLwp+jX2CX81p4B+sWdyW0jA2LXbfVK/fh7Yw==}
     dependencies:
       '@docsearch/css': 3.1.1
       '@docsearch/js': 3.1.1
@@ -5164,6 +5164,21 @@ packages:
         optional: true
     dependencies:
       vue: 3.2.37
+    dev: false
+
+  /vue-demi/0.13.7:
+    resolution: {integrity: sha512-hbhlvpx1gFW3TB5HxJ0mNxyA9Jh5iQt409taOs6zkhpvfJ7YzLs1rsLufJmDsjH5PI1cOyfikY1fE/meyHfU5A==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      vue:
+        optional: true
     dev: false
 
   /vue-eslint-parser/9.0.3_eslint@8.21.0:

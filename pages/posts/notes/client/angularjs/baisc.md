@@ -37,7 +37,7 @@ date: 2019-08-05 13:00:00
 </body>
 ~~~
 
-![理解第一个Angular应用](images/angularJS/oneAngular.png)
+![理解第一个Angular应用](https://pic.rmb.bdstatic.com/bjh/f2994edbaf0ee07d9f9b2f50ec4791d3.png)
 
 ## 表达式可操作数据
 
@@ -84,4 +84,4 @@ date: 2019-08-05 13:00:00
 </body>
 ~~~
 
-![双向数据绑定](images/angularJS/binding.png)
+![双向数据绑定](https://pic.rmb.bdstatic.com/bjh/03f8db95cc89f73b88cf8252f0f95912.png)

@@ -96,11 +96,11 @@ please contact us at support@github.com
 
 ### 创建分支
 
-<img src="images/Git/121dcqd1d.jpg" alt="创建分支"  />
+![](https://pic.imgdb.cn/item/62ece93e8c61dc3b8ebb912d.jpg)
 
 ### 修改分支并提交
 
-<img src="images/Git/12d1d3123awsca1.jpg" alt="修改分支"  />
+![](https://pic.imgdb.cn/item/62fb4d7416f2c2beb1ed2003.jpg)
 
 ### 切回主分支
 
