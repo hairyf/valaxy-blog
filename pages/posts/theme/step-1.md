@@ -2,6 +2,7 @@
 title: 主题配置
 categories: Valaxy Theme Hairy
 date: 2022-08-03 16:00:00
+home: false
 tags:
   - valaxy
   - 教程

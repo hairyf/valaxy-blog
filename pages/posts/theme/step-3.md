@@ -1,10 +1,11 @@
 ---
 title: 特殊功能
 categories: Valaxy Theme Hairy
+home: false
 tags:
   - valaxy
   - 教程
-date: 2022-08-03 15:00:00
+date: 2022-08-04 14:00:00
 ---
 
 :::info
@@ -13,7 +14,7 @@ date: 2022-08-03 15:00:00
 功能大部分基于 `markdown-it` 插件与 `theme/components` 中的组件。
 :::
 
-## links 链接(TODO)
+## links 链接
 
 基于 theme components，用来建立友链或其他网址链接功能。
 
@@ -29,6 +30,18 @@ date: 2022-08-03 15:00:00
 | desc  | 描述 | 否 |
 
 <!-- more -->
+
+```html
+<hairy-links :links="[
+  {
+    name: 'Hairy’s Blog',
+    url: 'https://hairy.blog',
+    image: 'https://tuimao233.gitee.io/mao-blog/avatar.png',
+    color: '#1bc9a6',
+    desc: '记录生活，持续学习。',
+  },
+]" />
+```
 
 ## 代码块行高亮
 

@@ -52,6 +52,11 @@ export default defineConfig<HairyTheme>({
         icon: 'i-material-symbols-import-contacts-rounded',
       },
       {
+        text: 'Links',
+        link: '/links/',
+        icon: 'i-material-symbols-monitor-heart',
+      },
+      {
         text: 'Github',
         link: 'https://github.com/TuiMao233/valaxy-theme-hairy',
         icon: 'i-ri-github-fill',
@@ -59,9 +64,9 @@ export default defineConfig<HairyTheme>({
     ],
     meting: {
       auto: 'https://music.163.com/#/playlist?id=2043085869',
-      autoplay: false,
+      autoplay: true,
       theme: 'var(--hy-c-primary)',
-      loop: 'all',
+      loop: 'one',
     },
   },
   social: [

@@ -6,12 +6,12 @@ specifiers:
   eslint: ^8.21.0
   typescript: ^4.7.4
   valaxy: 0.10.3
-  valaxy-theme-hairy: 0.0.11
+  valaxy-theme-hairy: 0.0.14
 
 dependencies:
   '@iconify-json/material-symbols': 1.1.13
   valaxy: 0.10.3_typescript@4.7.4
-  valaxy-theme-hairy: 0.0.11
+  valaxy-theme-hairy: 0.0.14
 
 devDependencies:
   '@antfu/eslint-config': 0.25.2_qugx7qdu5zevzvxaiqyxfiwquq
@@ -4830,7 +4830,7 @@ packages:
     dependencies:
       '@vueuse/core': 8.9.4
       lodash: 4.17.21
-      vue-demi: 0.13.7
+      vue-demi: 0.13.8
     dev: false
 
   /unplugin-vue-components/0.21.2_vite@2.9.14+vue@3.2.37:
@@ -4905,8 +4905,8 @@ packages:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
     dev: true
 
-  /valaxy-theme-hairy/0.0.11:
-    resolution: {integrity: sha512-89BlwczEHDeYdQnTO6Y7QP4nuIzmM+6I9AmGZC7k36+FWMYuGkLwp+jX2CX81p4B+sWdyW0jA2LXbfVK/fh7Yw==}
+  /valaxy-theme-hairy/0.0.14:
+    resolution: {integrity: sha512-/bgO3mI7i2J9z37lth7CAneod4Fdp8xLZJduzD5TIfz4NVxb7POfZ5JLbm5fhSGHJ3/bSvNb20N7Orhmrb4FlA==}
     dependencies:
       '@docsearch/css': 3.1.1
       '@docsearch/js': 3.1.1
@@ -5166,8 +5166,8 @@ packages:
       vue: 3.2.37
     dev: false
 
-  /vue-demi/0.13.7:
-    resolution: {integrity: sha512-hbhlvpx1gFW3TB5HxJ0mNxyA9Jh5iQt409taOs6zkhpvfJ7YzLs1rsLufJmDsjH5PI1cOyfikY1fE/meyHfU5A==}
+  /vue-demi/0.13.8:
+    resolution: {integrity: sha512-Vy1zbZhCOdsmvGR6tJhAvO5vhP7eiS8xkbYQSoVa7o6KlIy3W8Rc53ED4qI4qpeRDjv3mLfXSEpYU6Yq4pgXRg==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
