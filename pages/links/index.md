@@ -40,7 +40,7 @@ waline: true
       url: 'https://kifuan.top/',
       image: 'https://kifuan.top/avatar.png',
       color: '#50bfff',
-      desc: 'Talk is cheap. Show me the code.'
+      desc: '随便写写，主要内容是关于程序'
     },
   ]"
 />
