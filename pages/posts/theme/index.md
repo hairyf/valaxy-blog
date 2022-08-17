@@ -8,8 +8,6 @@ tags:
 top: 10
 ---
 
-## Valaxy-Theme-Hairy
-
 <HairyImage class="rounded w-full h-150" fit="contain" src="https://user-images.githubusercontent.com/49724027/182444624-6228d153-94cb-461d-a5d8-be8535441fb6.png" />
 
 起初是使用 [Vuepress](https://www.vuepress.cn/) 搭建博客，其主要目的是记录学习笔记，所以也没怎么在乎域名、RSS，为了方便直接使用了 gitee pages 部署。但使用期间逐渐想要一个更加具有个性化和开发体验的博客框架，[Vuepress](https://www.vuepress.cn/) 很棒，但是它实际定制起来难度也不低、博客功能集成度不高，很多功能需要自己想办法实现。
@@ -33,7 +31,7 @@ top: 10
 
 本博客为 Valaxy 主题，Valaxy 现如今仍在实验阶段，请谨慎使用，确保遇到问题时，您有能力解决和沟通协调。
 
-那么在此，我视为您已了解 Valaxy 的基础使用，本系列文章着重讲解主题的使用以及特殊功能。
+那么在此，我视为您已了解 Valaxy 的基础使用，本系列文章着重讲解主题的使用以及主题的特殊功能。
 
 > 更多信息请参见 [Valaxy 官网](https://valaxy.site/)
 
@@ -89,4 +87,8 @@ export default defineConfig({
 })
 ```
 
-> 您还可以参考详细文档 [Valaxy#config](https://valaxy.site/guide/getting-started)
+> 您还可以参考 Valaxy 的详细文档 [valaxy#config](https://valaxy.site/guide/getting-started)
+
+---
+
+> 在此感谢云游君开发了此框架，它真的很棒，希望云游君能好好休息，valaxy 能持续发展是我们共同的愿景，但也不要因此累坏身体。

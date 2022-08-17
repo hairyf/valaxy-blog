@@ -12,7 +12,7 @@ waline: true
       url: 'http://flame-ice.gitee.io/awaken/',
       image: 'https://flame-ice.gitee.io/awaken/avatar.jpg',
       color: 'rgb(248, 178, 106)',
-      desc: '记录生活，持续学习。',
+      desc: 'Live as i will die today.',
     },
     {
       name: '優萌初華',
@@ -27,6 +27,13 @@ waline: true
       image: 'https://www.yunyoujun.cn/images/avatar.jpg',
       color: '#0078e7',
       desc: 'All at sea.',
+    },
+    {
+      name: 'Mysteve',
+      url: 'https://mysteve.github.io',
+      image: 'https://pic.imgdb.cn/item/62fca5f016f2c2beb193428c.jpg',
+      color: '#71d0f7',
+      desc: '不抱怨不埋怨',
     }
   ]"
 />
