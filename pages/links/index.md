@@ -34,6 +34,13 @@ waline: true
       image: 'https://pic.imgdb.cn/item/62fca5f016f2c2beb193428c.jpg',
       color: '#71d0f7',
       desc: '不抱怨不埋怨',
-    }
+    },
+    {
+      name: 'Kifuan',
+      url: 'https://kifuan.top/',
+      image: 'https://kifuan.top/avatar.png',
+      color: '#50bfff',
+      desc: 'Talk is cheap. Show me the code.'
+    },
   ]"
 />
