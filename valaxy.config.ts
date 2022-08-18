@@ -8,10 +8,10 @@ export default defineConfig<HairyTheme>({
   lang: 'zh-CN',
   title: 'Hairy\'s Blog',
   author: {
-    avatar: 'https://tuimao233.gitee.io/mao-blog/avatar.png',
+    avatar: 'https://pic.imgdb.cn/item/62fe02d616f2c2beb14bc2f3.jpg',
     name: '毛先生',
   },
-  url: 'https://github.com/TuiMao233',
+  url: 'https://www.hairy.blog/',
   description: 'Mao\'s Notes',
   theme: 'hairy',
   markdown: { theme: 'material-ocean' },
