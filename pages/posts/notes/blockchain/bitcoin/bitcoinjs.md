@@ -10,7 +10,6 @@ top: 1
 
 用于 node.js 和浏览器的 javascript 比特币工具库。用 TypeScript 编写。
 
-<!-- more -->
 
 ## ECPair
 
@@ -32,6 +31,8 @@ const address = bitcoin.payments.p2pkh({ pubkey: keyPair.publicKey }).address
 ```
 
 这里出现了几个陌生的概念， `WIF`、`privateKey`、`publicKey`，这些都是些什么？
+
+<!-- more -->
 
 ### privateKey
 
