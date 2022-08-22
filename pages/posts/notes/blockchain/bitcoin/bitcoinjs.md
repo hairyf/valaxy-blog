@@ -5,7 +5,7 @@ categories:
   - Bitcoin
 tags:
   - Bitcoin
-top: 1
+date: 2022-08-21
 ---
 
 用于 node.js 和浏览器的 javascript 比特币工具库。用 TypeScript 编写。

@@ -122,3 +122,11 @@ export default {
 - `gap` 图片之间的间距
 - `justify` 图片的左右对齐方式
 - `align`   图片的上下对齐方式
+
+## 代码片段
+
+代码片段使用 [codepen](https://codepen.io/) 支持，必须传入 `slugHash` 和 `user`。
+
+```html
+<hairy-codepen slug-hash="wvwEOZL" user="GreenSock" />
+```
