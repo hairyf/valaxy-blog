@@ -40,7 +40,7 @@ waline: true
       url: 'https://kifuan.top/',
       image: 'https://kifuan.top/avatar.png',
       color: '#50bfff',
-      desc: '随便写写，主要内容是关于程序'
+      desc: '随便写写'
     },
   ]"
 />
