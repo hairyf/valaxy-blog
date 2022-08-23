@@ -32,7 +32,7 @@ GreenSock动画平台（GSAP）可以对 JavaScript 可以操作的所有内容�
 gsap.to('.box', { rotation: 27, x: 100, duration: 1 })
 ```
 
-<hairy-codepen slug-hash="wvwEOZL" user="GreenSock" />
+<hairy-codepen slug-hash="wvwEOZL" user="GreenSock" default-tab="html,result" />
 
 `Easing`：运动状态。属于 `vars` 中的一个属性，官网对于 [ease 属性](https://greensock.com/docs/v3/Eases)提供很多内置属性。
 
@@ -75,7 +75,7 @@ tl.to('.box1', { duration: 2, x: 100 }) // notice that there's no semicolon!
   .to('.box3', { duration: 3, rotation: 360 })
 ```
 
-<hairy-codepen slug-hash="gOYdyYE" user="GreenSock" />
+<hairy-codepen slug-hash="gOYdyYE" user="GreenSock" default-tab="html,result" />
 
 使用 `exactly` 可以对每个事件的时间线进行精确控制，数字表示绝对事件（以秒为单位），或带有 `+=` or `-=` 前缀的字符串表示相对时间线 `END` 的偏移量。
 例如，`+=2` 将在时间轴的事物结束后延迟两秒在执行，`-=2` 会在开始前两秒执行。
