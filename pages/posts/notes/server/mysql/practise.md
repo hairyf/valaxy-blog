@@ -2,6 +2,7 @@
 title:  MySQL 案例练习
 date: 2019-04-04
 categories:
+  - Notes
   - Server
   - MySQL
 tags: 

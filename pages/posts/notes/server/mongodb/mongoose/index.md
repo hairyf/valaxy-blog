@@ -2,6 +2,7 @@
 title: Mongoose 对象异步模型框架
 date: 2020-05-01 17:00:00
 categories:
+  - Notes
   - Server
   - MongoDB
 tags: 

@@ -2,6 +2,7 @@
 title: MongoDB 数据查询
 date: 2020-05-01 16:00:00
 categories:
+  - Notes
   - Server
   - MongoDB
 tags: 

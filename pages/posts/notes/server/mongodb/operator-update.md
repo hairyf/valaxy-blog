@@ -2,6 +2,7 @@
 title: MongoDB 查询操作符
 date: 2020-05-02 15:00:00
 categories:
+  - Notes
   - Server
   - MongoDB
 tags: 

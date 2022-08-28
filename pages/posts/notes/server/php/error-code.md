@@ -2,6 +2,7 @@
 title: PHP 系统错误代号
 date: 2019-04-03
 categories:
+  - Notes
   - Server
   - PHP
 tags: 

@@ -2,6 +2,7 @@
 title: MongoDB 基本应用
 date: 2020-05-01 15:00:00
 categories:
+  - Notes
   - Server
   - MongoDB
 tags: 

@@ -2,6 +2,7 @@
 title:  MySQL 基本应用
 date: 2019-04-03
 categories:
+  - Notes
   - Server
   - MySQL
 tags: 

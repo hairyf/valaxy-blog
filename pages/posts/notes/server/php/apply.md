@@ -2,6 +2,7 @@
 title: PHP 基本应用
 date: 2019-04-02
 categories:
+  - Notes
   - Server
   - PHP
 tags: 

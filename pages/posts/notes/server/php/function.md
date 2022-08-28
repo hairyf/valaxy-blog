@@ -2,6 +2,7 @@
 title: PHP 扩展方法
 date: 2019-04-04
 categories:
+  - Notes
   - Server
   - PHP
 tags: 

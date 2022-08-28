@@ -2,6 +2,7 @@
 title: NodeJS CommonJS 规范
 date: 2020-05-03 15:00:00
 categories:
+  - Notes
   - Server
   - NodeJS
 tags: 

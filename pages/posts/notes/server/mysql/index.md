@@ -2,6 +2,7 @@
 title:  MySQL 关系型数据库管理系统
 date: 2019-04-02
 categories:
+  - Notes
   - Server
   - MySQL
 tags: 

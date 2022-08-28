@@ -2,6 +2,7 @@
 title: GraphQL 数据库查询语言
 date: 2021-08-28
 categories:
+  - Notes
   - Server
   - GraphQL
 tags: 

@@ -2,6 +2,7 @@
 title: Apollo Server GraphQL Web 开发框架
 date: 2021-08-29
 categories:
+  - Notes
   - Server
   - GraphQL
 tags: 

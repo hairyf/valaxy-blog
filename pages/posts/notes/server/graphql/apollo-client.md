@@ -2,6 +2,7 @@
 title: Apollo Client GraphQl 客户端方案
 date: 2021-08-30
 categories:
+  - Notes
   - Server
   - GraphQL
 tags: 
