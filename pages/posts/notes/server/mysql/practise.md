@@ -236,7 +236,7 @@ SELECT 会员编号, 会员名, 性别, 联系电话 FROM 会员
 WHERE 性别 = '男';
 ```
 
-## 视图
+## 表视图
 
 ```sql
 -- create or replace view的意思就是若数据库中已经存在这个名字的视图的话，就替代它，若没有则创建视图；
@@ -258,3 +258,88 @@ WHERE 性别 = '男';
  DELETE FROM customers_view
   WHERE cust_name='周明';
 ```
+
+## 账号管理
+
+MySQL 的用户账号及相关信息都存储在一个名为 `mysql` 的数据库中，这个数据库里有一个名为 `user` 的数据表，包含了所有用户账号，并且它用一个名为 `user` 的列储存用户的登录名。可以使用下述 SQL 语句 查看 MySQL 数据库的使用者账号。
+
+```sql
+select user from mysql.user;
+```
+
+作为一个新安装的系统，当前只有一个名为 root 的用户。这个用户是在重构安装 MySQL 服务器后，由系统创建的，并被赋予操作和管理 MySQL 的所有权限，一次，root 用户拥有对整个 MySQL 服务器完全控制的能力。
+
+```sql
+create user 'zhangSan'@'localhost' identified by '123',
+            'lisi'    @'localhost' identified by password '*531E182E@F...',
+```
+
+> 创建用户账户，必须拥有 MySQL 中 `mysql` 数据库的 `insert` 权限或全局 `create user` 权限；
+
+删除用户：
+
+```sql
+drop user lisi;
+```
+
+修改用户：
+
+```sql
+rename user 'zhangSan'@'localhost' to 'wangwu'@'localhost'
+```
+
+修改密码：
+
+```sql
+-- 修改名为 hello 散列值
+select password('hello')
+-- 修改密码
+set password 'wangwu'@'localhost' = password('hello')
+```
+
+## 用户授权
+
+成功创建用户账户后，需要为该用户访问适当的权限，因为新创建的用户账户没有访问权限，只能登录 MySQL 服务器，不能执行任何数据库操作，使用 `show grants for` 就可以查看用户的授权表：
+
+```sql
+show grants for 'wangwu'@'localhost'
+```
+
+可以看到用户 `wangwu` 仅有一个权限 `usage on *.*`，其实质表示该用户在任何数据库和任何表上对任何内容都没有权限。
+
+使用 `grant` 语句来对用户授权：
+
+```sql
+grant
+  prive_type[(column_list)]
+    [,prive_type[(column_list)]] ...
+  ON [object_type] priv_level
+  TO user_specification[,user_specification]
+  [with grant option]
+```
+
+授予用户 `zhangsan` 在数据库 `mysql_test` 的表 `customers` 上拥有对列 `cust_id` 和列 `cust_name` 的 `select` 权限。
+
+```sql
+grant select(cust_id, cust_name)
+  ON mysql_test.customers
+  TO 'wangwu'@'localhost'
+```
+
+切换用户，则需要输入 `exit` 跳出 `mysql`，任何输入 `mysql -u[用户名] -p[密码]` 来切换不同权限的用户。
+
+```sql
+exit;
+
+mysql -uwangwu -phello;
+```
+
+## 事务与并发
+
+所谓事务是用户定义的一个数据操作序列，这些操作可作为一个完整的工作单元，要么全部执行，要么全部不执行，是一个不可分割的工作。例如在关系型数据库中，一个事务可以是一条 SQL 语句，一组 SQL 语句或整个程序。
+
+事务与程序很相似，但他们是两个彼此相连而又不同的概念；程序是静止的，事务是动态的。是程序的执行而不是程序本身；同一程序的多个独立执行可以同时进行，而每一步执行则是一个不同的事务。
+
+要让 DBMS 知道哪些动作属于一个事务，而不是单纯的数据库操作或程序，必须要显式告诉数据库系统，这可以通过标记事务的开始与结束实现。在 SQL 中，用户定义事务的语句一般有这三条： `begin transaction`、`commit`、`rollback`，且事务通常是以 `begin transaction` 开始，以 `commit`、`rollback` 结束。
+
+`rollback` 表示回滚，即事务运行的过程中若发生了某种故障，事务不能继续执行，则回滚到事务开始时的状态。
