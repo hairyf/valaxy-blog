@@ -37,10 +37,10 @@ waline: true
     },
     {
       name: 'Kifuan',
-      url: 'https://kifuan.top/',
-      image: 'https://kifuan.top/avatar.png',
+      url: 'https://blog.kifuan.me',
+      image: 'https://blog.kifuan.me/avatar.jpg',
       color: '#50bfff',
-      desc: '随便写写'
+      desc: '随便写写。'
     },
   ]"
 />
