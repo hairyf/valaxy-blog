@@ -9,6 +9,7 @@ waline: true
 - 前端打工人（2020 年 6 月毕业）
 - 老二次元，跟不上时代的老宅 [#](https://zh.moegirl.org.cn/%E8%80%81%E5%AE%85)
 - 希望有朝一日能活得更轻松一些
+- 无色无味，平淡又无趣
 
 <!-- more -->
 
@@ -16,7 +17,7 @@ waline: true
 
 - 随缘追番：[飞书](https://ngd3d2laaq.feishu.cn/sheets/shtcnr8QsoQKMDTFlZSikjNV4bc)、[哔哩哔哩](https://space.bilibili.com/1490903/bangumi)
 - 随缘开源：[github](https://github.com/TuiMao233)、[npm](https://www.npmjs.com/)
-- PC 游戏、独立游戏爱好者，目前平时喜欢打打 apex，玩玩 vr
+- PC 游戏、独立游戏爱好者，目前平时喜欢打打 apex legends，玩玩 vr
 - 听音乐，主要类型基本都是 V 家原曲、部分英文曲 [#](https://music.163.com/#/user/home?id=293486586)
 - 电吉他，但近几年一直没时间练习 [#](https://www.bilibili.com/video/BV1t64y1T7bk?spm_id_from=333.999.0.0)
 

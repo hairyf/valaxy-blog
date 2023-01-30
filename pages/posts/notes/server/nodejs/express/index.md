@@ -108,11 +108,11 @@ app.get('/search', (req, res) => {
 
   // 根路径重定向
   res.redirect('/admin')
-  // 相对当前路径URL 如当前路径是/admin/home那么重定向后就是/admin/home/post/new
+  // 相对当前路径URL 如当前路径是 /admin/home 那么重定向后就是 /admin/home/post/new
   res.redirect('post/new')
   // 重定向其他站点URL
   res.redirect('http://example.com')
-  // 重定向路径后退, 如当前路径是/admin/home那么重定向后就是/admin
+  // 重定向路径后退, 如当前路径是 /admin/home 那么重定向后就是 /admin
   res.redirect('..')
 
   // views中的模板资源渲染为html并返回响应

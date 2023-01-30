@@ -16,8 +16,19 @@ export default defineConfig<HairyTheme>({
   theme: 'hairy',
   markdown: { theme: 'material-ocean' },
   themeConfig: {
+    mode: 'dark',
     home: {
-      images: [],
+      images: [
+        'https://p0.meituan.net/dpplatform/dc7842e17c7c645635b50b870a6168532017909.jpg',
+        'https://p0.meituan.net/dpplatform/820b9e428f971d35a6b9584bc17d1f272615217.jpg',
+        'https://p0.meituan.net/dpplatform/0aac44175b3030d8eaeffb0b6fe51b592669123.jpg',
+        'https://p0.meituan.net/dpplatform/499580c826ae5915a2862c2e730dfc5d3744677.jpg',
+        'https://p0.meituan.net/dpplatform/3cf0d8735b34f87189e5108e462a85702340529.jpg',
+        'https://p0.meituan.net/dpplatform/1622f7a60a40e980a6e35c895ce989662276538.jpg',
+        'https://kjimg10.360buyimg.com/ott/jfs/t1/190496/8/33263/2119880/63d631beF08e0478e/715df13eb87dcbc8.jpg',
+        'https://kjimg10.360buyimg.com/ott/jfs/t1/53889/7/22592/379046/63d63150Fbe0021f2/93eedcd0592ba3a2.jpg',
+        'https://kjimg10.360buyimg.com/ott/jfs/t1/130126/4/29287/514354/63d631f3Fa8f1b678/0fdee892fb26a36a.jpg',
+      ],
       description: 'good evening, how are you doing?',
     },
     post: {
