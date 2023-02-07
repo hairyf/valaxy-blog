@@ -13,7 +13,7 @@
   "dependencies": {
     "@iconify-json/material-symbols": "^1.1.13",
     "valaxy": "0.10.3",
-    "valaxy-theme-hairy": "0.1.1"
+    "valaxy-theme-hairy": "0.1.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
