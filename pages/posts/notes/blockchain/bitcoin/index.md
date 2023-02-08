@@ -1,6 +1,7 @@
 ---
 title: 加密数字货币 - 比特币（Bitcoin）
 categories: 
+  - Notes
   - BlockChain
   - Bitcoin
 tags:

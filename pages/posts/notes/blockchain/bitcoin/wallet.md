@@ -1,6 +1,7 @@
 ---
 title: BitcoinJS - 比特币全服务钱包开发
 categories: 
+  - Notes
   - BlockChain
   - Bitcoin
 tags:

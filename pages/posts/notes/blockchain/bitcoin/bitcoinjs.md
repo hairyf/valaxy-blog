@@ -1,6 +1,7 @@
 ---
 title: BitcoinJS - 比特币应用开发
 categories: 
+  - Notes
   - BlockChain
   - Bitcoin
 tags:
