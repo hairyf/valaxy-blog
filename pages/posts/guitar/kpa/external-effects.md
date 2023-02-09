@@ -1,6 +1,6 @@
 ---
 title: Kemper（KPA）效果循环
-date: 2023-02-08 19:02:00
+date: 2023-02-08 19:03:00
 categories:
   - Notes
   - Guitar

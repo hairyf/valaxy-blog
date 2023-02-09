@@ -2,7 +2,7 @@
 title: JavaScript 编写规范
 date: 2022-03-02
 categories:
-  - standard
+  - Standard
 tags: 
   - Client
 ---

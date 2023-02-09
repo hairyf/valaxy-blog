@@ -3,7 +3,7 @@ title: 前端面试题目（偏向于 Vue 方向）
 date: 2022-06-02
 home: false
 categories:
-  - standard
+  - Standard
 tags:
   - topic
 ---

@@ -2,7 +2,7 @@
 title: CSS 编写规范
 date: 2022-03-04
 categories:
-  - standard
+  - Standard
 tags: 
   - css
 ---
