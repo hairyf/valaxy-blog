@@ -1,5 +1,5 @@
 ---
-title: Kemper（KPA）演出模式 - 基本
+title: Kemper（KPA）表演模式 - 基本
 date: 2023-02-09 11:54:00
 categories:
   - Notes
@@ -70,7 +70,7 @@ tags:
 
 <hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e46d4c4757feff33aca647.jpg" />
 
-可以使用第二个标记为 Delete 的软按钮，删除所有字符：
+可以使用第二个标记为 Delete|Clear 的软按钮，删除所有字符：
 
 <hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e46d9e4757feff33ad2465.jpg" />
 
