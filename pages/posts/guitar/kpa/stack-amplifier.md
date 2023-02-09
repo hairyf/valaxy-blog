@@ -1,5 +1,5 @@
 ---
-title: Kemper Profiler（KPA）分体式音箱 - 放大器
+title: Kemper（KPA）分体音箱 - 放大器
 date: 2023-02-08 19:01:00
 categories:
   - Notes
@@ -11,17 +11,17 @@ tags:
 
 在“Stack 音箱”菜单中，可以找到几个选项来微调所使用的音箱克隆。
 
-[](https://pic.imgdb.cn/item/63e38c914757feff3375c743.jpg)
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e38c914757feff3375c743.jpg" />
 
 按住 AMPLIFIER 键约一秒钟以显示“amp 放大器”菜单
 
-[](https://pic.imgdb.cn/item/63e38cf24757feff337667f5.jpg)
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e38cf24757feff337667f5.jpg" />
 
 - Clarity（清晰度）
 
 对于缺乏清晰度的高增益音色，“Clarity 清晰度”可以使声音更清晰，不那么糊。
 
-[](https://pic.imgdb.cn/item/63e38d4a4757feff3376f2f1.jpg)
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e38d4a4757feff3376f2f1.jpg" />
 
 在高增益音色下，即使用到六根弦的和弦启用清晰度后也可以轻松区分。
 
@@ -31,7 +31,7 @@ tags:
 
 “Power Sagging 功率衰减”参数模拟点子管放大器的功放饱和，非常独特的压缩行为，使用标准压缩技术无法实现。
 
-[](https://pic.imgdb.cn/item/63e38e184757feff33783855.jpg)
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e38e184757feff33783855.jpg" />
 
 浅失真的声音，能很好的反应吉他手拨弦的姿态，轻轻拨弦时，音色是清音，用力拨弦时，就会产生更多失真。
 
@@ -43,13 +43,13 @@ tags:
 
 “Definition 定义”用于参数确定放大器的声音特征，在克隆音箱的过程中，可以检测到原始值。
 
-[](https://pic.imgdb.cn/item/63e3909c4757feff337cc046.jpg)
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e3909c4757feff337cc046.jpg" />
 
 低的 definition 值代表具有柔和的高音和中音的复古风格音箱，随着值的增加，声音会变得更加明亮，更少的低中频。
 
 如果想尝试调整为一个现代的高增益放大器，一种方式是，不使用均衡器，使用具有高增益（GAIN）和更高的 definition。
 
-[](https://pic.imgdb.cn/item/63e391714757feff337e2291.jpg)
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e391714757feff337e2291.jpg" />
 
 要获得温暖的布鲁斯音色，只需降低 Gain 和 Definition 即可
 

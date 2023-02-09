@@ -1,5 +1,5 @@
 ---
-title: Kemper Profiler（KPA）分体式音箱 - EQ
+title: Kemper（KPA）分体音箱 - EQ 均衡
 date: 2023-02-08 19:02:00
 categories:
   - Notes
@@ -11,7 +11,7 @@ tags:
 
 要显示 EQ 菜单，按住 EQ 键约一秒钟以显示。
 
-[](https://pic.imgdb.cn/item/63e393d14757feff3382255c.jpg)
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e393d14757feff3382255c.jpg" />
 
 每一个克隆文件都提供四段均衡：低音、中音、高音、极高频。
 
@@ -20,7 +20,7 @@ tags:
 
 KPA 可以选择更改均衡器的位置，在大多数放大器中，可以将其放置在增益级的前面或后面，当均衡器位于增益器的后面时，所对均衡器的任何改动，只会对声音的频段产生影响，而不会对失真度产生影响。
 
-[](https://pic.imgdb.cn/item/63e395214757feff33845445.jpg)
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e395214757feff33845445.jpg" />
 
 对其 EQ 子项左旋转，将衰减该频段的音量，右旋转则会提升相应的音频。
 <!-- more -->
@@ -28,7 +28,7 @@ KPA 可以选择更改均衡器的位置，在大多数放大器中，可以将�
 
 按上方的 Position Post 按钮可以改改 EQ 的位置。
 
-[](https://pic.imgdb.cn/item/63e3956b4757feff3384c936.jpg)
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e3956b4757feff3384c936.jpg" />
 
 将均衡器放置在增益阶段之前，可以使用 EQ 频段影响失真值。
 

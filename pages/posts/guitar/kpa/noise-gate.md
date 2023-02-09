@@ -1,5 +1,5 @@
 ---
-title: Kemper Profiler（KPA）噪音门
+title: Kemper（KPA）噪音门
 date: 2023-02-08 19:00:00
 categories:
   - Notes
@@ -16,7 +16,7 @@ tags:
 
 噪音门在 Input（输入）下方，他由旋钮控制，可以抑制噪音和嗡声。
 
-<hairy-image src="https://pic.imgdb.cn/item/63e387af4757feff336de911.jpg" />
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e387af4757feff336de911.jpg" />
 
 但是如果噪音门设置得太极端，会对你弹奏的音符的延音（release）产生不良影响，甚至会改变音符的音头（attack）
 
@@ -35,14 +35,14 @@ tags:
 
 在 stomp B 中添加一个 hard shaper，它可以增加增益克隆文件中的噪音的数量。
 
-[](https://pic.imgdb.cn/item/63e3899a4757feff33710505.jpg)
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e3899a4757feff33710505.jpg" />
 
 在 stomp C 中添加一个噪音门来抑制音符之间的噪音。
 
-[](https://pic.imgdb.cn/item/63e38a2f4757feff3371ec75.jpg)
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e38a2f4757feff3371ec75.jpg" />
 
 在设置噪音门，像设置输入噪音门的操作一样，先调高吉他音量，不要弹奏，听噪音然后提高噪音门，直到噪音消失为止。
 
-[](https://pic.imgdb.cn/item/63e38b1e4757feff33737929.jpg)
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e38b1e4757feff33737929.jpg" />
 
 在检查音头是否保持不变，音符衰减是否自然即可。

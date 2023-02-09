@@ -1,5 +1,5 @@
 ---
-title: Kemper Profiler（KPA）输出
+title: Kemper（KPA）输出
 date: 2023-02-08 16:00:00
 categories:
   - Notes
@@ -12,15 +12,15 @@ KPA 提供了多种输出，可以在录音或演出时使用，每一种输出�
 
 首先，有立体声主输出，可以使用 TS 或 XLR 的插孔。
 
-<hairy-image src="https://pic.imgdb.cn/item/63e368dc4757feff333769b5.jpg" />
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e368dc4757feff333769b5.jpg" />
 
 旁边是直接输出和监听输出，并有独立的 TS 插孔。
 
-<hairy-image src="https://pic.imgdb.cn/item/63e3692c4757feff3337f980.jpg" />
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e3692c4757feff3337f980.jpg" />
 
 spdif 输出提供了以数字格式录音的方式，其采样率为 44.1KHz，分辨率为 24 位
 
-<hairy-image src="https://pic.imgdb.cn/item/63e369904757feff3338a841.jpg" />
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e369904757feff3338a841.jpg" />
 
 ## Ground Lift（接地断开）
 
@@ -28,7 +28,7 @@ KPA 为每个模拟输出以及返回输入提供了一个接地断开的开关�
 
 <!-- more -->
 
-<hairy-image src="https://pic.imgdb.cn/item/63e36a3d4757feff3339d0d3.jpg" />
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e36a3d4757feff3339d0d3.jpg" />
 
 ## Simple Setup Analog（简单设置模拟）
 
@@ -36,7 +36,7 @@ KPA 为每个模拟输出以及返回输入提供了一个接地断开的开关�
 
 使用模拟输出进行录音时的标准设置
 
-<hairy-image src="https://pic.imgdb.cn/item/63e36aaa4757feff333a8e64.jpg" />
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e36aaa4757feff333a8e64.jpg" />
 
 将 KPA 的主输出插孔连接到声卡，在将正确的输出源分配给主输出。
 
@@ -45,7 +45,7 @@ KPA 为每个模拟输出以及返回输入提供了一个接地断开的开关�
 
 按下 OUTPUT 设置输出选项，翻到输出菜单的第一个选项（Main Output 主输出）滚轮调整为 master stereo
 
-<hairy-image src="https://pic.imgdb.cn/item/63e36ca54757feff333e3647.jpg" />
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e36ca54757feff333e3647.jpg" />
 
 如果是单声道，则选择 master mono，这种情况下，只需要一根电缆连接到声卡即可。
 
@@ -59,7 +59,7 @@ KPA 为每个模拟输出以及返回输入提供了一个接地断开的开关�
 
 按下 OUTPUT 设置输出选项，翻到输出菜单的第四个选项（SPDIF Output 数字输出）滚轮调整为 master stereo
 
-<hairy-image src="https://pic.imgdb.cn/item/63e36ebe4757feff3341fc07.jpg" />
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e36ebe4757feff3341fc07.jpg" />
 
 ## Analog Dry Guitar（模拟干吉他）
 
@@ -77,7 +77,7 @@ KPA 为每个模拟输出以及返回输入提供了一个接地断开的开关�
 
 按下 OUTPUT 设置输出选项
 
-<hairy-image src="https://pic.imgdb.cn/item/63e374c64757feff334dcd32.jpg" />
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e374c64757feff334dcd32.jpg" />
 
 第一个选项（Main Output 主输出）调整为 master stereo。
 
@@ -114,7 +114,7 @@ Direct Output 设置为 Git Analog，这是直接来自输入的，没有任何�
 
 按下 OUTPUT 设置输出选项
 
-<hairy-image src="https://pic.imgdb.cn/item/63e3746c4757feff334d18dd.jpg" />
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e3746c4757feff334d18dd.jpg" />
 
 Main Output 设置为 Delay/reverb wet
 

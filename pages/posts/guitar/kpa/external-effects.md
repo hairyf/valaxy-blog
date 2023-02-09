@@ -1,5 +1,5 @@
 ---
-title: Kemper Profiler（KPA）效果循环
+title: Kemper（KPA）效果循环
 date: 2023-02-08 19:02:00
 categories:
   - Notes
@@ -12,11 +12,11 @@ KPA 可以在吉他和 KPA 直接连接一个或多个单块修改器，但如�
 
 为此，得先使用后面版上的 send 和 return 来连接单块修改器。
 
-[](https://pic.imgdb.cn/item/63e39b874757feff338e5414.jpg)
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e39b874757feff338e5414.jpg" />
 
 使用 STOMPS 或 EFFECTS 中的一个位置放置单块并激活效果循环
 
-[](https://pic.imgdb.cn/item/63e39bd64757feff338f0c2c.jpg)
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e39bd64757feff338f0c2c.jpg" />
 
 一般有三种不同类型的循环单块。
 
@@ -33,11 +33,11 @@ KPA 可以在吉他和 KPA 直接连接一个或多个单块修改器，但如�
 
 插入单块后，轻轻下 A 按键，屏幕上将显示对应的菜单，使用 “type 类型”旋钮，选择 loop mono，可在列表的最后找到它。
 
-[](https://pic.imgdb.cn/item/63e39ded4757feff3392b5bc.jpg)
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e39ded4757feff3392b5bc.jpg" />
 
 现在外部单块就成为效果链的一部分了。
 
-[](https://pic.imgdb.cn/item/63e39e3e4757feff33934684.jpg)
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e39e3e4757feff33934684.jpg" />
 
 Loop mono 提供了三个参数：
 
@@ -79,4 +79,4 @@ Loop mono 只有一个参数，就是 “Volume 音量”，如果想提升单�
 
 例如在 stomp 的 A 中分配一个效果器，按住 A 并踩下相应的踩定，即可绑定效果。
 
-[](https://pic.imgdb.cn/item/63e3a2004757feff3399bc00.jpg)
+<hairy-image style="max-width: 800px" src="https://pic.imgdb.cn/item/63e3a2004757feff3399bc00.jpg" />
