@@ -12,7 +12,7 @@ tags:
 
 例如我们使用 KPA 通过 MIDI 来控制外部 Whammy 单块
 
-<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e4ae904757feff332f5bf8.jpg">
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e4ae904757feff332f5bf8.jpg" />
 
 当然也可以使用 KPA 内部的效果器来替代，不过也会有人想继续使用他们的单块效果器。
 
@@ -20,7 +20,7 @@ tags:
 
 KPA 可以控制两个的外部效果器，通过连接 KPA 背面的 MIDI OUT 和 MIDI THRU：
 
-<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e4af444757feff3330a916.jpg">
+<hairy-image style="max-width: 1200px" src="https://pic.imgdb.cn/item/63e4af444757feff3330a916.jpg" />
 
 通过 MIDI 连接外部设备有许多选项，例如以串行方式连接多个设备：
 
