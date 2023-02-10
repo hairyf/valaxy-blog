@@ -1,6 +1,6 @@
 ---
 title: Kemper（KPA）音色管理器
-date: 2023-02-10 13:00:00
+date: 2023-02-10 14:00:00
 categories:
   - Notes
   - Guitar
