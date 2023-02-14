@@ -28,6 +28,8 @@ Aux In>Main: 在主输出中辅助输入信号的音量
 Aux In>Monitor: 在监听输出中辅助输入信号的音量
 Aux In>Headph: 在耳机中辅助输入信号的音量
 
+<!-- more -->
+
 ## Tablet > Profiler（平板电脑 > KPA 立体声）
 
 如果在家练习时，想使用平板电脑播放音频文件，就可以连接到 KPA 并使用立体声播放。
