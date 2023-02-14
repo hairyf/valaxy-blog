@@ -6,12 +6,12 @@ specifiers:
   eslint: ^8.21.0
   typescript: ^4.7.4
   valaxy: 0.10.3
-  valaxy-theme-hairy: 0.1.2
+  valaxy-theme-hairy: 0.1.3
 
 dependencies:
   '@iconify-json/material-symbols': 1.1.13
   valaxy: 0.10.3_typescript@4.7.4
-  valaxy-theme-hairy: 0.1.2
+  valaxy-theme-hairy: 0.1.3
 
 devDependencies:
   '@antfu/eslint-config': 0.25.2_qugx7qdu5zevzvxaiqyxfiwquq
@@ -465,8 +465,8 @@ packages:
       - supports-color
     dev: false
 
-  /@intlify/bundle-utils/3.4.0_vue-i18n@9.2.0:
-    resolution: {integrity: sha512-2UQkqiSAOSPEHMGWlybqWm4G2K0X+FyYho5AwXz6QklSX1EY5EDmOSxZmwscn2qmKBnp6OYsme5kUrnN9xrWzQ==}
+  /@intlify/bundle-utils/4.0.0_vue-i18n@9.2.0:
+    resolution: {integrity: sha512-klXrYT9VXyKEXsD6UY3pShg0O5MPC07n0TZ5RrSs5ry6T1eZVolIFGJi9c3qcDrh1qjJxgikRnPBmD7qGDqbjw==}
     engines: {node: '>= 12'}
     peerDependencies:
       petite-vue-i18n: '*'
@@ -543,7 +543,7 @@ packages:
       vue-i18n:
         optional: true
     dependencies:
-      '@intlify/bundle-utils': 3.4.0_vue-i18n@9.2.0
+      '@intlify/bundle-utils': 4.0.0_vue-i18n@9.2.0
       '@intlify/shared': 9.3.0-beta.16
       '@rollup/pluginutils': 4.2.1
       debug: 4.3.4
@@ -4929,8 +4929,8 @@ packages:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
     dev: true
 
-  /valaxy-theme-hairy/0.1.2:
-    resolution: {integrity: sha512-lnstcHqy8Pf8yH7LKq9vG5VRlFlckaJx7lnPyaGBM0px5M71cWId6PA0oaERimtM2ex1DZIJQlM/BwS4yVSv3Q==}
+  /valaxy-theme-hairy/0.1.3:
+    resolution: {integrity: sha512-0D8helrXAx+oVegGGkNa+5gMzGNrpjOq43cFDz8geS3Gms7v1ZaKuM+xttNW2F+RxECK4/c2iiSI8zZ1GD+kJg==}
     dependencies:
       '@docsearch/css': 3.1.1
       '@docsearch/js': 3.1.1
