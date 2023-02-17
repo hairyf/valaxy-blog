@@ -6,12 +6,12 @@ specifiers:
   eslint: ^8.21.0
   typescript: ^4.7.4
   valaxy: 0.10.3
-  valaxy-theme-hairy: 0.2.1
+  valaxy-theme-hairy: 0.2.2
 
 dependencies:
   '@iconify-json/material-symbols': 1.1.13
   valaxy: 0.10.3_typescript@4.7.4
-  valaxy-theme-hairy: 0.2.1
+  valaxy-theme-hairy: 0.2.2
 
 devDependencies:
   '@antfu/eslint-config': 0.25.2_qugx7qdu5zevzvxaiqyxfiwquq
@@ -4935,8 +4935,8 @@ packages:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
     dev: true
 
-  /valaxy-theme-hairy/0.2.1:
-    resolution: {integrity: sha512-JMvC2hJxcmEOvuVsgt0KgZK8Gyd8Ug3ay9Jz1uXUe087TDbuU3tlry0Cg7tKoAtDozJLusqoGaStu+r9Te/QNw==}
+  /valaxy-theme-hairy/0.2.2:
+    resolution: {integrity: sha512-6tpnzXTcfW6QGchwxWp2wvoiGBhx926ssWR1cO0LmuaYAHADGmioFOnmV0stvW06zKuHFZqX2aY87lzi2txOkQ==}
     dependencies:
       '@docsearch/css': 3.1.1
       '@docsearch/js': 3.1.1
