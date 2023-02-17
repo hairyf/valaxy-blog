@@ -68,10 +68,16 @@ export default defineConfig<HairyTheme>({
         icon: 'i-material-symbols-monitor-heart',
       },
       {
+        text: 'Library',
+        link: 'https://hairylib.com/',
+        icon: 'i-ri-sd-card-mini-fill',
+      },
+      {
         text: 'Github',
         link: 'https://github.com/TuiMao233/valaxy-theme-hairy',
         icon: 'i-ri-github-fill',
       },
+
     ],
     meting: {
       //
