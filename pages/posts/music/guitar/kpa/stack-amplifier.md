@@ -3,9 +3,9 @@ title: Kemper（KPA）分体音箱 - 放大器
 date: 2023-02-08 19:01:00
 categories:
   - Notes
-  - Guitar
+  - Kemper
 tags:
-  - guitar
+  - Kemper
 ---
 
 

@@ -3,9 +3,9 @@ title: Kemper（KPA）分体音箱 - EQ均衡
 date: 2023-02-08 19:02:00
 categories:
   - Notes
-  - Guitar
+  - Kemper
 tags:
-  - guitar
+  - Kemper
 ---
 
 

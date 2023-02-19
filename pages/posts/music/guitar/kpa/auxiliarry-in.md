@@ -3,9 +3,9 @@ title: Kemper（KPA）辅助输入
 date: 2023-02-14 14:00:00
 categories:
   - Notes
-  - Guitar
+  - Kemper
 tags:
-  - guitar
+  - Kemper
 ---
 
 辅助输入允许将 Line 输出设备连接到 KPA，例如 MP3 播放器、平板电脑或采样垫或鼓机，使用外部音频文件或采样声音来 JAM。

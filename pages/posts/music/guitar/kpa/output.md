@@ -3,9 +3,9 @@ title: Kemper（KPA）输出
 date: 2023-02-08 16:00:00
 categories:
   - Notes
-  - Guitar
+  - Kemper
 tags:
-  - guitar
+  - Kemper
 ---
 
 KPA 提供了多种输出，可以在录音或演出时使用，每一种输出都可以承载不同类型的信号

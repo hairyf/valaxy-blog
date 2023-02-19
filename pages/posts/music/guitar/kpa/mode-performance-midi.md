@@ -3,9 +3,9 @@ title: Kemper（KPA）表演模式 - MIDI
 date: 2023-02-09 16:00:00
 categories:
   - Notes
-  - Guitar
+  - Kemper
 tags:
-  - guitar
+  - Kemper
 ---
 
 在演奏模式下，可以发送 MIDI 程序更改，以切换外部效果设备上的预设。

@@ -3,9 +3,9 @@ title: Kemper（KPA）循环录音机
 date: 2023-02-10 12:00:00
 categories:
   - Notes
-  - Guitar
+  - Kemper
 tags:
-  - guitar
+  - Kemper
 ---
  
 将循环录音机放置在信号流不同的位置，需要按“SYSTEM系统”按钮，然后使用“PAGE页面”按钮翻到 Remote 设置页面：

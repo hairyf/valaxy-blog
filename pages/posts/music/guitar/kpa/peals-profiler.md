@@ -3,9 +3,9 @@ title: Kemper（KPA）表情踏板
 date: 2023-02-10 18:00:00
 categories:
   - Notes
-  - Guitar
+  - Kemper
 tags:
-  - guitar
+  - Kemper
 ---
 
 可以直接将表情踏板连接到 KPA，而 REMOTE 上有四个额外的表情踏板输入，出厂默认的踏板分配如下：

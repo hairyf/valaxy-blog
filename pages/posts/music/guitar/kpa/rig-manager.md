@@ -3,9 +3,9 @@ title: Kemper（KPA）音色管理器
 date: 2023-02-10 14:00:00
 categories:
   - Notes
-  - Guitar
+  - Kemper
 tags:
-  - guitar
+  - Kemper
 --- 
 
 可以从 Kemper 官方网站下载音色管理器软件，确保根据您的计算机操作系统，选择正确的版本。

@@ -3,9 +3,9 @@ title: Kemper（KPA）音量&推子踏板
 date: 2023-02-14 14:00:00
 categories:
   - Notes
-  - Guitar
+  - Kemper
 tags:
-  - guitar
+  - Kemper
 ---
 
 如果使用音量踏板功能，需要连接表情踏板，要么连接到 REMOTE 上，要么连接到 KPA 背后的 Switch/Pedal 开关/踏板插孔上。
