@@ -91,5 +91,3 @@ export default defineConfig({
 > 您还可以参考 Valaxy 的详细文档 [valaxy#config](https://valaxy.site/guide/getting-started)
 
 ---
-
-> 在此感谢云游君开发了此框架，它真的很棒，希望云游君能好好休息，valaxy 能持续发展是我们共同的愿景，但也不要因此累坏身体。
