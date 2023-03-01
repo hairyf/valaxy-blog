@@ -12,7 +12,7 @@ top: 10
 
 起初是使用 [Vuepress](https://www.vuepress.cn/) 搭建博客，其主要目的是记录学习笔记，所以也没怎么在乎域名、RSS，为了方便直接使用了 gitee pages 部署。但使用期间逐渐想要一个更加具有个性化和开发体验的博客框架，[Vuepress](https://www.vuepress.cn/) 很棒，但是它实际定制起来难度也不低、博客功能集成度不高，很多功能需要自己想办法实现。
 
-之后我发现了 [Valaxy](https://valaxy.site/) 它的设计理念与我的需求十分相似符合，加上近期 gitee pages 频繁告警文章敏感内容，难以排查（主要原因?）博客几乎处于瘫痪状态，就在这么机缘巧合的情况下，选择了 [Valaxy](https://valaxy.site/) 定制化博客。
+之后我发现了 [Valaxy](https://valaxy.site/) 它的设计理念与我的需求十分相似符合，加上近期 gitee pages 频繁告警文章敏感内容，难以排查（主要原因?）博客几乎处于瘫痪状态，所以选择了 [Valaxy](https://valaxy.site/) 定制化博客。
 
 <!-- more -->
 
