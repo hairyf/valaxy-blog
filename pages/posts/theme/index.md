@@ -43,7 +43,7 @@ top: 10
 
 ```sh
 # 创建项目
-pnpm create valaxy # or npm init valaxy
+pnpm create valaxy@0.10.3 # or npm init valaxy
 # 运行项目
 pnpm dev # or npm run dev
 ```
