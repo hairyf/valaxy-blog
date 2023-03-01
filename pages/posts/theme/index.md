@@ -31,7 +31,7 @@ top: 10
 
 本博客为 Valaxy 主题，Valaxy 现如今仍在实验阶段，请谨慎使用，确保遇到问题时，您有能力解决和沟通协调。
 
-那么在此，我视为您已了解 Valaxy 的基础使用，本系列文章着重讲解主题的使用以及主题的特殊功能。
+那么在此，我视为您已了解 Valaxy 的使用与风险，本系列文章着重讲解主题的使用以及主题的特殊功能。
 
 > 更多信息请参见 [Valaxy 官网](https://valaxy.site/)
 
@@ -47,6 +47,7 @@ pnpm create valaxy@0.10.3 # or npm init valaxy
 # 运行项目
 pnpm dev # or npm run dev
 ```
+> valaxy-hairy-theme 目前仅支持 valaxy@0.10.3，在 valaxy@1.x 发布后进行兼容
 
 ## 应用主题
 
