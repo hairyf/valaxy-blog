@@ -4,7 +4,7 @@ date: 2022-03-04
 categories:
   - Standard
 tags: 
-  - css
+  - Css
 ---
 
 关于 CSS 的标准。

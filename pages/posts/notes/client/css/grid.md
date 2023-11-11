@@ -3,9 +3,9 @@ title: Grid Layout
 categories:
   - Notes
   - Client
-  - css
+  - Css
 tags:
-  - css
+  - Css
 date: 2022-06-21
 ---
 

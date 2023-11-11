@@ -9,7 +9,7 @@ tags:
   - Promise
 ---
 
-promise有三种状态 pending（进行中） fulfilled（已成功） rejected（已失败），只有异步操作的结果，才可以决定当前是哪一种状态，任何其他操作都无法改变这个状态。
+promise 有三种状态 pending（进行中） fulfilled（已成功） rejected（已失败），只有异步操作的结果，才可以决定当前是哪一种状态，任何其他操作都无法改变这个状态。
 
 一旦从等待状态变成为其他状态就永远不能更改状态了。
 

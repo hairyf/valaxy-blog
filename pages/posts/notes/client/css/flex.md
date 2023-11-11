@@ -3,9 +3,9 @@ title: Flex Layout
 categories:
   - Notes
   - Client
-  - css
+  - Css
 tags:
-  - css
+  - Css
 date: 2018-08-21
 ---
 
