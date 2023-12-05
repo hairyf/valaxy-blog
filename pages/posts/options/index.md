@@ -30,29 +30,29 @@ npm install --global --production windows-build-tools
 
 2. 如果遇到了 successfully installed python 卡着、界面不动了情况
 
-![20210523095213711.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3fc2bf0a4a8d49deaaf26fd1fdf29ed6~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
+![20210523095213711.png](https://pic.imgdb.cn/item/656ef3cec458853aef8b30fe.webp)
 
 不要慌，疑似 window-build-tools 自带的bug，[可查看相关issue链接](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Ffelixrieseberg%2Fwindows-build-tools%2Fissues%2F244)
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/23a100d3fda74311bbcc53323f56e3ff~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
+![image.png](https://pic.imgdb.cn/item/656ef3dfc458853aef8b684e.webp)
 
 **解决方案:**
 
 1. 打开资源管理器（左下角搜索-资源管理器或者直接window+E），在路径处输入`%temp%`
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/931942e496014cdca816ff28e818ca0b~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
+![image.png](https://pic.imgdb.cn/item/656ef3e6c458853aef8b7f01.webp)
 
 2. 在`%temp%`目录下创建一个名为`dd_client_.log`的文件
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b720eeb4bc3d4d208be131ffc4559763~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
+![image.png](https://pic.imgdb.cn/item/656ef3edc458853aef8b9405.webp)
 
 3. 编辑创建的文件，加入一行`Closing installer. Return code: 3010.`然后保存。
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bc8122a073d74320852b56cc591845ba~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
+![image.png](https://pic.imgdb.cn/item/656ef3f4c458853aef8baa95.webp)
 
 4. 回到执行安装命令的窗口，重新安装 `windows-build-tools` 的步骤
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2967a7b61ca7492dbf4ddb89810a6950~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
+![image.png](https://pic.imgdb.cn/item/656ef3fcc458853aef8bc9e0.webp)
 
 ## 2. 安装 **python3**
 
@@ -60,7 +60,7 @@ npm install --global --production windows-build-tools
 
 1. 在 C 盘 Users 目录下的 .windows-build-tools, 找到python相关的 msi 文件, 打开并卸载掉 python2, 因为 node-gyp@9 版本对应是 python3 的版本
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9ceaf949429940769a2c63a5b2fd9c83~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
+![image.png](https://pic.imgdb.cn/item/656ef403c458853aef8bdd53.webp)
 
 > 这里需要注意，不同 window 系统存放的位置不一样，win11 的话是在 `C:\Users\[user]\.windows-build-tools`
 
