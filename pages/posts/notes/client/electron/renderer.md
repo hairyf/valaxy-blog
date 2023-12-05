@@ -1,12 +1,12 @@
 ---
-title: Electron 渲染进程与主线程通信
+title: Electron 主线程与渲染线程通信
 categories:
   - Notes
   - Client
   - Electron
 tags:
   - Electron
-date: 2023-12-05 17:51:00
+date: 2023-12-05 18:00:00
 ---
 
 Electron 是一个用于构建跨平台桌面应用程序的开源框架。它由主进程和渲染进程组成。
