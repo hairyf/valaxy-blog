@@ -1,0 +1,1 @@
+import{d as o,aw as r,r as s,o as n,b as c,w as _,p,a as i,ax as m}from"./index.d8672eba.js";const h=o({__name:"archives",setup(u){const e=r();return(d,f)=>{const t=s("router-view"),a=m;return n(),c(a,{header:{title:i(e).title}},{default:_(()=>[p(t)]),_:1},8,["header"])}}});export{h as default};

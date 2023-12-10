@@ -1,0 +1,1 @@
+import{_ as a,r as t,o as n,b as s,w as _,p as c,ax as p}from"./index.d8672eba.js";const m={};function u(e,i){const o=t("router-view"),r=p;return n(),s(r,{header:{title:`\u53D1\u8868\u4E8E'${e.$route.params.year}\u5E74${e.$route.params.month}'\u7684\u6587\u7AE0`}},{default:_(()=>[c(o)]),_:1},8,["header"])}var d=a(m,[["render",u]]);export{d as default};

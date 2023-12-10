@@ -1,0 +1,1 @@
+import{_ as n}from"./HairyPostList.8a67c8ba.js";import{b as o}from"./route-block.b5bad31b.js";import{_ as c,o as e,b as a}from"./index.d8672eba.js";const t={};function s(_,i){const r=n;return e(),a(r,{pagination:!0})}typeof o=="function"&&o(t);var u=c(t,[["render",s]]);export{u as default};
