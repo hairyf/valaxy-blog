@@ -10,9 +10,11 @@ top: 10
 
 <HairyImage class="rounded w-full h-150" fit="contain" src="https://user-images.githubusercontent.com/49724027/182444624-6228d153-94cb-461d-a5d8-be8535441fb6.png" />
 
-起初使用 [Vuepress](https://www.vuepress.cn/) 搭建博客，其主要目的是记录学习笔记，所以也没怎么在乎域名、RSS，为了方便直接使用了 gitee pages 部署。但逐渐想要一个更加具有个性化的博客框架，[Vuepress](https://www.vuepress.cn/) 很棒，但是它实际定制起来难度也不低、博客功能集成度不高，很多功能需要自己想办法实现。
+最初使用 [Vuepress](https://www.vuepress.cn/) 搭建了一个博客，主要用于记录学习笔记，为了方便直接采用了 gitee pages 进行部署。后面想要一个更加个性化的博客。尽管 [Vuepress](https://www.vuepress.cn/) 在文档功能上表现出色，但其定制复杂且功能集成度有限，许多功能需要自己动手实现。
 
-之后我发现了 [Valaxy](https://valaxy.site/) 它的设计理念与我的需求十分相似符合，加上近期 gitee pages 频繁告警文章敏感内容，难以排查（主要原因?）博客几乎处于瘫痪状态，所以选择了 [Valaxy](https://valaxy.site/) 定制化博客。
+之后我发现了 [Valaxy](https://valaxy.site/) 它的设计理念与我的需求十分相似符合，加上近期 gitee pages 频繁告警文章敏感内容，难以排查（主要原因? ）博客几乎处于瘫痪状态，因此我决定转向 Valaxy 定制博客。
+
+Valaxy 在官网中所描述，Valaxy = V + Galaxy 旨在成为下一代静态博客框架，提供更好的热更新与用户加载体验，它不像传统的文档系统，内置了更多博客相关的 API，为博客开发提供了更强大更便捷的自定义开发可能性。
 
 <!-- more -->
 
@@ -26,7 +28,6 @@ top: 10
   <HairyImage src="https://user-images.githubusercontent.com/49724027/182446015-021eb02f-570d-4c3c-8801-c02343ced0b8.png" />
 </HairyImageGroup>
 
-
 ## 使用指南
 
 本博客为 Valaxy 主题，Valaxy 现如今仍在实验阶段，请谨慎使用，确保遇到问题时，您有能力解决和沟通协调。
@@ -35,7 +36,7 @@ top: 10
 
 > 更多信息请参见 [Valaxy 官网](https://valaxy.site/)
 
-有任何关于本主题的缺陷报告与功能建议，可以发起 [Issues](https://github.com/TuiMao233/valaxy-theme-hairy/issues)。
+有任何关于本主题的缺陷报告与功能建议，可以发起 [Issues](https://github.com/hairyf/valaxy-theme-hairy/issues)。
 
 ## 快速开始
 
@@ -43,36 +44,65 @@ top: 10
 
 ```sh
 # 创建项目
-pnpm create valaxy@0.10.3 # or npm init valaxy
+pnpm create valaxy # or npm init valaxy
 # 运行项目
 pnpm dev # or npm run dev
 ```
-> valaxy-hairy-theme 目前仅支持 valaxy@0.10.3，在 valaxy@1.x 发布后进行兼容
 
 ## 应用主题
 
 进入您的 Valaxy 博客根目录，执行：
 
 ```sh
-pnpm i valaxy-theme-hairy
+pnpm i valaxy-theme-hairy valaxy-addon-meting valaxy-addon-waline
 ```
 
-编辑您的 valaxy.config ，设置 theme 字段
+编辑您的 valaxy.config，设置 theme 字段，并使用插件（meting/waline）
 
-```json
-{
-  "theme": "hairy"
-}
+```ts
+import { defineConfig } from 'valaxy'
+import type { ThemeConfig } from 'valaxy-theme-hairy'
+import { addonWaline } from 'valaxy-addon-waline'
+import { addonMeting } from 'valaxy-addon-meting'
+
+/**
+ * User Config
+ * do not use export const config to avoid defu conflict
+ */
+export default defineConfig<ThemeConfig>({
+  theme: 'hairy',
+
+  addons: [
+    addonMeting({
+      global: true,
+      props: {
+        // 设置你的网易云/qq或其他歌单 ID
+        id: '5312894314',
+        type: 'playlist',
+        autoplay: true,
+        theme: 'var(--hy-c-primary)',
+      },
+    }),
+    // 请参考 https://waline.js.org/ 设置 serverURL 地址
+    addonWaline({
+      comment: true,
+      serverURL: '...',
+      emoji: [/*  */],
+      pageview: true,
+    }),
+  ]
+})
 ```
 
 ## 修改站点配置
 
-站点配置文件 `<root>/valaxy.config`，它支持 `json|yml|ts|js`。
+站点配置文件 `<root>/site.config`，它支持 `json|yml|ts|js`。
 
 ```ts
-// valaxy.config.ts
-import { defineSite } from 'valaxy'
-export default defineConfig({
+// site.config.ts
+import { defineSiteConfig } from 'valaxy'
+
+export default defineSiteConfig({
   // 站点标题
   title: '...',
   // 作者信息

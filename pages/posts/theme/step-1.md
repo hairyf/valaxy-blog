@@ -8,34 +8,39 @@ tags:
   - 教程
 ---
 
-通过修改 valaxy.config 的 themeConfig 字段，实现主题部分定制化。
+通过修改 valaxy.config 的 themeConfig 字段，可以修改部分主题部分。
 
-```json
-{
-  "themeConfig": {
-    /* ... */
-  }
-}
+```ts
+import { defineConfig } from 'valaxy'
+import type { ThemeConfig } from 'valaxy-theme-hairy'
+export default defineConfig<ThemeConfig>({
+  theme: 'hairy',
+
+  themeConfig: {
+    // ...
+  },
+})
 ```
 
 ## 主页配置
 
 ```json
 {
-  "home": {
-    // 修改此列表更改主页轮播图使用的图片列表
-    // 默认使用 hairy 内置的图片列表
-    "images": [/* your image urls */],
-    "description": "good evening, how are you doing?"
-  }
+  // 修改此列表更改主页轮播图使用的图片列表
+  // 默认使用 hairy 内置的图片列表
+  "images": [/* your image urls */]
 }
 ```
 
+
 ## 文章配置
+
 
 ```json
 {
-  "layout": "image:slice:reverse",
+  "layout": {
+    "post": "image:slice:reverse"
+  },
   // posts image 数量需要达到 6 个以上才会生效
   "images": [/* your image urls */]
 }
@@ -95,13 +100,25 @@ tags:
 
 Meting 是基于 APlayer 的播放器组件、它支持网易云音乐、QQ音乐、酷狗，以及更多的主流播放源。
 
-```json
-{
-  "meting": {
-    "auto": "https://music.163.com/#/playlist?id=2043085869",
-    "autoplay": true
-  }
-}
+```ts
+import { defineConfig } from 'valaxy'
+import { addonMeting } from 'valaxy-addon-meting'
+
+export default defineConfig<ThemeConfig>({
+  theme: 'hairy',
+  addons: [
+    addonMeting({
+      global: true,
+      props: {
+        id: '5312894314',
+        type: 'playlist',
+        autoplay: true,
+        theme: 'var(--hy-c-primary)',
+      },
+    }),
+  ]
+})
+
 ```
 
-您可以查看 Meting 更多的 [API 文档](https://github.com/metowolf/MetingJS#option)，fixed 默认开启。
+您可以查看 Meting 更多的 [API 文档](https://github.com/metowolf/MetingJS#option)，global 开启全局播放器。
