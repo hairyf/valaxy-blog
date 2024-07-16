@@ -24,9 +24,9 @@ Aux-in 信号通过 RETURN 输入和 ALTERNATIVE 输入。
 
 <hairy-image src="https://pic.imgdb.cn/item/63eb2dcff144a01007220178.jpg" />
 
-Aux In>Main: 在主输出中辅助输入信号的音量
-Aux In>Monitor: 在监听输出中辅助输入信号的音量
-Aux In>Headph: 在耳机中辅助输入信号的音量
+Aux In > Main: 在主输出中辅助输入信号的音量
+Aux In > Monitor: 在监听输出中辅助输入信号的音量
+Aux In > Headph: 在耳机中辅助输入信号的音量
 
 <!-- more -->
 

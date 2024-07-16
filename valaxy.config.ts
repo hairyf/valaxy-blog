@@ -9,7 +9,6 @@ import { addonMeting } from 'valaxy-addon-meting'
  */
 export default defineConfig<ThemeConfig>({
   theme: 'hairy',
-
   themeConfig: {
     theme: 'dark',
     nav: [
