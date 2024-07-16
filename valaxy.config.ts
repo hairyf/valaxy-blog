@@ -40,7 +40,7 @@ export default defineConfig<ThemeConfig>({
       },
       {
         text: 'Github',
-        link: 'https://github.com/TuiMao233/valaxy-theme-hairy',
+        link: 'https://github.com/hairyf',
         icon: 'i-ri-github-fill',
       },
     ],
