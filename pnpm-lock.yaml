@@ -12,8 +12,8 @@ dependencies:
     specifier: ^0.1.3
     version: 0.1.3
   valaxy-addon-waline:
-    specifier: ^0.1.5
-    version: 0.1.5(typescript@5.5.3)(valaxy@0.19.2)
+    specifier: ^0.2.0
+    version: 0.2.0(typescript@5.5.3)(valaxy@0.19.2)
   valaxy-theme-hairy:
     specifier: 1.1.8
     version: 1.1.8(typescript@5.5.3)
@@ -6789,8 +6789,8 @@ packages:
     resolution: {integrity: sha512-E/YVyJAmTNXk4bW5C8GXF1NiyvIo5pXHt7dlqbPows2adJ049n6oDsNPTKq3Vv22iA/4w1ZEE4hA6Y3IVRqB6A==}
     dev: false
 
-  /valaxy-addon-waline@0.1.5(typescript@5.5.3)(valaxy@0.19.2):
-    resolution: {integrity: sha512-FVo9q6P0rFIsVBNsMNKgrCBzTabiU9JjLyi5hO4nlch5cn7k1TN/nrqLPJE0mbXeLJ3UCUaaSsMXMg6O/bLzyA==}
+  /valaxy-addon-waline@0.2.0(typescript@5.5.3)(valaxy@0.19.2):
+    resolution: {integrity: sha512-/aJ4XkMaKPVcZYdvzlJQVgbZ0KYZ24/BncJRmSdt33+rkRm8OeSvyQkwfXDnTJSyrbM3jL5qtLL9Bvl9JTHzTg==}
     peerDependencies:
       valaxy: latest
     dependencies:
