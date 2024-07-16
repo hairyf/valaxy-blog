@@ -2,8 +2,7 @@
 title: 上班族啊宅的电吉他康复训练
 date: 2023-07-15 20:00:00
 categories:
-  - Notes
-  - Guitar
+  - Daily
 tags:
   - guitar
   - blog
