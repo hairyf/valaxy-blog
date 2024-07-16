@@ -15,8 +15,8 @@ dependencies:
     specifier: ^0.1.5
     version: 0.1.5(typescript@5.5.3)(valaxy@0.19.2)
   valaxy-theme-hairy:
-    specifier: 1.1.7
-    version: 1.1.7(typescript@5.5.3)
+    specifier: 1.1.8
+    version: 1.1.8(typescript@5.5.3)
   valaxy-theme-yun:
     specifier: 0.19.1
     version: 0.19.1
@@ -6801,8 +6801,8 @@ packages:
       - typescript
     dev: false
 
-  /valaxy-theme-hairy@1.1.7(typescript@5.5.3):
-    resolution: {integrity: sha512-9uuMTAdbWFpKPjsxNtgz/WNzTWg+WE3IBD0L4UY08ny0bRVCHu9SoL3/L4nIBveJO7rgie60z4te6KGb3HZhTQ==}
+  /valaxy-theme-hairy@1.1.8(typescript@5.5.3):
+    resolution: {integrity: sha512-+TOJE0g8+36ZzFVdAxvlzz6Hn4xzatUXP+TPdniNlTM7Cd2x0COKUqKFnR1wtLbUicgU4HWJXGFraXFhvpWvog==}
     dependencies:
       '@docsearch/css': 3.6.0
       '@iconify-json/ant-design': 1.1.16

@@ -4,11 +4,12 @@ categories: Valaxy Theme Hairy
 date: 2022-08-03 15:00:00
 tags:
   - valaxy
+  - theme
   - 教程
 top: 10
 ---
 
-<HairyImage class="rounded w-full h-150" fit="contain" src="https://user-images.githubusercontent.com/49724027/182444624-6228d153-94cb-461d-a5d8-be8535441fb6.png" />
+<HairyImage class="rounded w-full h-150" fit="contain" src="/preview.png" />
 
 最初使用 [Vuepress](https://www.vuepress.cn/) 搭建了一个博客，主要用于记录学习笔记，为了方便直接采用了 gitee pages 进行部署。后面想要一个更加个性化的博客。尽管 [Vuepress](https://www.vuepress.cn/) 在文档功能上表现出色，但其定制复杂且功能集成度有限，许多功能需要自己动手实现。
 
