@@ -68,7 +68,7 @@ export default defineConfig<ThemeConfig>({
       props: {
         id: '5312894314',
         type: 'playlist',
-        autoplay: true,
+        autoplay: false,
         theme: 'var(--hy-c-primary)',
       },
     }),

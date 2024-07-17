@@ -5,3 +5,8 @@
 .dark {
   --un-prose-hr: rgb(195, 195, 195);
 }
+
+.aplayer-lrc::before,
+.aplayer-lrc::after {
+  display: none !important;
+}
