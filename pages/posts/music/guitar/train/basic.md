@@ -40,3 +40,9 @@ tags:
 前半段以食指为基准，后半截以小指为基准的运指练习
 
 <audio controls src="/guitar/2024-07-16.mp3" />
+
+## 周三
+
+按照谱子中的指定指法顺序坦洲三连音
+
+<audio controls src="/guitar/2024-07-17.mp3" />
