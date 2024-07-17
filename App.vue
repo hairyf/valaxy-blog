@@ -7,7 +7,7 @@ const frontmatter = useFrontmatter()
 const router = useRouter()
 const meting = ref()
 
-router.beforeResolve(() => {
+router.afterEach(() => {
   if (frontmatter.value.tags?.includes('music'))
     return
   setTimeout(() => meting.value?.aplayer?.play?.(), 500)
