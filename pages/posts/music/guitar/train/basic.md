@@ -41,8 +41,8 @@ tags:
 
 <audio controls src="/guitar/2024-07-16.mp3" />
 
-## 周三
+### 周三
 
-按照谱子中的指定指法顺序坦洲三连音
+按照谱子中的指定指法顺序弹奏三连音
 
 <audio controls src="/guitar/2024-07-17.mp3" />
