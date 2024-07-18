@@ -46,3 +46,9 @@ tags:
 按照谱子中的指定指法顺序弹奏三连音
 
 <audio controls src="/guitar/2024-07-17.mp3" />
+
+### 周四
+
+以三个音为一个单位的反复乐句
+
+<audio controls src="/guitar/2024-07-18.mp3" />
