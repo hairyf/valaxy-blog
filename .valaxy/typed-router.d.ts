@@ -50,6 +50,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/music/guitar/kpa/volume-boost-pedal': RouteRecordInfo<'/posts/music/guitar/kpa/volume-boost-pedal', '/posts/music/guitar/kpa/volume-boost-pedal', Record<never, never>, Record<never, never>>,
     '/posts/music/guitar/train/basic': RouteRecordInfo<'/posts/music/guitar/train/basic', '/posts/music/guitar/train/basic', Record<never, never>, Record<never, never>>,
     '/posts/music/ncm/byebye-night': RouteRecordInfo<'/posts/music/ncm/byebye-night', '/posts/music/ncm/byebye-night', Record<never, never>, Record<never, never>>,
+    '/posts/music/ncm/take-medicine-sleep': RouteRecordInfo<'/posts/music/ncm/take-medicine-sleep', '/posts/music/ncm/take-medicine-sleep', Record<never, never>, Record<never, never>>,
     '/posts/music/theory/_1-basic': RouteRecordInfo<'/posts/music/theory/_1-basic', '/posts/music/theory/_1-basic', Record<never, never>, Record<never, never>>,
     '/posts/music/theory/_2-temperament': RouteRecordInfo<'/posts/music/theory/_2-temperament', '/posts/music/theory/_2-temperament', Record<never, never>, Record<never, never>>,
     '/posts/music/theory/_3-mode': RouteRecordInfo<'/posts/music/theory/_3-mode', '/posts/music/theory/_3-mode', Record<never, never>, Record<never, never>>,
