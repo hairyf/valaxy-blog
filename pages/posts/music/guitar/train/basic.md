@@ -52,3 +52,17 @@ tags:
 以三个音为一个单位的反复乐句
 
 <audio controls src="/guitar/2024-07-18.mp3" />
+
+> 太简单了，把下面两天的也给先练了（
+
+### 周五
+
+练习移动一个品格
+
+<audio controls src="/guitar/2024-07-19.mp3" />
+
+### 周六
+
+练习移动两个品格
+
+<audio controls src="/guitar/2024-07-20.mp3" />
