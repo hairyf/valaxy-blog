@@ -1,6 +1,7 @@
 ---
 title: Music：おくすり飲んで寝よう
 date: 2024-07-19 22:00:00
+image: "https://pic.imgdb.cn/item/66992a77d9c307b7e9f219d5.png"
 categories:
   - Music
 tags:
