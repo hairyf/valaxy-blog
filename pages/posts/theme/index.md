@@ -6,7 +6,6 @@ tags:
   - valaxy
   - theme
   - 教程
-top: 10
 ---
 
 <HairyImage class="rounded w-full h-150" fit="contain" src="/preview.png" />

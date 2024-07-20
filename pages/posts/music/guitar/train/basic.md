@@ -1,6 +1,6 @@
 ---
 title: 上班族啊宅的电吉他康复训练
-date: 2024-07-15 20:00:00
+date: 2024-07-20 00:00:00
 categories:
   - Daily
 tags:
