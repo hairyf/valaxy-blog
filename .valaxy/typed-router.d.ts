@@ -231,6 +231,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/theme/step-2': RouteRecordInfo<'/posts/theme/step-2', '/posts/theme/step-2', Record<never, never>, Record<never, never>>,
     '/posts/theme/step-3': RouteRecordInfo<'/posts/theme/step-3', '/posts/theme/step-3', Record<never, never>, Record<never, never>>,
     '/posts/think/2022': RouteRecordInfo<'/posts/think/2022', '/posts/think/2022', Record<never, never>, Record<never, never>>,
+    '/posts/think/2024': RouteRecordInfo<'/posts/think/2024', '/posts/think/2024', Record<never, never>, Record<never, never>>,
     '/posts/think/rules': RouteRecordInfo<'/posts/think/rules', '/posts/think/rules', Record<never, never>, Record<never, never>>,
     '/posts/think/sleep': RouteRecordInfo<'/posts/think/sleep', '/posts/think/sleep', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
