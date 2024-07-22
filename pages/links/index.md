@@ -7,13 +7,16 @@ waline: true
 
 ## 本站信息
 
-- 站名：Hairy'Blog
-- 地址：https://www.hairy.blog
-- 标志：
-
-<hairy-image style="width: 200px" src="https://pic.imgdb.cn/item/62fe02d616f2c2beb14bc2f3.jpg" />
-
-- 简洁：热爱生活，持续学习。
+<div class="flex gap-5">
+  <span>站名：Hairy'Blog</span>
+  <span>|</span>
+  <span>
+  地址：<a href="https://www.hairy.blog">https://www.hairy.blog</a>
+  </span>
+  <span>图片：右边用户栏</span>
+  <span>|</span>
+  <span>简介：热爱生活，持续学习。</span>
+</div>
 
 ## 申请方法
 
@@ -34,13 +37,6 @@ waline: true
 <hairy-links 
   :links="[
     {
-      name: 'Barney’s Blog',
-      url: 'https://hugo.bnblogs.cc/',
-      image: 'https://hugo.bnblogs.cc/images/img/20220215001349.png',
-      color: '#00bfa5',
-      desc: 'All the truth is simple.',
-    },
-    {
       name: '優萌初華',
       url: 'https://shoka.lostyu.me',
       image: 'https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg',
@@ -56,17 +52,10 @@ waline: true
     },
     {
       name: 'Mysteve',
-      url: 'https://mysteve.github.io',
+      url: 'https://www.mysteve.top',
       image: 'https://pic.imgdb.cn/item/62fca5f016f2c2beb193428c.jpg',
       color: '#71d0f7',
       desc: '不抱怨不埋怨。',
-    },
-    {
-      name: 'Kifuan',
-      url: 'https://blog.kifuan.me',
-      image: 'https://blog.kifuan.me/avatar.jpg',
-      color: '#50bfff',
-      desc: '随便写写。'
     },
     {
       name: 'Luch',
