@@ -33,7 +33,7 @@ tags:
 拨片上下交替拨弦弹奏分解 C 和弦
 
 <div class="flex items-center gap-6">
-  <audio controls src="/guitar/2024-07-15.mp3" />
+  <audio controls src="/guitar/2024-07-22.mp3" />
   <span>ヘ(>_<ヘ)</span>
   <hairy-image class="h-15" src="/images/03317.jpg" />
 </div>
