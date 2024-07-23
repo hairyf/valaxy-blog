@@ -37,3 +37,9 @@ tags:
   <span>ヘ(>_<ヘ)</span>
   <hairy-image class="h-15" src="/images/03317.jpg" />
 </div>
+
+### 周二
+
+拨片上下交替拨弦弹奏三连音
+
+<audio controls src="/guitar/2024-07-23.mp3" />
