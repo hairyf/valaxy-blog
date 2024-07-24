@@ -44,4 +44,12 @@ tags:
 
 <audio controls src="/guitar/2024-07-23.mp3" />
 
-> 说实话没想到练琴需要这么大决心，感觉没有小时候的那种冲劲反而练起来更累了，如果要不是我实在闲，我应该也不会重新拿起吉他练吧...
+### 周三
+
+拨片上下交替拨弦弹奏核心组成音
+
+<audio controls src="/guitar/2024-07-24.mp3" />
+
+乔伊节奏 20 节
+
+<audio controls src="/guitar/2024-07-24_qiao.mp3" />
