@@ -53,3 +53,7 @@ tags:
 乔伊节奏 20 节
 
 <audio controls src="/guitar/2024-07-24_qiao.mp3" />
+
+### 周四
+
+<audio controls src="/guitar/2024-07-25.mp3" />
