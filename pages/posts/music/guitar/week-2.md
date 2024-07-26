@@ -48,7 +48,7 @@ tags:
 
 拨片上下交替拨弦弹奏核心组成音
 
-<audio controls src="/guitar/2024-07-24.mp3" />
+<audio controls src="/sguitar/2024-07-24.mp3" />
 
 乔伊节奏 20 节
 
@@ -57,3 +57,7 @@ tags:
 ### 周四
 
 <audio controls src="/guitar/2024-07-25.mp3" />
+
+### 周五
+
+<audio controls src="/guitar/2024-07-26.mp3" />
