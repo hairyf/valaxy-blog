@@ -61,3 +61,7 @@ tags:
 ### 周五
 
 <audio controls src="/guitar/2024-07-26.mp3" />
+
+### 周日
+
+<audio controls src="/guitar/2024-07-27.mp3" />
