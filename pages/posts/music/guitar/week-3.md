@@ -56,3 +56,8 @@ tags:
 
 <audio controls src="/guitar/2024-08-02.mp3" />
 
+### 周六
+
+在全部琴弦上进行弹奏，注意不要使音符重叠
+
+<audio controls src="/guitar/2024-08-03.mp3" />
