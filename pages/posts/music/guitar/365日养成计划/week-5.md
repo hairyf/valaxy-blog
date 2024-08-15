@@ -1,6 +1,6 @@
 ---
 title: 365日养成计划 - 第四周
-date: 2024-08-05 22:00:00
+date: 2024-08-12 22:00:00
 categories:
   - Music
   - Guitar
@@ -20,7 +20,7 @@ tags:
 
 弹奏带有开放音的 “哆唻咪”
 
-> TODO
+<audio controls src="/guitar/daily-5.mp3" />
 
 > 使用琴弦的开放音来弹奏“咪发嗖啦····” 的基础练习。不管是电吉他、古典吉他、还是民谣吉他，都要从这里开始。
 
@@ -47,3 +47,5 @@ tags:
 ## 周四
 
 分布得很有规律、适合速弹的 C 大调音阶把位
+
+<audio controls src="/guitar/2024-08-15.mp3" />
