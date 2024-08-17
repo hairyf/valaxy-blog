@@ -49,3 +49,9 @@ tags:
 分布得很有规律、适合速弹的 C 大调音阶把位
 
 <audio controls src="/guitar/2024-08-15.mp3" />
+
+## 周五
+
+按照 “哆咪唻发嗦啦” 来弹奏的形式
+
+<audio controls src="/guitar/2024-08-16.mp3" />
