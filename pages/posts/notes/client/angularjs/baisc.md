@@ -1,6 +1,5 @@
 ---
 title: AngularJS 基本应用
-
 categories:
   - Notes
   - Client

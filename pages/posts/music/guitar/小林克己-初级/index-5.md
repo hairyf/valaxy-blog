@@ -20,3 +20,7 @@ CD 008 曲目
 CD 010 曲目
 
 <audio controls src="/guitar-lin-c/cd-010.mp3" />
+
+CD 014 曲目
+
+<audio controls src="/guitar-lin-c/cd-014.mp3" />
