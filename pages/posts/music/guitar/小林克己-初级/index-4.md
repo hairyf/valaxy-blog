@@ -1,9 +1,10 @@
 ---
-title: 小林克己 - 第四章（推弦姿势）
+title: 小林克己初级 - 第四章（推弦姿势）
 date: 2024-08-17 17:00:00
 categories:
   - Music
   - Guitar
+  - 小林克己初级
 tags:
   - guitar
   - blog

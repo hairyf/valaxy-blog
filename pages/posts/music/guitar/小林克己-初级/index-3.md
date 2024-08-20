@@ -1,9 +1,10 @@
 ---
-title: 小林克己 - 第三章（和弦弹奏与扫弦）
+title: 小林克己初级 - 第三章（和弦弹奏与扫弦）
 date: 2024-08-15 22:00:00
 categories:
   - Music
   - Guitar
+  - 小林克己初级
 tags:
   - guitar
   - blog

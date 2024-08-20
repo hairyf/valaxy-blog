@@ -1,9 +1,10 @@
 ---
-title: 365日养成计划 - 第二周
+title: 365电吉他养成计划 - 第二周
 date: 2024-07-22 21:00:00
 categories:
   - Music
   - Guitar
+  - 365电吉他养成计划
 tags:
   - guitar
   - blog

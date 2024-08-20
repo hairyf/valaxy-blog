@@ -1,9 +1,10 @@
 ---
-title: 小林克己 - 第二章（基础练习）
+title: 小林克己初级 - 第二章（基础练习）
 date: 2024-08-15 21:00:00
 categories:
   - Music
   - Guitar
+  - 小林克己初级
 tags:
   - guitar
   - blog

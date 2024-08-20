@@ -1,9 +1,10 @@
 ---
-title: 365日养成计划 - 第四周
+title: 365电吉他养成计划 - 第四周
 date: 2024-08-05 22:00:00
 categories:
   - Music
   - Guitar
+  - 365电吉他养成计划
 tags:
   - guitar
   - blog
