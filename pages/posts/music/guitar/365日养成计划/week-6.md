@@ -26,4 +26,10 @@ tags:
 
 在 ⑥ 弦至 ③ 弦之间移动，练习各手指的击、勾弦
 
-<audio controls src="/guitar/2024-08-16.mp3" />
+<audio controls src="/guitar/2024-08-19.mp3" />
+
+## 周二
+
+连续使用击勾弦技巧
+
+<audio controls src="/guitar/2024-08-20.mp3" />
