@@ -33,3 +33,9 @@ tags:
 连续使用击勾弦技巧
 
 <audio controls src="/guitar/2024-08-20.mp3" />
+
+## 周三
+
+击勾弦技巧的强化乐句
+
+<audio controls src="/guitar/2024-08-21.mp3" />

@@ -73,5 +73,6 @@ tags:
 
 ## 音的表达
 
+- 音级：1 2 3 4 5 6 7
 - 音名：C D E F G A B
 - 唱名：do re mi fa sol la xi
