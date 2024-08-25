@@ -17,6 +17,9 @@ module.exports = {
     'no-caller': 'off',
     'n/no-path-concat': 'off',
     'n/handle-callback-err': 'off',
+    'vue/object-curly-newline': 'off',
+    'vue/dot-location': 'off',
+    'vue/space-unary-ops': 'off',
   },
 }
 
