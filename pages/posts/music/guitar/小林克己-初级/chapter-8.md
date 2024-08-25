@@ -1,5 +1,5 @@
 ---
-title: 小林克己初级 - 第七章（勾弦）
+title: 小林克己初级 - 第八章（勾弦）
 date: 2024-08-22 00:00:00
 categories:
   - Music
@@ -39,3 +39,7 @@ CD 45 曲目（谱例-51）
 <br />
 
 <audio controls src="/guitar-lin-c/cd-045.2.mp3" />
+
+CD 47 曲目（勾弦）
+
+<audio controls src="/guitar-lin-c/cd-047.mp3" />

@@ -39,3 +39,21 @@ tags:
 击勾弦技巧的强化乐句
 
 <audio controls src="/guitar/2024-08-21.mp3" />
+
+## 周四
+
+在 ① 弦上进行大跨度的击勾弦
+
+<audio controls src="/guitar/2024-08-22.mp3" />
+
+> 在 Hard Rock 风格的吉他 solo 中，很实用且出现频率很高的形式。
+
+
+## 周五
+
+在一根弦上弹奏三连音的速弹常用套路
+
+> TODO
+
+## 周六
+
