@@ -16,4 +16,6 @@ tags:
 
 <!-- more -->
 
+<GuitarFingerboard class="mt-48px" controls />
+
 <FingerboardPractice />

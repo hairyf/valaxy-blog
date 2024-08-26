@@ -140,8 +140,6 @@ function uniqueRandomNumbers() {
 
 <template>
   <div>
-    <GuitarFingerboard class="mt-48px" controls />
-
     <h2>随机挑战</h2>
     <div class="flex items-center gap-12px">
       <ElButton type="text" @click="random">

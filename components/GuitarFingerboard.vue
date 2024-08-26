@@ -112,67 +112,68 @@ function filter(key?: string) {
 </script>
 
 <template>
-  <div>
-    <div ref="contentRef" class=" relative">
-      <div class="flex flex-col gap-36px">
-        <div class="border-t border-1px" />
-        <div class="border-t border-1px" />
-        <div class="border-t border-1px" />
-        <div class="border-t border-1px" />
-        <div class="border-t border-1px" />
-        <div class="border-t border-1px" />
-      </div>
-      <div class="w-full h-full absolute top-0 flex justify-between">
-        <div class="border-l border-1px h-full w-1px" />
-        <div class="border-l border-1px h-full w-1px" />
-        <div class="border-l border-1px h-full w-1px" />
-        <div class="border-l border-1px h-full w-1px" />
-        <div class="border-l border-1px h-full w-1px" />
-        <div class="border-l border-1px h-full w-1px" />
-        <div class="border-l border-1px h-full w-1px" />
-        <div class="border-l border-1px h-full w-1px" />
-        <div class="border-l border-1px h-full w-1px" />
-        <div class="border-l border-1px h-full w-1px" />
-        <div class="border-l border-1px h-full w-1px" />
-        <div class="border-l border-1px h-full w-1px" />
-        <div class="border-l border-1px h-full w-1px" />
-      </div>
-      <div
-        v-for="(item, index) in notes"
-        :key="index"
-        class="absolute w-40px h-20px rounded-full text-12px flex-center z-1"
-        :style="[tl(item.pos[0], item.pos[1]), {background: colors[item.unit]}]"
-      >
-        {{ item.unit }}
-      </div>
-      <div>
+  <div class="w-full">
+    <div class="w-full py12px px24px lt-2xl:pb-24px overflow-auto">
+      <div ref="contentRef" class="min-w-1200px relative">
+        <div class="flex flex-col gap-36px">
+          <div class="border-t border-1px" />
+          <div class="border-t border-1px" />
+          <div class="border-t border-1px" />
+          <div class="border-t border-1px" />
+          <div class="border-t border-1px" />
+          <div class="border-t border-1px" />
+        </div>
+        <div class="w-full h-full absolute top-0 flex justify-between">
+          <div class="border-l border-1px h-full w-1px" />
+          <div class="border-l border-1px h-full w-1px" />
+          <div class="border-l border-1px h-full w-1px" />
+          <div class="border-l border-1px h-full w-1px" />
+          <div class="border-l border-1px h-full w-1px" />
+          <div class="border-l border-1px h-full w-1px" />
+          <div class="border-l border-1px h-full w-1px" />
+          <div class="border-l border-1px h-full w-1px" />
+          <div class="border-l border-1px h-full w-1px" />
+          <div class="border-l border-1px h-full w-1px" />
+          <div class="border-l border-1px h-full w-1px" />
+          <div class="border-l border-1px h-full w-1px" />
+          <div class="border-l border-1px h-full w-1px" />
+        </div>
         <div
-          class="absolute w-14px h-14px rounded-full bg-[#fff]"
-          :style="{ left: `${tw(2)-8}px`, top: `${th(3) - th(1) + 12}px` }"
-        />
-        <div
-          class="absolute w-14px h-14px rounded-full bg-[#fff]"
-          :style="{ left: `${tw(4)-8}px`, top: `${th(3) - th(1) + 12}px` }"
-        />
-        <div
-          class="absolute w-14px h-14px rounded-full bg-[#fff]"
-          :style="{ left: `${tw(6)-8}px`,top: `${th(3) - th(1) + 12}px` }"
-        />
-        <div
-          class="absolute w-14px h-14px rounded-full bg-[#fff]"
-          :style="{ left: `${tw(8)-8}px`,top: `${th(3) - th(1) + 12}px` }"
-        />
-        <div
-          class="absolute w-14px h-14px rounded-full bg-[#fff]"
-          :style="{ left: `${tw(11)-8}px`, top: `${th(2) - th(1) + 12}px` }"
-        />
-        <div
-          class="absolute w-14px h-14px rounded-full bg-[#fff]"
-          :style="{ left: `${tw(11)-8}px`, top: `${th(4) - th(1) + 12}px` }"
-        />
+          v-for="(item, index) in notes"
+          :key="index"
+          class="absolute w-40px h-20px rounded-full text-12px flex-center z-1"
+          :style="[tl(item.pos[0], item.pos[1]), {background: colors[item.unit]}]"
+        >
+          {{ item.unit }}
+        </div>
+        <div>
+          <div
+            class="absolute w-14px h-14px rounded-full bg-[#fff]"
+            :style="{ left: `${tw(2)-8}px`, top: `${th(3) - th(1) + 12}px` }"
+          />
+          <div
+            class="absolute w-14px h-14px rounded-full bg-[#fff]"
+            :style="{ left: `${tw(4)-8}px`, top: `${th(3) - th(1) + 12}px` }"
+          />
+          <div
+            class="absolute w-14px h-14px rounded-full bg-[#fff]"
+            :style="{ left: `${tw(6)-8}px`,top: `${th(3) - th(1) + 12}px` }"
+          />
+          <div
+            class="absolute w-14px h-14px rounded-full bg-[#fff]"
+            :style="{ left: `${tw(8)-8}px`,top: `${th(3) - th(1) + 12}px` }"
+          />
+          <div
+            class="absolute w-14px h-14px rounded-full bg-[#fff]"
+            :style="{ left: `${tw(11)-8}px`, top: `${th(2) - th(1) + 12}px` }"
+          />
+          <div
+            class="absolute w-14px h-14px rounded-full bg-[#fff]"
+            :style="{ left: `${tw(11)-8}px`, top: `${th(4) - th(1) + 12}px` }"
+          />
+        </div>
       </div>
     </div>
-
     <div v-if="controls" class="flex gap-12px mt-48px">
       <ElButton type="info" @click="filter()">
         显示全部
