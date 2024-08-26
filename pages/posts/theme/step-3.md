@@ -93,7 +93,7 @@ export default {
 <hairy-image style="width: 400px" fit="cover" src="https://...jpg" />
 ```
 
-<hairy-image style="width: 400px" fit="cover" src="https://tva2.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg" />
+<hairy-image style="width: 400px" fit="cover" src="https://kjimg10.360buyimg.com/ott/jfs/t1/117817/17/31499/301424/63d63174Fb6ed6ab2/88c6c5557baeaa6c.jpg" />
 
 使用 `HairyImageGroup` 对图片分组，分组后支持点击打开图片浏览器。
 
@@ -108,11 +108,11 @@ export default {
 ```
 
 <hairy-image-group row="120px">
-  <hairy-image fit="cover" src="https://tva2.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg" />
-  <hairy-image fit="cover" src="https://tva2.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg" />
-  <hairy-image fit="cover" src="https://tva2.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg" />
-  <hairy-image fit="cover" src="https://tva2.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg" />
-  <hairy-image fit="cover" src="https://tva2.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg" />
+  <hairy-image fit="cover" src="https://kjimg10.360buyimg.com/ott/jfs/t1/177531/9/32618/276801/63d63104F712da8d4/8efbfff374052847.jpg" />
+  <hairy-image fit="cover" src="https://kjimg10.360buyimg.com/ott/jfs/t1/103502/31/35169/95092/63d63118F2f8b7277/da5cbf428a0b68ad.jpg" />
+  <hairy-image fit="cover" src="https://kjimg10.360buyimg.com/ott/jfs/t1/221336/33/22547/267537/63d6312aFa2fc2fbd/ce8258acd7177735.jpg" />
+  <hairy-image fit="cover" src="https://kjimg10.360buyimg.com/ott/jfs/t1/195283/5/32473/190475/63d63133Ff58c38fb/36ca70d73bb89fa5.jpg" />
+  <hairy-image fit="cover" src="https://kjimg10.360buyimg.com/ott/jfs/t1/192428/14/31797/388629/63d63159F0438f713/fd8a097affca1362.jpg" />
 </hairy-image-group>
 
 `HairyImageGroup` 支持以下属性

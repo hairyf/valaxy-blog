@@ -50,13 +50,13 @@ export default defineConfig<ThemeConfig>({
 
 文章列表布局支持五种布局，分别是 `text`、`markdown`、`image`、`image:slice`、`image:slice:reverse`
 
-<HairyImageGroup row="150px">
+<!-- <HairyImageGroup row="150px">
   <HairyImage src="https://tva3.sinaimg.cn/large/008ugSUaly8h4tkzd4r8yj315l0u0tb0.jpg" />
   <HairyImage src="https://tva3.sinaimg.cn/large/008ugSUaly8h4tkzgjn6wj31ha0nkdj4.jpg" />
   <HairyImage src="https://tva3.sinaimg.cn/large/008ugSUaly8h4tkzrldvej317n0u0q9h.jpg" />
   <HairyImage src="https://tva3.sinaimg.cn/large/008ugSUaly8h4tl0fhm8ej313h0u0wk7.jpg" />
   <HairyImage src="https://tva3.sinaimg.cn/large/008ugSUaly8h4tl0rjknkj31kx0u0jz0.jpg" />
-</HairyImageGroup>
+</HairyImageGroup> -->
 
 目前比较完善的是 `image` 相关布局，其他布局假如有需求在完善（很懒不想动.jpg
 
