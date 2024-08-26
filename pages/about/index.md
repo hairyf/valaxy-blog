@@ -5,7 +5,6 @@ description: "hairy self introduction"
 waline: true
 ---
 
-- 99 后（12月，所以也算 00 后？）
 - 前端打工（2020 年 6 月毕业）
 - 老二次元，跟不上时代的老宅 [# 追番列表](https://zh.moegirl.org.cn/%E8%80%81%E5%AE%85)
 - 希望有朝一日能活得更轻松一些
