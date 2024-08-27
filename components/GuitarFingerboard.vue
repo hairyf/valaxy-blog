@@ -142,34 +142,34 @@ function filter(key?: string) {
           v-for="(item, index) in notes"
           :key="index"
           class="absolute w-40px h-20px rounded-full text-12px flex-center z-1"
-          :style="[tl(item.pos[0], item.pos[1]), {background: colors[item.unit]}]"
+          :style="[tl(item.pos[0], item.pos[1]), { background: colors[item.unit] }]"
         >
           {{ item.unit }}
         </div>
         <div>
           <div
             class="absolute w-14px h-14px rounded-full bg-[#fff]"
-            :style="{ left: `${tw(2)-8}px`, top: `${th(3) - th(1) + 12}px` }"
+            :style="{ left: `${tw(2) - 8}px`, top: `${th(3) - th(1) + 12}px` }"
           />
           <div
             class="absolute w-14px h-14px rounded-full bg-[#fff]"
-            :style="{ left: `${tw(4)-8}px`, top: `${th(3) - th(1) + 12}px` }"
+            :style="{ left: `${tw(4) - 8}px`, top: `${th(3) - th(1) + 12}px` }"
           />
           <div
             class="absolute w-14px h-14px rounded-full bg-[#fff]"
-            :style="{ left: `${tw(6)-8}px`,top: `${th(3) - th(1) + 12}px` }"
+            :style="{ left: `${tw(6) - 8}px`, top: `${th(3) - th(1) + 12}px` }"
           />
           <div
             class="absolute w-14px h-14px rounded-full bg-[#fff]"
-            :style="{ left: `${tw(8)-8}px`,top: `${th(3) - th(1) + 12}px` }"
+            :style="{ left: `${tw(8) - 8}px`, top: `${th(3) - th(1) + 12}px` }"
           />
           <div
             class="absolute w-14px h-14px rounded-full bg-[#fff]"
-            :style="{ left: `${tw(11)-8}px`, top: `${th(2) - th(1) + 12}px` }"
+            :style="{ left: `${tw(11) - 8}px`, top: `${th(2) - th(1) + 12}px` }"
           />
           <div
             class="absolute w-14px h-14px rounded-full bg-[#fff]"
-            :style="{ left: `${tw(11)-8}px`, top: `${th(4) - th(1) + 12}px` }"
+            :style="{ left: `${tw(11) - 8}px`, top: `${th(4) - th(1) + 12}px` }"
           />
         </div>
       </div>
