@@ -16,36 +16,36 @@ tags:
 
 CD 008 曲目（一音推弦）
 
-<audio controls src="/guitar-lin-c/cd-008.mp3" />
+<audio controls src="/guitar-lin/cd-008.mp3" />
 
 CD 010 曲目（一音推弦）
 
-<audio controls src="/guitar-lin-c/cd-010.mp3" />
+<audio controls src="/guitar-lin/cd-010.mp3" />
 
 CD 014 曲目（半音推弦）
 
-<audio controls src="/guitar-lin-c/cd-014.mp3" />
+<audio controls src="/guitar-lin/cd-014.mp3" />
 
 CD 016 曲目（半音与一音推弦）
 
-<audio controls src="/guitar-lin-c/cd-016.mp3" />
+<audio controls src="/guitar-lin/cd-016.mp3" />
 
 CD 019 曲目（谱例-26）
 
-<audio controls src="/guitar-lin-c/cd-019.mp3" />
+<audio controls src="/guitar-lin/cd-019.mp3" />
 
 CD 020 曲目（谱例-27）
 
-<audio controls src="/guitar-lin-c/cd-020.mp3" />
+<audio controls src="/guitar-lin/cd-020.mp3" />
 
 CD 021 曲目（谱例-28）
 
-<audio controls src="/guitar-lin-c/cd-021.mp3" />
+<audio controls src="/guitar-lin/cd-021.mp3" />
 
 CD 022 曲目（谱例-29）
 
-<audio controls src="/guitar-lin-c/cd-022.mp3" />
+<audio controls src="/guitar-lin/cd-022.mp3" />
 
 CD 024 曲目（下拉推弦）
 
-<audio controls src="/guitar-lin-c/cd-022.mp3" />
+<audio controls src="/guitar-lin/cd-022.mp3" />

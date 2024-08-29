@@ -17,8 +17,8 @@ tags:
 
 CD 002
 
-<audio controls src="/guitar-lin-c/cd-002.mp3" />
+<audio controls src="/guitar-lin/cd-002.mp3" />
 
 CD 003
 
-<audio controls src="/guitar-lin-c/cd-003.mp3" />
+<audio controls src="/guitar-lin/cd-003.mp3" />

@@ -16,4 +16,4 @@ tags:
 
 CD 029 曲目（推弦释放）
 
-<audio controls src="/guitar-lin-c/cd-029.mp3" />
+<audio controls src="/guitar-lin/cd-029.mp3" />

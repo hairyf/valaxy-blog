@@ -18,28 +18,28 @@ tags:
 
 CD 41 曲目（谱例-47）
 
-<audio controls src="/guitar-lin-c/cd-041.mp3" />
+<audio controls src="/guitar-lin/cd-041.mp3" />
 
 CD 42 曲目（谱例-48）
 
-<audio controls src="/guitar-lin-c/cd-042.mp3" />
+<audio controls src="/guitar-lin/cd-042.mp3" />
 
 CD 43 曲目（谱例-49）
 
-<audio controls src="/guitar-lin-c/cd-043.mp3" />
+<audio controls src="/guitar-lin/cd-043.mp3" />
 
 CD 44 曲目（谱例-50）
 
-<audio controls src="/guitar-lin-c/cd-044.mp3" />
+<audio controls src="/guitar-lin/cd-044.mp3" />
 
 CD 45 曲目（谱例-51）
 
-<audio controls src="/guitar-lin-c/cd-045.1.mp3" />
+<audio controls src="/guitar-lin/cd-045.1.mp3" />
 
 <br />
 
-<audio controls src="/guitar-lin-c/cd-045.2.mp3" />
+<audio controls src="/guitar-lin/cd-045.2.mp3" />
 
 CD 47 曲目（勾弦）
 
-<audio controls src="/guitar-lin-c/cd-047.mp3" />
+<audio controls src="/guitar-lin/cd-047.mp3" />

@@ -38,6 +38,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/music/guitar/365日养成计划/week-7': RouteRecordInfo<'/posts/music/guitar/365日养成计划/week-7', '/posts/music/guitar/365日养成计划/week-7', Record<never, never>, Record<never, never>>,
     '/posts/music/guitar/小林克己-初级/chapter-1': RouteRecordInfo<'/posts/music/guitar/小林克己-初级/chapter-1', '/posts/music/guitar/小林克己-初级/chapter-1', Record<never, never>, Record<never, never>>,
     '/posts/music/guitar/小林克己-初级/chapter-10': RouteRecordInfo<'/posts/music/guitar/小林克己-初级/chapter-10', '/posts/music/guitar/小林克己-初级/chapter-10', Record<never, never>, Record<never, never>>,
+    '/posts/music/guitar/小林克己-初级/chapter-11': RouteRecordInfo<'/posts/music/guitar/小林克己-初级/chapter-11', '/posts/music/guitar/小林克己-初级/chapter-11', Record<never, never>, Record<never, never>>,
     '/posts/music/guitar/小林克己-初级/chapter-2': RouteRecordInfo<'/posts/music/guitar/小林克己-初级/chapter-2', '/posts/music/guitar/小林克己-初级/chapter-2', Record<never, never>, Record<never, never>>,
     '/posts/music/guitar/小林克己-初级/chapter-3': RouteRecordInfo<'/posts/music/guitar/小林克己-初级/chapter-3', '/posts/music/guitar/小林克己-初级/chapter-3', Record<never, never>, Record<never, never>>,
     '/posts/music/guitar/小林克己-初级/chapter-4': RouteRecordInfo<'/posts/music/guitar/小林克己-初级/chapter-4', '/posts/music/guitar/小林克己-初级/chapter-4', Record<never, never>, Record<never, never>>,

@@ -18,12 +18,12 @@ tags:
 
 CD 30 曲目（谱例-33）
 
-<audio controls src="/guitar-lin-c/cd-030.mp3" />
+<audio controls src="/guitar-lin/cd-030.mp3" />
 
 CD 34 曲目（谱例-37）
 
-<audio controls src="/guitar-lin-c/cd-034.mp3" />
+<audio controls src="/guitar-lin/cd-034.mp3" />
 
 CD 37 曲目（锤弦）
 
-<audio controls src="/guitar-lin-c/cd-037.mp3" />
+<audio controls src="/guitar-lin/cd-037.mp3" />

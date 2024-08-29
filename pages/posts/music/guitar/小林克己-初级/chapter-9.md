@@ -16,4 +16,4 @@ tags:
 
 CD 53 曲目（震音）
 
-<audio controls src="/guitar-lin-c/cd-053.mp3" />
+<audio controls src="/guitar-lin/cd-053.mp3" />

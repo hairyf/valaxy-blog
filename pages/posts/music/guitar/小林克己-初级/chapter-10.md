@@ -1,6 +1,6 @@
 ---
 title: 小林克己初级 - 第十章（滑弦）
-date: 2024-08-22 00:00:00
+date: 2024-08-27 00:00:00
 categories:
   - Music
   - Guitar
@@ -18,12 +18,12 @@ tags:
 
 CD 56 曲目（谱例-62）
 
-<audio controls src="/guitar-lin-c/cd-056.mp3" />
+<audio controls src="/guitar-lin/cd-056.mp3" />
 
 CD 57 曲目（谱例-63）
 
-<audio controls src="/guitar-lin-c/cd-057.mp3" />
+<audio controls src="/guitar-lin/cd-057.mp3" />
 
 CD 59 曲目（滑弦）
 
-> TODO
+<audio controls src="/guitar-lin/cd-059.mp3" />

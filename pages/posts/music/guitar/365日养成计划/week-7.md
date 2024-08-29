@@ -29,6 +29,10 @@ tags:
 
 从“嗦”开始的把位。
 
-> TODO
+<audio controls src="/guitar/2024-08-26.mp3" />
 
-忘记录了，明天补上
+## 周二
+
+从“啦”开始的把位。
+
+<audio controls src="/guitar/2024-08-27.mp3" />
