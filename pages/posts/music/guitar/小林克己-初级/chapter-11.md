@@ -38,4 +38,4 @@ CD 66 曲目（谱例-70）
 
 CD 68 曲目（无定向滑弦）
 
-<audio controls src="/guitar-lin/cd-066.mp3" />
+<audio controls src="/guitar-lin/cd-068.mp3" />
