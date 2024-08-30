@@ -36,3 +36,15 @@ tags:
 从“啦”开始的把位。
 
 <audio controls src="/guitar/2024-08-27.mp3" />
+
+## 周三
+
+从“西”开始的把位。
+
+<audio controls src="/guitar/2024-08-28.mp3" />
+
+## 周四
+
+从“哆”开始的把位。
+
+<audio controls src="/guitar/2024-08-29.mp3" />
