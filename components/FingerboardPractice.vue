@@ -4,8 +4,6 @@ import { ref } from 'vue'
 import { ElButton } from 'element-plus'
 import 'element-plus/theme-chalk/el-button.css'
 
-defineProps<{}>()
-
 const musicalNotes = [
   { pos: [8, 1], unit: 'C' },
   { pos: [1, 2], unit: 'C' },

@@ -48,3 +48,15 @@ tags:
 从“哆”开始的把位。
 
 <audio controls src="/guitar/2024-08-29.mp3" />
+
+## 周五
+
+从“唻”开始的把位。
+
+<audio controls src="/guitar/2024-08-30.mp3" />
+
+## 周六
+
+从“咪”开始的把位。
+
+<audio controls src="/guitar/2024-09-01.mp3" />

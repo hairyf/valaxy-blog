@@ -1,14 +1,15 @@
 <!-- eslint-disable vue/comma-dangle -->
 <script lang="ts" setup>
 import { useElementSize, useVModel } from '@vueuse/core'
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { ElButton } from 'element-plus'
 import 'element-plus/theme-chalk/el-button.css'
 
 const props = defineProps<{
   notes: {
     pos: number[]
-    unit: string
+    unit?: string
+    text?: string
   }[]
   controls?: boolean
 }>()
@@ -45,6 +46,7 @@ const musicalNotes = [
   { pos: [3, 2], unit: 'D' },
   { pos: [7, 3], unit: 'D' },
   { pos: [0, 4], unit: 'D' },
+  { pos: [12, 4], unit: 'D' },
   { pos: [5, 5], unit: 'D' },
   { pos: [10, 6], unit: 'D' },
 
@@ -54,6 +56,8 @@ const musicalNotes = [
   { pos: [2, 4], unit: 'E' },
   { pos: [7, 5], unit: 'E' },
   { pos: [0, 6], unit: 'E' },
+  { pos: [12, 1], unit: 'E' },
+  { pos: [12, 6], unit: 'E' },
 
   { pos: [1, 1], unit: 'F' },
   { pos: [6, 2], unit: 'F' },
@@ -72,6 +76,7 @@ const musicalNotes = [
   { pos: [3, 1], unit: 'G' },
   { pos: [8, 2], unit: 'G' },
   { pos: [0, 3], unit: 'G' },
+  { pos: [12, 3], unit: 'G' },
   { pos: [5, 4], unit: 'G' },
   { pos: [10, 5], unit: 'G' },
   { pos: [3, 6], unit: 'G' },
@@ -81,10 +86,12 @@ const musicalNotes = [
   { pos: [2, 3], unit: 'A' },
   { pos: [7, 4], unit: 'A' },
   { pos: [0, 5], unit: 'A' },
+  { pos: [12, 5], unit: 'A' },
   { pos: [5, 6], unit: 'A' },
 
   { pos: [7, 1], unit: 'B' },
   { pos: [0, 2], unit: 'B' },
+  { pos: [12, 2], unit: 'B' },
   { pos: [4, 3], unit: 'B' },
   { pos: [9, 4], unit: 'B' },
   { pos: [2, 5], unit: 'B' },
@@ -102,6 +109,14 @@ const colors: Record<string, string> = {
 }
 
 const notes = useVModel(props, 'notes', undefined, { passive: true, defaultValue: musicalNotes })
+const showNotes = computed(() => musicalNotes
+  .filter(n => notes.value.some(ns => compare(n, ns)))
+  .map(n => ({ ...n, ...notes.value.find(ns => compare(n, ns)) })),
+)
+
+function compare(a: any, b: any) {
+  return a.pos[0] === b.pos[0] && a.pos[1] === b.pos[1]
+}
 
 function filter(key?: string) {
   if (!key)
@@ -139,12 +154,11 @@ function filter(key?: string) {
           <div class="border-l border-1px h-full w-1px" />
         </div>
         <div
-          v-for="(item, index) in notes"
-          :key="index"
+          v-for="(item, index) in showNotes" :key="index"
           class="absolute w-40px h-20px rounded-full text-12px flex-center z-1"
           :style="[tl(item.pos[0], item.pos[1]), { background: colors[item.unit] }]"
         >
-          {{ item.unit }}
+          {{ item.text || item.unit }}
         </div>
         <div>
           <div
@@ -181,10 +195,7 @@ function filter(key?: string) {
       <ElButton type="info" @click="notes = []">
         隐藏
       </ElButton>
-      <ElButton
-        v-for="item in Object.keys(colors)" :key="item" :color="colors[item]"
-        @click="filter(item)"
-      >
+      <ElButton v-for="item in Object.keys(colors)" :key="item" :color="colors[item]" @click="filter(item)">
         <span class="text-white">{{ item }}</span>
       </ElButton>
     </div>

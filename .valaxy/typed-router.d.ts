@@ -75,6 +75,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/music/theory/3-mode': RouteRecordInfo<'/posts/music/theory/3-mode', '/posts/music/theory/3-mode', Record<never, never>, Record<never, never>>,
     '/posts/music/theory/4-spectrum': RouteRecordInfo<'/posts/music/theory/4-spectrum', '/posts/music/theory/4-spectrum', Record<never, never>, Record<never, never>>,
     '/posts/music/theory/5-fingerboard': RouteRecordInfo<'/posts/music/theory/5-fingerboard', '/posts/music/theory/5-fingerboard', Record<never, never>, Record<never, never>>,
+    '/posts/music/utils/all-c-major': RouteRecordInfo<'/posts/music/utils/all-c-major', '/posts/music/utils/all-c-major', Record<never, never>, Record<never, never>>,
     '/posts/music/utils/memory-fingerboard': RouteRecordInfo<'/posts/music/utils/memory-fingerboard', '/posts/music/utils/memory-fingerboard', Record<never, never>, Record<never, never>>,
     '/posts/notes/blockchain/bitcoin/': RouteRecordInfo<'/posts/notes/blockchain/bitcoin/', '/posts/notes/blockchain/bitcoin', Record<never, never>, Record<never, never>>,
     '/posts/notes/blockchain/bitcoin/bitcoinjs': RouteRecordInfo<'/posts/notes/blockchain/bitcoin/bitcoinjs', '/posts/notes/blockchain/bitcoin/bitcoinjs', Record<never, never>, Record<never, never>>,

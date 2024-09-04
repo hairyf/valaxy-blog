@@ -16,6 +16,4 @@ tags:
 
 <!-- more -->
 
-<GuitarFingerboard class="mt-48px" controls />
-
-<FingerboardPractice />
+## 第一把位
