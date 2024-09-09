@@ -20,7 +20,6 @@ tags:
 <hairy-image-group row="240px" col="160px">
   <hairy-image fit="cover" src="/follow-me/1.jpg" />
   <hairy-image fit="cover" src="/follow-me/IMG_20240909_235919.jpg" />
-  <hairy-image fit="cover" src="/follow-me/Image_1725895250486.jpg" />
 </hairy-image-group>
 
 <!-- more -->
@@ -66,7 +65,12 @@ tags:
 
 那我寻思不靠谱我就自己找呗，在因特网认识了一个可爱的女孩子，跟我一样喜欢中二病跟孤独摇滚。
 
-> 物语还在延续...
+<hairy-image-group row="120px" col="120px">
+  <hairy-image fit="cover" src="/follow-me/Image_1725895250486.jpg" />
+  <hairy-image fit="cover" src="/follow-me/mmexport1725856413905.jpg" />
+</hairy-image-group>
+
+> 物语还在延续...（像我这样麻烦的性格，希望能继续下去就好了呢
 
 ## 思考
 
