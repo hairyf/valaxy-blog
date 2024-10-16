@@ -1,6 +1,6 @@
 ---
 title: 随记 - 近况
-date: 2024-08-31
+date: 2024-10-16
 tags:
  - think
 ---
@@ -16,6 +16,8 @@ tags:
 工作方面，放假完之后就天天在摸鱼 hhhhh，最近总算找回了点状态，正在努力码字中！
 
 <hairy-image style="max-width: 650px" src="https://pic.imgdb.cn/item/670f7e53d29ded1a8c0e3c89.jpg" />
+
+<!-- more -->
 
 ## 学 & 兴
 
