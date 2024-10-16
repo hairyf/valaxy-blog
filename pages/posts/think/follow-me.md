@@ -1,9 +1,8 @@
 ---
 title: 随记 - 近况
-categories: Daily
 date: 2024-08-31
 tags:
- - blog
+ - think
 ---
 
 <meting-js type="song" theme="var(--hy-c-primary)" server="netease"  id="2071193941" autoplay="true" />
