@@ -24,10 +24,10 @@ tags:
 对了，这是我的小米 SU7，它很帅。
 
 <hairy-image-group row="240px">
-  <hairy-image src="/images/car/mmexport1731146913444.jpg" />
-  <hairy-image src="/images/car/mmexport1731146921004.jpg" />
-  <hairy-image src="/images/car/mmexport1731147014622.jpg" />
-  <hairy-image src="/images/car/mmexport1731147025135.jpg" />
+  <hairy-image fit="cover" src="/images/car/mmexport1731146913444.jpg" />
+  <hairy-image fit="cover" src="/images/car/mmexport1731146921004.jpg" />
+  <hairy-image fit="cover" src="/images/car/mmexport1731147014622.jpg" />
+  <hairy-image fit="cover" src="/images/car/mmexport1731147025135.jpg" />
 </hairy-image-group>
 
 ## 工作
