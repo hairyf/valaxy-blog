@@ -7,9 +7,9 @@ tags:
 
 ## 近况
 
-貌似发生了很多事情、去大舞台做了表演、也提了车，不过工作日还是一样的乏味无趣，对兴趣逐渐退烧了，但还在坚持。
+貌似发生了很多事情、去大舞台做了表演、也提了车，回了趟老家，去朋友家做客，突然结识了个女孩子···，不过工作日还是有点无趣，对兴趣逐渐退烧了，但还在还在坚持。
 
-最近好像一直在思考如何做对与错，被以前经历所影响，总是会让自己陷入内耗的状态，这样的我，被这一段话所鼓励了。
+最近好像一直在思考如何做对与错，被以前经历所影响，总会让自己陷入内心的挣扎，这样的我，被这一段话所鼓励了。
 
 ```
 大家好像从小是被吓大的，小时候没写作业就觉得自己完了，
@@ -21,7 +21,7 @@ tags:
 
 <!-- more -->
 
-对了，这是我的小米 SU7，它很帅。
+对了，这是我的小米 SU7 **MAX**，它很帅。
 
 <hairy-image-group row="240px" col="240px">
   <hairy-image fit="cover" src="/images/car/mmexport1731146913444.jpg" />
@@ -32,7 +32,7 @@ tags:
 
 ## 工作
 
-工作最近较为平淡，项目准备上线了，正在帮同事处理一些琐事，以及一些新的业务，再接再厉。
+工作比较平淡，项目准备上线了，正在帮同事处理一些琐事，以及一些新的业务，再接再厉。
 
 <hairy-image style="max-width: 120px" src="/images/gaga.gif" />
 
@@ -48,20 +48,29 @@ tags:
 
 又或者，将来不在是孤单一人的夜晚度过。
 
-以一生的陪伴，携手相伴，变丑变老，走向终结。
+以一生的陪伴，共度岁月，变丑变老，走向终结。
 
-> 现在进行时...
+> 现在进行时中...
 
 > 物语还在延续...
 
 ## 思考
 
-转居家之后，很多同事都回了老家，我却没有回去，我怀疑过我的选择，孤身一人留在这一望无际的大海中，我还能掀起什么浪花。
+转居家之后，很多同事都回了老家，我却留在这里，怀疑过这个选择，孤身一人留在这一望无际的大海中，我还能掀起什么浪花。
 
-如今回想，大致是不想安于现状把，所以我并没有后悔，也因此认识了很多朋友，也有了自己喜欢的女孩，这些也足以让我，
+如今回想，大致是不想安于现状，所以我并没有后悔，也因此认识了很多朋友，和一些美好的回忆，这些也足以让我，
 
 在努力坚持下去，加油。
 
 ## 最近
 
-> TODO
+<hairy-image-group row="240px" col="240px">
+  <hairy-image fit="cover" src="https://pic.imgdb.cn/item/674fe968d0e0a243d4dd0bbb.jpg" />
+  <hairy-image fit="cover" src="https://pic.imgdb.cn/item/674fea08d0e0a243d4dd0c3b.jpg" />
+  <hairy-image fit="cover" src="https://pic.imgdb.cn/item/674fe967d0e0a243d4dd0bb7.jpg" />
+  <hairy-image fit="cover" src="https://pic.imgdb.cn/item/674fe968d0e0a243d4dd0bb9.jpg" />
+  <hairy-image fit="cover" src="https://pic.imgdb.cn/item/674fea07d0e0a243d4dd0c39.jpg" />
+  <hairy-image fit="cover" src="https://pic.imgdb.cn/item/674fea08d0e0a243d4dd0c3a.jpg" />
+  <hairy-image fit="cover" src="https://pic.imgdb.cn/item/674fea07d0e0a243d4dd0c38.jpg" />
+  <hairy-image fit="cover" src="https://pic.imgdb.cn/item/674fe969d0e0a243d4dd0bbd.jpg" />
+</hairy-image-group>
