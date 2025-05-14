@@ -113,7 +113,8 @@ npm i @babel/core@7.4.5 @babel/preset-env@7.4.5 --dev
 {
   "presets": [
     [
-      "@babel/preset-env", {
+      "@babel/preset-env",
+      {
         "targets": {
           "node": "current"
         }

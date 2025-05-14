@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - TypeScript
-tags: 
+tags:
   - TypeScript
 ---
 
@@ -51,10 +51,10 @@ console.log(m.min)
 
 ### 泛型接口
 
-~~~ts 
+~~~ts
 // 第一种定义泛型的方法
 interface ConfigFn {
-    <Type>(value: Type): Type
+  <Type>(value: Type): Type
 }
 const getData: ConfigFn = function<Type>(value: Type): Type {
   return value
@@ -62,7 +62,7 @@ const getData: ConfigFn = function<Type>(value: Type): Type {
 getData<string>('number')
 // 第二种定义泛型的方法
 interface ConfigFn<Type> {
-    <Type>(value: Type): Type
+  <Type>(value: Type): Type
 }
 const getData = function<Type>(value: Type): Type {
   return value

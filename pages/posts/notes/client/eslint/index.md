@@ -48,13 +48,13 @@ Lint 是检验代码格式工具的一个统称，具体的工具有 Jslint 、 
 > To check syntax only		[只是检查语法]
 	To check syntax and find problems		[检查语法并找到问题]
   To check syntax, find problems, and enforce code style	[检查语法并找到问题，并强制的保持风格]
-  
+
 // 使用哪一种模块化语法？
 ? What type of modules does your project use? (Use arrow keys)
 > JavaScript modules (import/export)		[ES6模块化]
   CommonJS (require/exports)		[CommonJS模块化]
   None of these			[不使用模块化语法]
-  
+
 // 你使用哪一种框架？
 ? Which framework does your project use? (Use arrow keys)
 > React
@@ -62,7 +62,7 @@ Lint 是检验代码格式工具的一个统称，具体的工具有 Jslint 、 
   None of these		[不使用框架]
 
 // 你是否使用TypeScript语法
-? Does your project use TypeScript? (y/N) 
+? Does your project use TypeScript? (y/N)
 
 // 你的代码是运行在哪里？
 ? Where does your code run? (Press <space> to select, <a> to toggle all, <i> to invert selection)
@@ -72,7 +72,7 @@ Lint 是检验代码格式工具的一个统称，具体的工具有 Jslint 、 
 // 编码规范是？
 ? How would you like to define a style for your project? (Use arrow keys)
 > Use a popular style guide		[使用流行的规范]
-  Answer questions about your style		[选项自定义]	
+  Answer questions about your style		[选项自定义]
   Inspect your JavaScript file(s)		[导入js配置文件]
 
 // 选择哪个流行的编码规范？
@@ -80,7 +80,7 @@ Lint 是检验代码格式工具的一个统称，具体的工具有 Jslint 、 
 > Airbnb: https://github.com/airbnb/javascript				[Airbnb代码规范]
   Standard: https://github.com/standard/standard			[Standard代码规范]
   Google: https://github.com/google/eslint-config-google		[Google代码规范]
-  
+
 // 配置文件的类型？
 ? What format do you want your config file to be in? (Use arrow keys)
 > JavaScript
@@ -98,8 +98,8 @@ Lint 是检验代码格式工具的一个统称，具体的工具有 Jslint 、 
 **错误信息**
 
 ~~~dart
-1:7 error 'lint' is assigned a value but never used no-unused-vars 
-	定义的变量没有被使用到 
+1:7 error 'lint' is assigned a value but never used no-unused-vars
+	定义的变量没有被使用到
 1:22 error Newline required at end of file but not found eol-last
  	新行是必须的 但是没有找到
 ~~~
@@ -146,7 +146,7 @@ module.exports = {
 
 **rules**
 
-用于覆盖继承来的规则，我们可以通过设置 rules 来定义我们自己的编码规范。	
+用于覆盖继承来的规则，我们可以通过设置 rules 来定义我们自己的编码规范。
 ESLint 附带有大量的规则，修改规则应遵循如下要求
 
 - `0 | "off"   - 关闭规则`

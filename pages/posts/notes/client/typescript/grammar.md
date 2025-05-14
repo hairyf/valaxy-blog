@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - TypeScript
-tags: 
+tags:
   - TypeScript
 date: 2020-08-05 14:00:00
 ---
@@ -99,6 +99,6 @@ dec(value!)
 ## 判断类型的返回值
 
 ~~~ts
-const isRef = (v): v is Ref<any> => { /**/ }
-const isString = (v): v is string => { /**/ }
+function isRef(v): v is Ref<any> { /**/ }
+function isString(v): v is string { /**/ }
 ~~~

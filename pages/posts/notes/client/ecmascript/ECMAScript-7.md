@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - ECMAScript
-tags: 
+tags:
   - ECMAScript
   - ES6
 ---
@@ -19,14 +19,14 @@ ECMAScript 7又以JavaScript 2016而被熟知，是正在快速开发的新一�
 includes() 作用,是查找一个值在不在数组里,若是存在则返回true,不存在返回false.
 
 ```javascript
-['a', 'b', 'c'].includes('a')     // true
-['a', 'b', 'c'].includes('d')     // false
+['a', 'b', 'c'].includes('a') // true
+  ['a', 'b', 'c'].includes('d') // false
 ```
 
 接收俩个参数：要搜索的值和搜索的开始索引
 
 ```javascript
-['a', 'b', 'c', 'd'].includes('b')         // true
-['a', 'b', 'c', 'd'].includes('b', 1)      // true
-['a', 'b', 'c', 'd'].includes('b', 2)      // false
+['a', 'b', 'c', 'd'].includes('b') // true
+  ['a', 'b', 'c', 'd'].includes('b', 1) // true
+  ['a', 'b', 'c', 'd'].includes('b', 2) // false
 ```

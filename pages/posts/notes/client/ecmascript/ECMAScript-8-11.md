@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - ECMAScript
-tags: 
+tags:
   - ECMAScript
   - ES6
 ---
@@ -50,7 +50,6 @@ btn.onclick = function () {
     module.hello()
   })
 }
-
 ~~~
 
 ## 正则扩展
@@ -234,7 +233,6 @@ console.log(p.age) // undefined
 console.log(p.weight) // undefined
 
 p.intro()
-
 ~~~
 
 ## Promise 扩展
@@ -302,6 +300,3 @@ console.log(BigInt(max) + BigInt(2))
 // globalThis 永远指向全局对象的一个特殊对象(无论浏览器和node都支持)
 console.log(globalThis)
 ~~~
-
-
-

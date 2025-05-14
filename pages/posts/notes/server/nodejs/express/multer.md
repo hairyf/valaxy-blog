@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - Express
-tags: 
+tags:
   - Express
 ---
 
@@ -64,8 +64,8 @@ $('.submit').click(async () => {
 ## 接收数据（multer）
 
 ~~~js
-const fs = require('fs')
-const path = require('path')
+const fs = require('node:fs')
+const path = require('node:path')
 const express = require('express')
 const multer = require('multer')
 
@@ -128,4 +128,3 @@ app.post('/upload', upload.array('files', 6), (req, res) => {
   // 会自动添加req.files , 是 `files` 文件数组的信息
 })
 ~~~
-

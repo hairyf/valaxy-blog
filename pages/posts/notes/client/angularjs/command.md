@@ -106,8 +106,6 @@ ng-bind 可以用于指令解决闪烁加载
 </script>
 ~~~
 
-
-
 ## 事件绑定
 
 **ng-click**：点击监听, 值为函数调用, 可以传$event
@@ -121,7 +119,7 @@ ng-bind 可以用于指令解决闪烁加载
 	.controller('MyCtrl', ['$scope', function($scope) {
 		$scope.isLike = true
 		$scope.switch = function () {
-      $scope.isLike = false 
+      $scope.isLike = false
     }
 }])
 </script>

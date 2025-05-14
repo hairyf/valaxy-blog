@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - react
-tags: 
+tags:
   - react
 ---
 
@@ -32,7 +32,7 @@ react定义的一种类似于XML的JS扩展语法: XML+JS，他专门用来创�
 ~~~jsx
 // JSX标签语法跟HTML标签语法一样
 var ele = <h2>Hello JSX!</h2> // <div>Hello JSX!</div>
-var ele = <h2 class=''>Hello JSX!</h2> // <div id="">Hello JSX!</div>
+var ele = <h2 class="">Hello JSX!</h2> // <div id="">Hello JSX!</div>
 ~~~
 
 > 实际上，浏览器不能直接解析 JSX 代码, 需要借助 babel 等工具转译为纯 JS（虚拟 DOM）的代码才能运行。

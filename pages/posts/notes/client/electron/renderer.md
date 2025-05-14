@@ -55,7 +55,7 @@ const win = new BrowserWindow({
 ```
 
 ```ts
-import { writeFile } from 'fs'
+import { writeFile } from 'node:fs'
 import { contextBridge } from 'electron'
 
 writeFile('./example.txt', 'abc', () => {
@@ -133,4 +133,3 @@ window.ipcRenderer.on('main-process-message', (_event, message) => {
   console.log(message)
 })
 ```
-

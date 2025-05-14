@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - GraphQL
-tags: 
+tags:
   - GraphQL
 ---
 
@@ -190,4 +190,3 @@ type Mutation {
 // post data: 修改传参, 与创建时传参一致的语法
 // post data: 删除传参, 与创建时传参一致的语法
 ~~~
-

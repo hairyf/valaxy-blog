@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - bundler
-tags: 
+tags:
   - grunt
 ---
 
@@ -20,7 +20,6 @@ esbuild 是一个用 go 语言写的 javascript, typescript 打包工具，速�
 - js 是单线程串行，esbuild 是新开一个进程，然后多线程并行，充分发挥多核优势
 - go 是纯机器码，肯定要比 JIT 快
 - 不使用 AST，优化了构建流程。（也带来了一些缺点）
-
 
 ## 基本使用
 
@@ -59,11 +58,10 @@ build({
 
 ```typescript
 interface OnResolveOptions {
-  filter: RegExp;
-  namespace?: string;
+  filter: RegExp
+  namespace?: string
 }
 ```
-
 
 而 CallBack 是一个函数，即回调函数。插件实现的关键则是在 `onResolve` 和 `onLoad` 中定义的回调函数内部做一些特殊的处理。
 
@@ -83,7 +81,7 @@ esbuild 的插件可以创建 Virtual Modules，而 Virtual Modules 则会使用
 
 `filter` 作为 Options 上必须的属性，它的值是一个正则。它主要用于匹配指定规则的导入（`import`）路径的模块，避免执行不需要的回调，从而提高整体打包性能。
 
-### onResolve 
+### onResolve
 
 `onResolve` 函数的回调函数会在 esbuild 构建每个模块的导入路径（可匹配的）时执行。
 

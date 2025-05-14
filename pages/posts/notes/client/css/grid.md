@@ -285,7 +285,7 @@ place-items: start end;
 ```css
 .container {
   justify-content: start | end | center | stretch | space-around | space-between | space-evenly;
-  align-content: start | end | center | stretch | space-around | space-between | space-evenly;  
+  align-content: start | end | center | stretch | space-around | space-between | space-evenly;
 }
 ```
 
@@ -488,8 +488,6 @@ place-content: space-around space-evenly;
   justify-self: start;
 }
 ```
-
-
 
 ![img](https://www.wangbase.com/blogimg/asset/201903/bg2019032532.png)
 

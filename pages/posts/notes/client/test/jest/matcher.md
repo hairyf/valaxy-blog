@@ -26,7 +26,8 @@ function baojian2(money) {
   return money >= 1000 ? '双人服务' : '单人服务'
 }
 module.exports = {
-  baojian1, baojian2
+  baojian1,
+  baojian2
 }
 ~~~
 
@@ -142,7 +143,7 @@ test('匹配数组/Set中某个元素', () => {
 ## 错误匹配
 
 ~~~js
-const throwNewErrorFunc = () => { throw new Error('this is Error') }
+function throwNewErrorFunc() { throw new Error('this is Error') }
 test('匹配该函数是否抛出错误', () => {
   expect(throwNewErrorFunc).toThrow() // -> 通过
   // 匹配该异常字符串是否符合

@@ -116,7 +116,7 @@ window.addEventListener('scroll', onScroll, false)
 
 大概的做法就是在页面滚动的时候, 给 添加上 `.disable-hover` 样式，那么在滚动停止之前, 所有鼠标事件都将被禁止。当滚动结束之后，再移除该属性。
 
-CSS: 
+CSS:
 
 ```css
 .disable-hover,
@@ -125,7 +125,7 @@ CSS:
 }
 ```
 
-JavaScript: 
+JavaScript:
 
 ```js
 const body = document.body; let timer

@@ -14,7 +14,6 @@ tags:
 
 <!-- more -->
 
-
 CD 002
 
 <audio controls src="/guitar-lin/cd-002.mp3" />

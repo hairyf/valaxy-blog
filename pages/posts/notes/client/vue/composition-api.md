@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - vue
-tags: 
+tags:
   - vue
 date: 2021-03-24 17:00:00
 ---
@@ -184,7 +184,6 @@ export default {
     - 有些值不应被设置为响应式的，例如复杂的第三方类实例或 Vue 组件对象。
     - 当渲染具有不可变数据源的大列表时，跳过代理转换可以提高性能。
 
-
 ## 响应式判断
 
 - isRef: 检查一个值是否为一个 ref 对象
@@ -240,4 +239,3 @@ WatchSource<T = any>
 // 是或不是Ref
 MaybeRef<T>
 ~~~
-

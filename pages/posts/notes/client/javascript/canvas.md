@@ -54,7 +54,7 @@ Canvas 对象表示一个 HTML 画布元素 - `<canvas>`。它没有自己的行
   //////////////////////////////
   ctx.rect()
   ctx.restore()
-</script>				
+</script>
 ~~~
 
 ## 矩形(rect)
@@ -128,8 +128,8 @@ arc(x, y, radius, startAngle, endAngle, anticlockwise)
   ctx.beginPath()
   ctx.arc(150, 150, 100, 0, ang(360))
   ctx.stroke()
-  ctx.restore() 
-</script>		
+  ctx.restore()
+</script>
 ~~~
 
 ## 弧线(moveTo|arcTo)
@@ -153,13 +153,13 @@ ctx.moveTo(x0,y0) | ctx.arcTo(x1,y1,x2,y2,r)
   ctx.beginPath()
 
   // 起点
-  ctx.moveTo(150,100) 
+  ctx.moveTo(150,100)
   // 中点 终点 半径
   ctx.arcTo(200, 100, 200, 200, 50)
 
   ctx.stroke();
   ctx.restore();
-</script>		
+</script>
 ~~~
 
 ## 贝塞尔曲线(quadraticCurveTo)
@@ -168,9 +168,9 @@ ctx.moveTo(x0,y0) | ctx.arcTo(x1,y1,x2,y2,r)
 
 ctx.moveTo(x0,y0) | ctx.quadraticCurveTo(x1,y1,x2,y2)
 
-- 以`x0,y0`为起点		
-- 以`x1,y1`为中点		
-- 以`x2,y2`为终点	
+- 以`x0,y0`为起点
+- 以`x1,y1`为中点
+- 以`x2,y2`为终点
 
 ~~~html
 <canvas class="test" width="400" height="300"></canvas>
@@ -180,7 +180,7 @@ ctx.moveTo(x0,y0) | ctx.quadraticCurveTo(x1,y1,x2,y2)
   var ctx = testNode.getContext("2d")
   ctx.save()
   ctx.beginPath()
-  ctx.moveTo(150,100) // 起点 
+  ctx.moveTo(150,100) // 起点
   ctx.quadraticCurveTo(200, 100, 200, 200) // 中点 终点
 
   ctx.stroke();ctx.restore()
@@ -229,7 +229,7 @@ ctx.translate(500,300)  //将画布瞄点移到中心店 x,y
 ctx.beginPath()	//////////////////////////////
 ctx.arc(150, 150, 100, 0, ang(360))	 // 绘制一个圆
 ctx.stroke();ctx.restore() 	//////////////////////////////
-</script>		
+</script>
 ~~~
 
 ## 画布旋转(rotate)
@@ -249,7 +249,7 @@ ctx.rotate(ang(40))	// 旋转矩形90度
 ctx.beginPath()	//////////////////////////////
 ctx.arc(150, 150, 100, 0, ang(360))	 // 绘制一个圆
 ctx.stroke();ctx.restore() 	//////////////////////////////
-</script>		
+</script>
 ~~~
 
 ## 控制尺寸(scale)
@@ -267,7 +267,7 @@ ctx.scale(2, 2)	// 放大200%
 ctx.beginPath()	//////////////////////////////
 ctx.arc(150, 150, 100, 0, ang(360))	 // 绘制一个圆
 ctx.stroke();ctx.restore() 	//////////////////////////////
-</script>	
+</script>
 ~~~
 
 ### 图片绘制(drawImage)
@@ -299,15 +299,15 @@ img.onload = function(){ // 该图片加载完成的回调
 
 ctx.createPattern(image,repetition)
 
-- `image` 图形源		
+- `image` 图形源
 - `repetition` 重复铺垫规则(repeat,repeat-x,repeat-y,no-repeat)
 
 ~~~html
 <canvas class="test" width="1000" height="600"></canvas>
 <script>
 var img = new Image()
-img.src = "tg.png"	 
-img.onload = function(){ 
+img.src = "tg.png"
+img.onload = function(){
     ctx.fillStyle = ctx.createPattern(img,"no-repeat");
 	ctx.fillRect(0,0,600,600)
 }
@@ -330,9 +330,9 @@ gradient.addColorStop(position,color)
 
 ~~~js
 var gradient = ctx.createLinearGradient(0, 150, 300, 150)
-gradient.addColorStop(0, 'red') 		// 第一个
-gradient.addColorStop(0.5, 'yellow') 	// 第二个
-gradient.addColorStop(1, 'green')		// 第三个
+gradient.addColorStop(0, 'red') // 第一个
+gradient.addColorStop(0.5, 'yellow') // 第二个
+gradient.addColorStop(1, 'green') // 第三个
 ctx.fillStyle = gradient
 ctx.fillRect(0, 0, 300, 300)
 ~~~
@@ -349,7 +349,7 @@ createRadialGradient(x1,y1,r1,x2,y2,r2)
 ~~~js
 ctx.translate(500, 300)
 const gradient = ctx.createRadialGradient(0, 0, 100, 0, 0, 300)
-gradient.addColorStop(0, 'red') 		// 第一个
+gradient.addColorStop(0, 'red') // 第一个
 gradient.addColorStop(0.5, 'yellow') // 第二个
 gradient.addColorStop(0.8, 'pink') // 第二个
 gradient.addColorStop(1, 'green')	// 第三个
@@ -362,9 +362,9 @@ ctx.fillRect(-500, -300, 1000, 600)
 ~~~js
 var ctx = testNode.getContext('2d')
 ctx.fillStyle = 'darkgreen' // 字体的颜色
-ctx.font = 'bold 100px sans-serif' 	// 字体样式
-ctx.textBaseline = 'middle'		// 字体上下对其的方式
-ctx.textAlign = 'center'			// 字体左右对其的方式
+ctx.font = 'bold 100px sans-serif' // 字体样式
+ctx.textBaseline = 'middle' // 字体上下对其的方式
+ctx.textAlign = 'center' // 字体左右对其的方式
 ctx.fillText('李国超', 500, 300) // 绘制字体
 console.log(ctx.measureText('李国超'))// 字体的信息
 ~~~
@@ -424,7 +424,6 @@ function setPxInfo(imgData, x, y, color) {
   var w = imgData.width
   for (let i = 0; i < 4; i++)
     data[(y * w + x) * 4 + i] = color[i]
-
 }
 ~~~
 

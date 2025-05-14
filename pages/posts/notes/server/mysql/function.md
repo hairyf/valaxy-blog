@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - MySQL
-tags: 
+tags:
   - MySQL
 ---
 
@@ -146,4 +146,3 @@ SELECT max(<字段名称>) FROM <表名称>;
 ## count() -> 字段个数
 SELECT count(<字段名称>) FROM <表名称>;
 ~~~
-

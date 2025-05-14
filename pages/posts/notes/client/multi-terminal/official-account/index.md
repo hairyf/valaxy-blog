@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Official Account
-tags: 
+tags:
   - Official Account
 ---
 
@@ -111,7 +111,6 @@ ngrok http 3000
 - 将三个参数字符串拼接成一个字符串进行 `sha1` 加密。
 - 开发者获得加密后的字符串 与微信加密签名（signature）对比， 标识该请求来源于微信。
 
-
 ~~~js
 // 引入 express 模块
 const express = require('express')
@@ -139,7 +138,6 @@ app.use((req, res, next) => {
 
   else
     res.send('error')
-
 })
 // 监听端口号
 app.listen(3000, () => console.log('服务器启动成功'))
@@ -223,8 +221,6 @@ app.use(auth())
 // 开启监听端口号
 app.listen(3000, () => console.log('start_server:http://localhost:3000/'))
 ~~~
-
-
 
 ## 路由中间件
 

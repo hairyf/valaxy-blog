@@ -42,4 +42,3 @@ globalShortcut.register('CommandOrControl+Y', () => {
   globalShortcut.unregister('CommandOrControl+Y')
 })
 ```
-

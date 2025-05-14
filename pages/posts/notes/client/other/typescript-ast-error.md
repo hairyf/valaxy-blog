@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Other
-tags: 
+tags:
   - Typescript
 ---
 
@@ -35,42 +35,42 @@ TypeError: Invalid arguments
 而 `factory.createInterfaceDeclaration` 也在其中，在 `typescript.js` 173993 行开始：
 
 ```js
-factory.createInterfaceDeclaration = ts.buildOverload("createInterfaceDeclaration")
-    .overload({
-    0: function (modifiers, name, typeParameters, heritageClauses, members) {
-        return createInterfaceDeclaration(modifiers, name, typeParameters, heritageClauses, members);
+factory.createInterfaceDeclaration = ts.buildOverload('createInterfaceDeclaration')
+  .overload({
+    0(modifiers, name, typeParameters, heritageClauses, members) {
+      return createInterfaceDeclaration(modifiers, name, typeParameters, heritageClauses, members)
     },
-    1: function (_decorators, modifiers, name, typeParameters, heritageClauses, members) {
-        return createInterfaceDeclaration(modifiers, name, typeParameters, heritageClauses, members);
+    1(_decorators, modifiers, name, typeParameters, heritageClauses, members) {
+      return createInterfaceDeclaration(modifiers, name, typeParameters, heritageClauses, members)
     },
-})
-    .bind({
+  })
+  .bind({
     // 对应目前版本的验证
-    0: function (_a) {
-        var modifiers = _a[0], name = _a[1], typeParameters = _a[2], heritageClauses = _a[3], members = _a[4], other = _a[5];
-        return (other === undefined) &&
-            (modifiers === undefined || ts.every(modifiers, ts.isModifier)) &&
-            (name === undefined || !ts.isArray(name)) &&
-            (typeParameters === undefined || ts.isArray(typeParameters)) &&
-            (heritageClauses === undefined || ts.every(heritageClauses, ts.isHeritageClause)) &&
-            (members === undefined || ts.every(members, ts.isTypeElement));
+    0(_a) {
+      var modifiers = _a[0]; var name = _a[1]; var typeParameters = _a[2]; var heritageClauses = _a[3]; var members = _a[4]; var other = _a[5]
+      return (other === undefined)
+        && (modifiers === undefined || ts.every(modifiers, ts.isModifier))
+        && (name === undefined || !ts.isArray(name))
+        && (typeParameters === undefined || ts.isArray(typeParameters))
+        && (heritageClauses === undefined || ts.every(heritageClauses, ts.isHeritageClause))
+        && (members === undefined || ts.every(members, ts.isTypeElement))
     },
     // 对应旧版本的验证
-    1: function (_a) {
-        var decorators = _a[0], modifiers = _a[1], name = _a[2], typeParameters = _a[3], heritageClauses = _a[4], members = _a[5];
-        return (decorators === undefined || ts.every(decorators, ts.isDecorator)) &&
-            (modifiers === undefined || ts.isArray(modifiers)) &&
-            (name === undefined || !ts.isArray(name)) &&
-            (typeParameters === undefined || ts.every(typeParameters, ts.isTypeParameterDeclaration)) &&
-            (heritageClauses === undefined || ts.every(heritageClauses, ts.isHeritageClause)) &&
-            (members === undefined || ts.every(members, ts.isTypeElement));
+    1(_a) {
+      var decorators = _a[0]; var modifiers = _a[1]; var name = _a[2]; var typeParameters = _a[3]; var heritageClauses = _a[4]; var members = _a[5]
+      return (decorators === undefined || ts.every(decorators, ts.isDecorator))
+        && (modifiers === undefined || ts.isArray(modifiers))
+        && (name === undefined || !ts.isArray(name))
+        && (typeParameters === undefined || ts.every(typeParameters, ts.isTypeParameterDeclaration))
+        && (heritageClauses === undefined || ts.every(heritageClauses, ts.isHeritageClause))
+        && (members === undefined || ts.every(members, ts.isTypeElement))
     },
-})
+  })
   // 对应旧版本验证注入废弃信息
   .deprecate({
     1: DISALLOW_DECORATORS
   })
-  .finish();
+  .finish()
 ```
 
 可以看到 `createInterfaceDeclaration` 现在由 `ts.buildOverload` 构建，`buildOverload` 构建后，API 具有强验证类型，如果传入参数不正确，就会抛出错误。
@@ -79,55 +79,54 @@ factory.createInterfaceDeclaration = ts.buildOverload("createInterfaceDeclaratio
 
 ```ts
 export function createOverload<T extends OverloadDefinitions>(name: string, overloads: T, binder: OverloadBinders<T>, deprecations?: OverloadDeprecations<T>) {
-    Object.defineProperty(call, "name", { ...Object.getOwnPropertyDescriptor(call, "name"), value: name });
+  Object.defineProperty(call, 'name', { ...Object.getOwnPropertyDescriptor(call, 'name'), value: name })
 
-    if (deprecations) {
-        for (const key of Object.keys(deprecations)) {
-            const index = +key as (keyof T & number);
-            if (!isNaN(index) && hasProperty(overloads, `${index}`)) {
-                overloads[index] = deprecate(overloads[index], { ...deprecations[index], name });
-            }
-        }
+  if (deprecations) {
+    for (const key of Object.keys(deprecations)) {
+      const index = +key as (keyof T & number)
+      if (!isNaN(index) && hasProperty(overloads, `${index}`)) {
+        overloads[index] = deprecate(overloads[index], { ...deprecations[index], name })
+      }
     }
+  }
 
-    // 这里的 binder 可以看做是验证器
-    const bind = createBinder(overloads, binder);
-    return call as OverloadFunction<T>;
+  // 这里的 binder 可以看做是验证器
+  const bind = createBinder(overloads, binder)
+  return call as OverloadFunction<T>
 
-    function call(...args: OverloadParameters<T>) {
-        const index = bind(args);
-        const fn = index !== undefined ? overloads[index] : undefined;
-        if (typeof fn === "function") {
-            return fn(...args);
-        }
-        // 没有通过验证抛出异常 Invalid arguments
-        throw new TypeError("Invalid arguments");
+  function call(...args: OverloadParameters<T>) {
+    const index = bind(args)
+    const fn = index !== undefined ? overloads[index] : undefined
+    if (typeof fn === 'function') {
+      return fn(...args)
     }
+    // 没有通过验证抛出异常 Invalid arguments
+    throw new TypeError('Invalid arguments')
+  }
 }
 function createBinder<T extends OverloadDefinitions>(overloads: T, binder: OverloadBinders<T>): OverloadBinder<T> {
-    return args => {
-        for (let i = 0; hasProperty(overloads, `${i}`) && hasProperty(binder, `${i}`); i++) {
-            const fn = binder[i];
-            // 判断是否通过验证
-            if (fn(args)) {
-                return i as OverloadKeys<T>;
-            }
-        }
-    };
+  return (args) => {
+    for (let i = 0; hasProperty(overloads, `${i}`) && hasProperty(binder, `${i}`); i++) {
+      const fn = binder[i]
+      // 判断是否通过验证
+      if (fn(args)) {
+        return i as OverloadKeys<T>
+      }
+    }
+  }
 }
 export function buildOverload(name: string): OverloadBuilder {
-    return {
-        overload: overloads => ({
-            bind: binder => ({
-                finish: () => createOverload(name, overloads, binder),
-                deprecate: deprecations => ({
-                    finish: () => createOverload(name, overloads, binder, deprecations)
-                })
-            })
+  return {
+    overload: overloads => ({
+      bind: binder => ({
+        finish: () => createOverload(name, overloads, binder),
+        deprecate: deprecations => ({
+          finish: () => createOverload(name, overloads, binder, deprecations)
         })
-    };
+      })
+    })
+  }
 }
-
 ```
 
 ## 问题原因
@@ -183,7 +182,7 @@ members === undefined || ts.every(members, ts.isTypeElement)
 
 ```ts
 const isTypeElement = ts.isTypeElement
-ts.isTypeElement = function(node): node is ts.TypeElement {
-  return isTypeElement(node) || ts.isJSDoc(node) || ts.isIdentifier(node) 
+ts.isTypeElement = function (node): node is ts.TypeElement {
+  return isTypeElement(node) || ts.isJSDoc(node) || ts.isIdentifier(node)
 }
 ```

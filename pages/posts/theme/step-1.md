@@ -32,9 +32,7 @@ export default defineConfig<ThemeConfig>({
 }
 ```
 
-
 ## 文章配置
-
 
 ```json
 {
@@ -116,7 +114,6 @@ export default defineConfig<ThemeConfig>({
     }),
   ]
 })
-
 ```
 
 您可以查看 Meting 更多的 [API 文档](https://github.com/metowolf/MetingJS#option)，global 开启全局播放器。

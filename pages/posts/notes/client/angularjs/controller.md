@@ -86,7 +86,7 @@ console.log(newArr2)
   	<input type="text" ng-model="empName">
   	<p>员工名:{{empName}}</p> <!--Tom-->
 	</div>
-  
+
 	<div ng-controller="MyCtrl1"> <!--Jack-->
   	<input type="text" ng-model="empName">
   	<p>员工:{{empName}}</p>

@@ -5,7 +5,7 @@ categories:
   - Client
   - webpack
 date: 2019-10-09 14:00:00
-tags: 
+tags:
   - webpack
 ---
 
@@ -46,29 +46,28 @@ webpack 是一种前端资源构建工具，一个静态模块打包器(module b
 
 ~~~javascript
 // 引入资源
-import data from './data.json';
-console.log(data);
-function add(x, y) { return x + y; }
-console.log(add(1, 2));
+import data from './data.json'
+console.log(data)
+function add(x, y) { return x + y }
+console.log(add(1, 2))
 ~~~
 
 配置 `config` 接口文件(webpack.config.js)
 
 ~~~javascript
-const { resolve } = require('path'); // node 内置核心模块，用来处理路径问题。
+const { resolve } = require('node:path') // node 内置核心模块，用来处理路径问题。
 module.exports = {
-  	// 接口文件
-	entry: './src/js/index.js', 					
-	// 输出配置
-	output: { 
-		filename: './built.js', 			// 输出文件名
-		path: resolve(__dirname, 'build/js') // 输出文件路径配置(绝对路径)
-	},
-	mode: 'development' //开发环境
-};
+  // 接口文件
+  entry: './src/js/index.js',
+  // 输出配置
+  output: {
+    filename: './built.js', // 输出文件名
+    path: resolve(__dirname, 'build/js') // 输出文件路径配置(绝对路径)
+  },
+  mode: 'development' // 开发环境
+}
 ~~~
 
 **运行指令**： `webpack`
 
 > 注意，此时功能只能编译打包 `js` 和 `json`
-

@@ -1,6 +1,6 @@
 ---
 title: BitcoinJS - 比特币全服务钱包开发
-categories: 
+categories:
   - Notes
   - BlockChain
   - Bitcoin
@@ -85,7 +85,7 @@ axios.defaults.baseURL = 'https://blockstream.info/testnet/api'
  * 获取该地址的 utxo
  * @param address
  */
-export const getUtxos = async (address: string) => {
+export async function getUtxos(address: string) {
   const response = await axios({
     url: `/address/${address}/utxo`
   })
@@ -104,7 +104,7 @@ export const getUtxos = async (address: string) => {
  * 获取交易 hex
  * @param txid
  */
-export const getTransaction = async (txid: string) => {
+export async function getTransaction(txid: string) {
   const { data: rowTx } = await axios({
     url: `/tx/${txid}/hex`
   })
@@ -115,7 +115,7 @@ export const getTransaction = async (txid: string) => {
  * 将交易进行广播
  * @param hex
  */
-export const postBroadcast = async (hex: string) => {
+export async function postBroadcast(hex: string) {
   const { data } = await axios({
     url: '/tx',
     method: 'POST',
@@ -128,7 +128,7 @@ export const postBroadcast = async (hex: string) => {
  * @param address
  * @returns
  */
-export const getBalance = async (address: string) => {
+export async function getBalance(address: string) {
   const { data } = await axios({ url: `/address/${address}` })
   return data.chain_stats.funded_txo_sum as string
 }
@@ -147,7 +147,6 @@ Coin Select 发生在用户想要花费比特币时，因此 Coin Select 的第�
 ```ts
 import coinselect from 'coinselect'
 function calculateUtxo(utxo: any[], targets: any[], feeRate = 55) {
-  // eslint-disable-next-line prefer-const
   let { inputs, outputs, fee } = coinselect(utxos, targets, feeRate)
   if (!inputs || !outputs) {
     console.log('Coinselect 未没有找到解决方案')

@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Other
-tags: 
+tags:
   - VSCode
 ---
 
@@ -47,9 +47,9 @@ yo code
      |  ~  |
    __'.___.'__
  ´   `  |° ´ Y `
- 
+
  #↓↓↓↓↓↓↓↓↓#
- 
+
  ? What type of extension do you want to create? ## 使用哪种扩展语言
   New Extension (TypeScript)
   New Extension (JavaScript)
@@ -59,9 +59,9 @@ yo code
 > New Keymap
   New Extension Pack
   New Language Pack (Localization)
-  
+
 #↓↓↓↓↓↓↓↓↓#
-  
+
 ? What's the name of your extension? ' ## 您的扩展名是什么(插件名)
 
 #↓↓↓↓↓↓↓↓↓#
@@ -113,7 +113,6 @@ import * as vscode from 'vscode'
 // 激活您的扩展程序时将调用此方法
 // 您的扩展程序在第一次执行命令时被激活
 export function activate(context: vscode.ExtensionContext) {
-
   // 使用控制台输出诊断信息（console.log）和错误（console.error）
   // 这行代码只会在您的扩展程序激活后执行一次
   console.log('恭喜，您的扩展“ create-mpvue-view”现已激活！')
@@ -398,7 +397,8 @@ vscode.window.showInputBox(
     placeHolder: '你到底想输入什么？', // 在输入框内的提示信息
     prompt: '赶紧输入，不输入就赶紧滚', // 在输入框下方的提示信息
     validateInput(text) { return text } // 对输入内容进行验证并返回
-  }).then((msg) => {
+  }
+).then((msg) => {
   console.log(`用户输入：${msg}`)
 })
 ~~~
@@ -413,7 +413,8 @@ vscode.window.showOpenDialog(
     canSelectMany: true, // 是否可以选择多个
     defaultUri: vscode.Uri.file('/D:/'), // 默认打开本地路径
     openLabel: '按钮文字说明'
-  }).then((msg) => {
+  }
+).then((msg) => {
   console.log(msg.path)
 })
 ~~~
@@ -434,7 +435,8 @@ vscode.window.showQuickPick(
     matchOnDescription: true,
     matchOnDetail: true,
     placeHolder: '温馨提示，请选择你是哪种类型？'
-  })
+  }
+)
   .then((msg) => {
     console.log(msg)
   })
@@ -453,4 +455,3 @@ vsce package
 
 1. 进入 https://app.vssps.visualstudio.com/
 2. 找到你的扩展，然后将 vsix 上传发布
-

@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - TypeScript
-tags: 
+tags:
   - TypeScript
 ---
 
@@ -43,18 +43,19 @@ enum GunType_2 {
 
 ~~~typescript
 enum Gender {
-    Boy, // 男孩 --> 1
-    Girl, // 女孩 --> 2
-    Unknow // 未知 --> 3
+  Boy, // 男孩 --> 1
+  Girl, // 女孩 --> 2
+  Unknow // 未知 --> 3
 }
 // 创建用户性别变量
 // let usrSex: Gender = Gender.Boy
-let usrSex = Gender.Boy
+const usrSex = Gender.Boy
 // 判断变量中的性别是否为 Boy
-if(usrSex == Gender.Boy){
-    console.log(usrSex) // 1
-}else {
-    console.log(usrSex) // 2 or 3
+if (usrSex == Gender.Boy) {
+  console.log(usrSex) // 1
+}
+else {
+  console.log(usrSex) // 2 or 3
 }
 ~~~
 
@@ -107,5 +108,5 @@ const y: string = test_2()
 Record 用于定义对象中key值与val值的类型，使用泛型定义，由 `,` 区别key与val的关系
 
 ~~~typescript
-const obj:Record<string , number> = {dwd: 60};
+const obj: Record<string, number> = { dwd: 60 }
 ~~~

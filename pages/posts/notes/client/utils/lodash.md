@@ -65,7 +65,7 @@ Lodash 通过降低 array、number、objects、string 等等的使用难度从�
 
 - [futil-js](https://github.com/smartprocure/futil-js) 是一套用来补足 lodash 的实用工具集。
 
-## 数组类方法 
+## 数组类方法
 
 ### 数组分割（chunk）
 
@@ -492,7 +492,7 @@ _.forEach(saves, (type) => {
 创建一个调用`func`的函数。调用`func`时最多接受 `n`个参数，忽略多出的参数。
 
 ~~~js
-_.map(['6', '8', '10'], _.ary(parseInt, 1))
+_.map(['6', '8', '10'], _.ary(Number.parseInt, 1))
 // => [6, 8, 10]
 ~~~
 
@@ -761,7 +761,7 @@ _.isInteger(3)
 **注意:** 这个方法基于[`Number.isNaN`](https://mdn.io/Number/isNaN)，和全局的[`isNaN`](https://mdn.io/isNaN) 不同之处在于，全局的[`isNaN`](https://mdn.io/isNaN)对 于 `undefined` 和其他非数字的值返回 `true`。
 
 ~~~js
-_.isNaN(NaN)
+_.isNaN(Number.NaN)
 // => true
 ~~~
 
@@ -1198,7 +1198,7 @@ compiled({ user: 'pebbles' })
 // => 'hello pebbles!'
 
 // 使用自定义的模板分隔符
-_.templateSettings.interpolate = /{{([\s\S]+?)}}/g
+_.templateSettings.interpolate = /\{\{([\s\S]+?)\}\}/g
 compiled = _.template('hello {{ user }}!')
 compiled({ user: 'mustache' })
 // => 'hello mustache!'
@@ -1274,4 +1274,3 @@ _.words('fred, barney, & pebbles')
 _.words('fred, barney, & pebbles', /[^, ]+/g)
 // => ['fred', 'barney', '&', 'pebbles']
 ~~~
-

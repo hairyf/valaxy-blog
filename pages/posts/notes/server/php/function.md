@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - PHP
-tags: 
+tags:
   - PHP
 ---
 
@@ -146,4 +146,3 @@ echo $one,'--',$two; // 1--2
 // array_values($arr) -> 获取一个元素的所有值, 组成返回一个值数组
 
 ~~~
-

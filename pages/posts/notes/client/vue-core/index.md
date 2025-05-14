@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - vueCore
-tags: 
+tags:
   - vue
   - core
 date: 2021-07-24 16:00:00

@@ -5,10 +5,9 @@ categories:
   - Notes
   - Client
   - mpvue
-tags: 
+tags:
   - Mini Program
 ---
-
 
 mpVue (Vue in Mini Program) 美团工程师推出的基于 Vue.js 封装的用于开发小程序的框架，融合了原生小程序和 Vue.js 的特点，可完全组件化开发。
 

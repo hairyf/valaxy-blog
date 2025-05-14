@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - vue
-tags: 
+tags:
   - vue
 date: 2020-03-06 15:00:00
 ---

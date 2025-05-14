@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - webpack
-tags: 
+tags:
   - webpack
 date: 2019-10-10 15:00:00
 ---
@@ -16,7 +16,7 @@ npm i mini-css-extract-plugin -D
 ```
 
 ~~~js
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // 引入CSS提取文件插件
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -83,7 +83,7 @@ postcss-preset-env 可以帮 `postcss` 找到`package.json`中`browserslist`里�
 配置 `config` 接口文件(webpack.config.js)
 
 ~~~js
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -145,22 +145,19 @@ npm i eslint eslint-loader eslint-config-airbnb-base  eslint-plugin-import -D
 ```
 
 ~~~javascript
-const { resolve } = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { resolve } = require('node:path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   entry: './src/js/index.js',
-  output: {filename: 'js/built.js',path: resolve(__dirname, 'build')},
+  output: { filename: 'js/built.js', path: resolve(__dirname, 'build') },
   mode: 'development',
-  module: {rules: [
-      {	test: /\.js$/,
-        exclude: /node_modules/,
-       	enforce: 'pre', // 优先处理
-        loader: 'eslint-loader',
-        options: {fix: true}// 自动修复eslint的错误
-      }
-  ]},
-  plugins: [ new HtmlWebpackPlugin({template: './src/index.html'})]
-};
+  module: { rules: [
+    {	test: /\.js$/, exclude: /node_modules/, enforce: 'pre', // 优先处理
+      loader: 'eslint-loader', options: { fix: true }// 自动修复eslint的错误
+    }
+  ] },
+  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })]
+}
 ~~~
 
 设置 eslint 编码风格(package.json)
@@ -197,7 +194,7 @@ npm i babel-loader @babel/preset-env @babel/core -D
 配置 `config` 接口文件(webpack.config.js)
 
 ~~~js
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   entry: './src/js/index.js',
@@ -282,7 +279,7 @@ devDependencies
 
 ~~~js
 // 绝对路径拼接相对路径方法
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 // 引入webpack打包HTML文件插件
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // 引入webpack提取CSS为文件的插件
@@ -377,4 +374,3 @@ module.exports = {
   ]
 }
 ~~~
-

@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - TypeScript
-tags: 
+tags:
   - TypeScript
 ---
 
@@ -94,15 +94,16 @@ const obj: UserObj = { key: 'value', name: 123 } // 报错
 ~~~typescript
 // 类类型接口, 与抽象类类似, 但抽象类不可以规范属性, 类接口可以
 interface Animal_ {
-    myName: string;
-    eat(str:number): any;
+  myName: string
+  eat: (str: number) => any
 }
 class Dow implements Animal_ {
-    myName:string
-    constructor(myName:string) {
-        this.myName = myName
-    }
-    eat(str:number) { }
+  myName: string
+  constructor(myName: string) {
+    this.myName = myName
+  }
+
+  eat(str: number) { }
 }
 ~~~
 
@@ -110,10 +111,10 @@ class Dow implements Animal_ {
 
 ~~~ts
 interface Animal_gf {
-  eat(): void
+  eat: () => void
 }
 interface Person extends Animal_gf {
-  work(): void
+  work: () => void
 }
 class Web implements Person {
   eat() {}

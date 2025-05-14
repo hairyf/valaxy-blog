@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Other
-tags: 
+tags:
   - Flutter
 ---
 
@@ -37,7 +37,6 @@ Flutter 编写的应用是可以达到 120fps(每秒传输帧数)，这也就是
 - **JAVA环境**：https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 ## 环境配置
-
 
 ~~~makefile
 ## 安装JAVA环境
@@ -107,7 +106,6 @@ flutter doctor --android-licenses
 ![](https://pic.imgdb.cn/item/62fb0b8d16f2c2beb17876cd.jpg)
 
 ![](https://pic.imgdb.cn/item/62fb0baf16f2c2beb178b823.jpg)
-
 
 ## 构建问题解决
 

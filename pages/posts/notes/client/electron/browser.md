@@ -31,7 +31,6 @@ BrowserWindow 的一些主要特性和功能：
 
 - Web 内容集成：BrowserWindow 支持与 Web 内容的集成，可以使用 JavaScript、HTML 和 CSS 来构建丰富的用户界面和互动体验。
 
-
 ## 加载窗口内容(win.loadURL/win.loadFile)
 
 ```ts
@@ -48,8 +47,6 @@ win.loadFile('index.html')
 ```
 
 > 注意: `win.loadURL(url[, options])` 和 `loadFile` 互斥
-
-
 
 ## 优化显示窗口
 

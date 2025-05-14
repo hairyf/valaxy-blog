@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Bundler
-tags: 
+tags:
   - Gulp
 ---
 
@@ -71,12 +71,12 @@ npm install gulp-concat gulp-uglify gulp-rename --save-dev
 
 ~~~javascript
 function javascript() {
-	return gulp.src('src/js/*.js') 			  // 操作的源目录文件
-        .pipe(concat('built.js')) 			// 合并到临时文件     
-        .pipe(gulp.dest('dist/js')) 		// 将临时文件拷贝到指定文件
-        .pipe(rename({suffix: '.min'})) // 将临时文件重命名 rename方法suffix配置是添加后缀名
-        .pipe(uglify())    						  // 临时文件进行压缩
-        .pipe(gulp.dest('dist/js'));	  // 将临时文件拷贝到指定文件
+  return gulp.src('src/js/*.js') // 操作的源目录文件
+    .pipe(concat('built.js')) // 合并到临时文件
+    .pipe(gulp.dest('dist/js')) // 将临时文件拷贝到指定文件
+    .pipe(rename({ suffix: '.min' })) // 将临时文件重命名 rename方法suffix配置是添加后缀名
+    .pipe(uglify()) // 临时文件进行压缩
+    .pipe(gulp.dest('dist/js')) // 将临时文件拷贝到指定文件
 }
 // 执行 minifyjs 任务流程 default 为默认任务
 exports.default = javascript
@@ -92,20 +92,20 @@ npm install gulp-less gulp-clean-css --save-dev
 
 ~~~javascript
 // gulp-less 不支持新版语法，需要用 task 定义规则
-gulp.task('less',function () {
-	return gulp.src('src/less/*.less') 
-		.pipe(less())	                // 编译
-		.pipe(gulp.dest('src/css'))   // 输出
+gulp.task('less', () => {
+  return gulp.src('src/less/*.less')
+    .pipe(less()) // 编译
+    .pipe(gulp.dest('src/css')) // 输出
 })
 var less = gulp.task('less')
 // css合并,压缩任务
 function css() {
-	return gulp.src('src/css/*.css') 
-		.pipe(concat('built.css'))						  // 合并到临时文件
-		.pipe(gulp.dest('dist/css'))					  // 将临时文件拷贝到指定文件
-		.pipe(rename({suffix: '.min'}))				  // 将临时文件重命名 rename方法suffix配置是添加后缀名
-		.pipe(cleanCss({compatibility:'ie8'}))  // 临时文件压缩css并兼容ie8
-		.pipe(gulp.dest('dist/css'))					  // 将临时文件拷贝到指定文件
+  return gulp.src('src/css/*.css')
+    .pipe(concat('built.css')) // 合并到临时文件
+    .pipe(gulp.dest('dist/css')) // 将临时文件拷贝到指定文件
+    .pipe(rename({ suffix: '.min' })) // 将临时文件重命名 rename方法suffix配置是添加后缀名
+    .pipe(cleanCss({ compatibility: 'ie8' })) // 临时文件压缩css并兼容ie8
+    .pipe(gulp.dest('dist/css')) // 将临时文件拷贝到指定文件
 }
 // 任务合并为lessCss
 exports.lessCss = gulp.series(less, css)
@@ -117,7 +117,7 @@ exports.lessCss = gulp.series(less, css)
 npm i gulp-connect open --save-dev
 ```
 
-1. 注册热加载的任务 server，注意依赖 build 任务 
+1. 注册热加载的任务 server，注意依赖 build 任务
 2. 注册热加载的任务
 
 ```js

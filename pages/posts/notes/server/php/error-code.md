@@ -5,12 +5,11 @@ categories:
   - Notes
   - Server
   - PHP
-tags: 
+tags:
   - PHP
 ---
 
 php 中所有看到的错误代码在 php 中都被定义成了系统常量（可以直接使用）
-
 
 ## 系统错误
 
@@ -75,7 +74,7 @@ php系统提供了一种用户处理错误的机制；用户自定义错误处�
 // 对应参数为错误处理回调, 第二个是错误的级别
 set_error_handler(callback $error_handler, [, E_ALL | E_STRICT]);
 handler(
-  int $errno, // 
+  int $errno, //
   string $errstr,
   [, string $errfile],
   [, int $errline],

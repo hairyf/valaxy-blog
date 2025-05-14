@@ -40,7 +40,7 @@ waline: true
 
 ## 猫咪
 
-家里的毛孩子，以及... 毛毯
+家里的毛孩子，以及毛毯
 
 <hairy-image-group row="140px">
   <hairy-image fit="cover" src="https://pic.imgdb.cn/item/63042f0e16f2c2beb15b14dd.jpg" />

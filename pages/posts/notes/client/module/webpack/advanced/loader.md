@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - webpack
-tags: 
+tags:
   - webpack
 date: 2019-11-10 14:00:00
 ---
@@ -120,7 +120,7 @@ module.exports = {
 
 ~~~js
 // loaders/babel-loader.js
-const { promisify } = require('util')
+const { promisify } = require('node:util')
 const { getOptions } = require('loader-utils')
 const { validate } = require('schema-utils')
 const babel = require('@babel/core')

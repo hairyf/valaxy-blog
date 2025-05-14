@@ -54,15 +54,14 @@ axios.all(promises): 用于批量执行多个异步请求
 axios.spread(): 用来指定接收所有成功数据的回调函数的方法
 ~~~
 
-
 axios 函数可传入配置：
 
 ~~~javascript
 axios({
-  url: '',			// 请求地址
+  url: '', // 请求地址
   method: 'GET',	// 请求方式 GET/POST/PUT/DELETE
-  data: {}, 		// 定义请求体 用来进行REST API CRUD操作
-  params: {},		// 定义链接请求头 用于获取数据操作
+  data: {}, // 定义请求体 用来进行REST API CRUD操作
+  params: {}, // 定义链接请求头 用于获取数据操作
   timeout: 1000,	// 定义请求超时时间，如果超过，则终止请求
   auth: { username: '', password: '' },	// 定义HTTP 基础验证，并提供凭据
   responseType: 'json',	// 定义响应数据类型

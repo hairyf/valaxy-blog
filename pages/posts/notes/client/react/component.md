@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - react
-tags: 
+tags:
   - react
 ---
 
@@ -25,7 +25,7 @@ React 中，组件定义有两种方式，一种利用 Function 定义的无状�
 Function 组件：
 
 ~~~jsx
-function MyComponent () {
+function MyComponent() {
   return <div>工厂函数组件(简单组件)</div>
 }
 ~~~
@@ -33,17 +33,17 @@ function MyComponent () {
 Class 类组件：
 
 ```jsx
-class MyComponent2 extends React.Component  {
-   render () {
-     return <div>ES6类组件(复杂组件)</div>
-   }
+class MyComponent2 extends React.Component {
+  render() {
+    return <div>ES6类组件(复杂组件)</div>
+  }
 }
 ```
 
 组件跟一个标签的使用方式相同，可以在组件中使用组件。如果要渲染组件，只要跟标签一样使用 `ReactDOM.render`。
 
 ~~~jsx
-ReactDOM.render(<MyComponent />, document.querySelector('#example'));
+ReactDOM.render(<MyComponent />, document.querySelector('#example'))
 ~~~
 
 实际上工作中组件编写的流程，一般可以细分为：
@@ -78,7 +78,6 @@ setState 则被用于修改组件状态的方法，调用 setState 会使组件�
 this.setState({ count: this.count++ })
 ```
 
-
 ## 组件参数(props)
 
 用于外部接收参数的容器，通常在渲染组件时定义在标签中，Class 组件内部拿取参数就在组件的 this.props 中，如果是 Function 组件，则在函数参数中。
@@ -95,10 +94,9 @@ function Person(props) {
 Class 类组件：
 
 ~~~jsx
-
 // 类组件接收参数
 class Person extends React.Component {
- render() {return <p>{this.props.name}</p>}
+  render() { return <p>{this.props.name}</p> }
 }
 ~~~
 
@@ -110,12 +108,13 @@ class Person extends React.Component {
 
 ~~~jsx
 class Person extends React.Component {
- render() {
-  return <p refs="content">{ props.name }</p>
- }
- show() {
-  console.log(this.refs.content)
- }
+  render() {
+    return <p refs="content">{ props.name }</p>
+  }
+
+  show() {
+    console.log(this.refs.content)
+  }
 }
 ~~~
 
@@ -123,12 +122,13 @@ class Person extends React.Component {
 
 ~~~jsx
 class Person extends React.Component {
- render() {
-  return <p refs={p =>this.p = p}>{ props.name }</p>
- }
- show() {
-  console.log(this.p)
- }
+  render() {
+    return <p refs={p => this.p = p}>{ props.name }</p>
+  }
+
+  show() {
+    console.log(this.p)
+  }
 }
 ~~~
 
@@ -173,7 +173,7 @@ setState((state) => {
 
 修改得到结果：
 ```jsx
-setState({count: 2}, (state) => {
+setState({ count: 2 }, (state) => {
   console.log(state)
 })
 ```
@@ -193,11 +193,13 @@ setState((state) => {
 // 1. 通过 React 的 lazy 函数配合 import() 函数动态加载路由组件 (路由组件代码会被分包)
 const Login = lazy(() => import('@/pages/Loading'))
 // 2. 通过异步组件 <Suspense> 指定在加载得到路由组件前, 显示自定义 loading 界面
-const Component = <>
-  <Suspense fallback={<h1>loading.....</h1>}>
+const Component = (
+  <>
+    <Suspense fallback={<h1>loading.....</h1>}>
       <Login />
-  </Suspense>
-</>
+    </Suspense>
+  </>
+)
 ~~~
 
 ## 渲染优化(PureComponent)
@@ -230,15 +232,15 @@ const Component = <>
 我们在一些定制化较强的组件，可以采用 props 中接受渲染组件，从而实现子组件渲染传入特定的插槽组件。
 
 ~~~jsx
-const A = (props) => {
-    const name = '12312321'
-    return <div>{props.render(name)}</div>
+function A(props) {
+  const name = '12312321'
+  return <div>{props.render(name)}</div>
 }
-const B = (props) => {
-    return <div>{props.name}</div>
+function B(props) {
+  return <div>{props.name}</div>
 }
-const Component = () => {
-    return <A render={(name) => {<B name={name} />}}></A>
+function Component() {
+  return <A render={(name) => { <B name={name} /> }}></A>
 }
 ~~~
 
@@ -286,9 +288,9 @@ npm run build
 组件的使用：
 
 ~~~jsx
-import { Button } from 'antd-mobile';
-import 'antd-mobile/dist/antd-mobile.css';
-ReactDOM.render(<Button />, mountNode);
+import { Button } from 'antd-mobile'
+import 'antd-mobile/dist/antd-mobile.css'
+ReactDOM.render(<Button />, mountNode)
 ~~~
 
 ## 按需引用样式
@@ -298,7 +300,6 @@ ReactDOM.render(<Button />, mountNode);
 ```sh
 npm i react-app-rewired babel-plugin-import customize-cra --save
 ```
-
 
 1. 修改 `package.json`
 

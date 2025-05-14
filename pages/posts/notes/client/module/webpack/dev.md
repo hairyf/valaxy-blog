@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - webpack
-tags: 
+tags:
   - webpack
 date: 2019-10-09 15:00:00
 ---
@@ -22,19 +22,19 @@ npm i css-loader style-loader less-loader less -D
 源文件：
 
 ~~~javascript
-import './index.css';
-import './index.less';
+import './index.css'
+import './index.less'
 ~~~
 
 配置 `config` 接口文件(webpack.config.js)
 
 ~~~js
 // resolve用来拼接绝对路径的方法
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 module.exports = {
-  entry: './src/index.js',		// 接口js
-  output: {},						 // 输出配置
-  mode: 'development',			 // 开发模式
+  entry: './src/index.js', // 接口js
+  output: {}, // 输出配置
+  mode: 'development', // 开发模式
   // module{rules}插件配置的集合
   module: {
     rules: [ // rules是loader配置
@@ -70,7 +70,7 @@ npm i html-webpack-plugin -D
 
 ~~~js
 // resolve用来拼接绝对路径的方法
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 // 引入webpack html打包插件
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
@@ -102,7 +102,7 @@ npm install html-loader url-loader file-loader --save-dev
 配置 `config` 接口文件(webpack.config.js)
 
 ~~~js
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 module.exports = {
   entry: './src/index.js',
   output: {/* ... */},
@@ -139,7 +139,7 @@ module.exports = {
 ## 其他资源(other)
 
 ~~~js
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 module.exports = {
   entry: './src/index.js',
   output: {/* ... */},
@@ -173,7 +173,7 @@ npm i webpack webpack-dev-server --save-dev
 配置 `config` 接口文件(webpack.config.js)
 
 ~~~js
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 module.exports = {
   entry: './src/index.js',
   output: {/* ... */},
@@ -218,7 +218,7 @@ devDependencies
 
 ~~~js
 // 内置核心模块, 用于拼接绝对路径与相对路径
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 // 打包html方法
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
@@ -266,5 +266,5 @@ module.exports = {
 }
 ~~~
 
-**打包输出到文件夹**：`webpack` 
-**内存编译运行项目**：`webpack-dev-server [--host 0.0.0.0]` 
+**打包输出到文件夹**：`webpack`
+**内存编译运行项目**：`webpack-dev-server [--host 0.0.0.0]`

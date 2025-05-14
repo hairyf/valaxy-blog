@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - vueCore
-tags: 
+tags:
   - vue
   - core
 date: 2021-07-25
@@ -119,7 +119,7 @@ mustache 不能用简单的正则表达式思路实现，当情况复杂时，�
 
 ![image-20220324153137996](./images/image-20220324153137996.png)
 
-mustache tokens 思想 
+mustache tokens 思想
 
 ![image-20220324154538255](./images/image-20220324154538255.png)
 

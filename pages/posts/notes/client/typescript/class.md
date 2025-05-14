@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - TypeScript
-tags: 
+tags:
   - TypeScript
 ---
 
@@ -116,4 +116,3 @@ class Rhino extends Animal {
   eat() { /* ... */ }
 }
 ~~~
-

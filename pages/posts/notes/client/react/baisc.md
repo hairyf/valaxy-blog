@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - react
-tags: 
+tags:
   - react
 ---
 
@@ -27,7 +27,7 @@ this.state = { pwd: '' }
 2. 绑定输入事件，触发时更改 pwd 更新
 
 ```jsx
-<input value={this.state.pwd} onChange={(event) => this.setState({ pwd: event.target.value })} />
+<input value={this.state.pwd} onChange={event => this.setState({ pwd: event.target.value })} />
 ```
 
 ## 生命周期（旧）

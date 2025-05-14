@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - vue
-tags: 
+tags:
   - vue
 date: 2020-03-06 16:00:00
 ---
@@ -273,8 +273,8 @@ data() {
 
 ~~~html
 <!--语法: v-for="(item , index) in Vue数组数据"-->
-<p v-for="(item,index) in persons" :key="index">		
-		{{index}}---{{item.name}}---{{item.age}}    
+<p v-for="(item,index) in persons" :key="index">
+		{{index}}---{{item.name}}---{{item.age}}
 <p>
 <script>
 var vm = new Vue({
@@ -569,7 +569,7 @@ Vue.prototype.$myMethod = function () { console.log('我tm是实例方法') }
     //添加的实例方法
 	mounted() {this.$myMethod()}
   })
-  
+
   // 添加的全局方法 可以在任何地方调用
   Vue.ZdyWenFun('全局方法阿nmd');
   // 添加的实例方法 只能在当前的vm实例中调用

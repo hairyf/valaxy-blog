@@ -5,14 +5,13 @@ categories:
   - Notes
   - Client
   - Promise
-tags: 
+tags:
   - Promise
 ---
 
 同步编程通常来说易于调试和维护，然而，异步编程通常能获得更好的性能和更大的灵活性。异步的最大特点是无需等待。 Promise 渐渐成为 JavaScript 里最重要的一部分，大量的新 API 都开始 Promise 原理实现。
 
 <!-- more -->
-
 
 - **抽象表达**：Promise 是 JS 中进行异步编程的新的解决方案。
 - **具体表达**：从语法上来说 Promise 是一个构造函数。
@@ -27,7 +26,6 @@ Promise 有三种状态（pending、resolved、rejected），他们之间会产�
 - pending 变为 rejected
 
 > 只有这 2 种, 且一个 promise 对象只能改变一次无论变为成功还是失败, 都会有一个结果数据成功的结果数据一般称为 value 失败的结果数据一般称为 reason。
-
 
 ## 基本使用
 

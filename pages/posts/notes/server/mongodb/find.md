@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - MongoDB
-tags: 
+tags:
   - MongoDB
 ---
 

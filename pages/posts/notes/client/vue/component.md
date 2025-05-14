@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - vue
-tags: 
+tags:
   - vue
 date: 2020-03-06 17:00:00
 ---
@@ -89,7 +89,7 @@ export default {
 
 ~~~html
 <!-- 父组件标签(App.js)传输数据(任意JS属性或方法) -->
-<TdoHead  :addTask='addTask' /> 
+<TdoHead  :addTask='addTask' />
 ~~~
 
 ~~~js
@@ -197,9 +197,9 @@ Vue CLI v4.3.1
  (*) Linter / Formatter		## 代码风格检查和格式化
  (*) Unit Testing		## 单元测试(unit tests)
  ( ) E2E Testing		## e2e测试(end to end)
- 
+
 #↓↓↓↓↓↓↓#
- 
+
 ? Check the features needed for your project: Babel, Router, Vuex, CSS Pre-processors, Linter, Unit
 ? Use history mode for router? (Y/n) 	## router是否使用history模式, 否则使用hash默认(建议n)
 
@@ -210,7 +210,7 @@ Vue CLI v4.3.1
   Sass/SCSS (with node-sass)
 > Less
   Stylus
-  
+
 #↓↓↓↓↓↓↓#
 
 ? Pick a linter / formatter config: ## 选择Eslint 代码验证规则 (通常Prettier用的比较多)
@@ -224,7 +224,7 @@ Vue CLI v4.3.1
 ? Pick additional lint features: ## 选择什么时候检测
 >(*) Lint on save		## 保存就检测
  ( ) Lint and fix on commit		## fix或commit的时候检测
- 
+
 #↓↓↓↓↓↓↓#
 
 ? Pick a unit testing solution: ## 选择单元测试方案
@@ -276,7 +276,6 @@ package.json --> scripts:{serve: "vue-cli-service serve --open"}
   - App.vue		    项目的主组件,所有页面都是在app.vue下切换的.一个标准的vue文件,分为三部分。
   - main.js	    	页面程序入口文件,加载各种公共组件
 ~~~
-
 
 开发运行项目：
 

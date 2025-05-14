@@ -27,7 +27,7 @@ const image = nativeImage.createFromPath('/path/to/image.png')
 or
 
 ```ts
-import fs from 'fs'
+import fs from 'node:fs'
 const buffer = fs.readFileSync('/path/to/image.png')
 const image = nativeImage.createFromBuffer(buffer)
 ```

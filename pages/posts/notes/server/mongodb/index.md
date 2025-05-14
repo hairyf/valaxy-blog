@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - MongoDB
-tags: 
+tags:
   - MongoDB
 ---
 
@@ -62,7 +62,7 @@ show collections
 3. 以管理员的身份打开命令行窗口，执行如下路径。
 
 ```sh
-sc.exe create MongoDB 
+sc.exe create MongoDB
   binPath = "\"mongod的bin目录\mongod.exe\" --service --config=\"mongo的安装目录\mongod.cfg\""
   DisplayName = "MongoDB"
   start = "auto"
@@ -71,4 +71,3 @@ sc.exe create MongoDB
 4. 启动 MongoDB 服务。
 
 > 如果启动失败，证明上边的操作有误，在控制台输入 `sc delete MongoDB` 删除之前配置的服务然后从第一步再来一次。
-

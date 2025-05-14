@@ -9,7 +9,6 @@ tags:
 date: 2023-12-05 17:51:00
 ---
 
-
 [Electron](https://www.electronjs.org/) 是一个开源的框架，用于构建跨平台的桌面应用程序。它由GitHub开发，并且被许多知名的应用程序使用，如 [Visual Studio Code](https://code.visualstudio.com/)、[Slack](https://slack.com/intl) 和 [Discord](https://discord.com/) 等。
 
 Electron 最初是为了开发 GitHub 的桌面客户端而创建的，它的前身是 Atom Shell。它的设计目标是允许开发者使用 Web 技术，如 HTML、CSS 和 JavaScript 来构建桌面应用程序，而不需要了解底层的操作系统的特定细节。
@@ -113,7 +112,6 @@ html 中处理控制台警告：
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src * data:; script-src 'self'; style-src 'self' 'unsafe-inline'">
 ```
 
-
 ## 关闭窗口和保留窗口
 
 ```ts
@@ -121,7 +119,6 @@ function watchReloadWindow() {
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0)
       createWindow()
-
   })
 }
 
@@ -138,9 +135,7 @@ app.whenReady()
   .then(createWindow)
   // 在 MacOS 下，当全部窗口关闭，点击 dock 图表，再次打开。
   .then(watchReloadWindow)
-
 ```
-
 
 ```ts
 const win = new BrowserWindow({
@@ -156,7 +151,7 @@ const win = new BrowserWindow({
 ```
 
 ```ts
-import { writeFile } from 'fs'
+import { writeFile } from 'node:fs'
 import { contextBridge } from 'electron'
 
 writeFile('./example.txt', 'abc', () => {

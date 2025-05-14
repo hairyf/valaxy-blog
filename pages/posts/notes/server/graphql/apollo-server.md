@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - GraphQL
-tags: 
+tags:
   - Apollo Server
 ---
 
@@ -302,4 +302,3 @@ let schema = makeExecutableSchema({ typeDefs, resolvers })
 schema = upperDirectiveTransformer(schema, 'upper')
 createApolloServer({ schema })
 ~~~
-

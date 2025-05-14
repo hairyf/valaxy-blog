@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - MongoDB
-tags: 
+tags:
   - MongoDB
 ---
 
@@ -34,7 +34,8 @@ tags:
 
 ~~~js
 db.products.update(
-  { _id: 1 }, { $currentDate: { lastModified: true } }
+  { _id: 1 },
+  { $currentDate: { lastModified: true } }
 )
 ~~~
 
@@ -46,7 +47,8 @@ db.products.update(
 
 ~~~js
 db.products.update(
-  { _id: 1 }, { $inc: { num: 10 } }
+  { _id: 1 },
+  { $inc: { num: 10 } }
 )
 ~~~
 
@@ -57,14 +59,14 @@ db.products.update(
 
 ~~~js
 db.products.update(
-  { _id: 1 }, { $min: { num: 10 } }
+  { _id: 1 },
+  { $min: { num: 10 } }
 )
 ~~~
 
 ## $max
 
 `$max` 操作符和 `$min` 正好相反，它会更新文档中某个字段值大于特定值的字段。用法和 `$min` 相同。
-
 
 ## $set
 

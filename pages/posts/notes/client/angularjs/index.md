@@ -43,11 +43,11 @@ Google开源的前端结构化框架，动态展示页面数据, 并与用户进
 
 ## MVVM 模式
 
-**M: Model, 即数据模型,** 
+**M: Model, 即数据模型,**
 - 在angular中：为scope中的各个数据对象
 
-**V: View, 即视图,** 
+**V: View, 即视图,**
 - 在angular中：为页面
 
-**VM: ViewModel, 即视图模型,** 
+**VM: ViewModel, 即视图模型,**
 - 在angular中：为scope对象

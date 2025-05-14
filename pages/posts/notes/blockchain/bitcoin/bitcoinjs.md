@@ -1,6 +1,6 @@
 ---
 title: BitcoinJS - 比特币应用开发
-categories: 
+categories:
   - Notes
   - BlockChain
   - Bitcoin
@@ -10,7 +10,6 @@ date: 2022-08-21
 ---
 
 用于 node.js 和浏览器的 javascript 比特币工具库。用 TypeScript 编写。
-
 
 ## ECPair
 
@@ -49,7 +48,6 @@ const address = bitcoin.payments.p2pkh({ pubkey: keyPair.publicKey }).address
 
 `{K = k * G} secp256k1` 标准的椭圆曲线，以私钥 `k` 为起点，将曲线上已定义的生成点 `G` 相乘获得另一点，也就是公钥 `K = (x, y)`
 
-
 ```java
 K = bef05ca99c4bb9d17f9f164a5bffd48ee2f99f866a3621dd9a4be62412c28148 * G
 x = c2a0eef93156029532c9b6d33dfd4d09abc3fa0454bc1580230682c9d197f974
@@ -72,7 +70,6 @@ WIF(Wallet import format) 钱包导入格式，(也被称为电子钱包的导�
 - P2PKH 类型， 以数字 `1` 开头，  例如：`1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2`
 - P2SH 类型，  以数字 `3` 开头，  例如：`3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy`
 - Bech32 类型，以数字 `bc1` 开头，例如：`bc1qar0srrr7xfkvy5l643lydnw9re59gtzzwf5mdq`
-
 
 ## BIP39
 

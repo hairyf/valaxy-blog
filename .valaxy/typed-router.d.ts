@@ -80,6 +80,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/notes/blockchain/bitcoin/': RouteRecordInfo<'/posts/notes/blockchain/bitcoin/', '/posts/notes/blockchain/bitcoin', Record<never, never>, Record<never, never>>,
     '/posts/notes/blockchain/bitcoin/bitcoinjs': RouteRecordInfo<'/posts/notes/blockchain/bitcoin/bitcoinjs', '/posts/notes/blockchain/bitcoin/bitcoinjs', Record<never, never>, Record<never, never>>,
     '/posts/notes/blockchain/bitcoin/wallet': RouteRecordInfo<'/posts/notes/blockchain/bitcoin/wallet', '/posts/notes/blockchain/bitcoin/wallet', Record<never, never>, Record<never, never>>,
+    '/posts/notes/blockchain/hardhat-3/': RouteRecordInfo<'/posts/notes/blockchain/hardhat-3/', '/posts/notes/blockchain/hardhat-3', Record<never, never>, Record<never, never>>,
     '/posts/notes/blockchain/solidity/': RouteRecordInfo<'/posts/notes/blockchain/solidity/', '/posts/notes/blockchain/solidity', Record<never, never>, Record<never, never>>,
     '/posts/notes/client/angularjs/': RouteRecordInfo<'/posts/notes/client/angularjs/', '/posts/notes/client/angularjs', Record<never, never>, Record<never, never>>,
     '/posts/notes/client/angularjs/baisc': RouteRecordInfo<'/posts/notes/client/angularjs/baisc', '/posts/notes/client/angularjs/baisc', Record<never, never>, Record<never, never>>,

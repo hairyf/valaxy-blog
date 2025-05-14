@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - PHP
-tags: 
+tags:
   - PHP
 ---
 
@@ -15,7 +15,7 @@ PHP即“[超文本](https://baike.baidu.com/item/超文本)[预处理器](https
 
 ## 主要特点
 
-- 开源性和免费性，由于PHP的[解释器](https://baike.baidu.com/item/解释器/10418965)的源代码是公开的，所以安全系数较高的网站可以自己更改PHP的解释程序。另外，PHP 运行环境的使用也是免费的。 
+- 开源性和免费性，由于PHP的[解释器](https://baike.baidu.com/item/解释器/10418965)的源代码是公开的，所以安全系数较高的网站可以自己更改PHP的解释程序。另外，PHP 运行环境的使用也是免费的。
 - 快捷性，PHP是一种非常容易学习和使用的一门语言，它的语法特点类似于C语言，但又没有C语言复杂的地址操作，而且又加入了[面向对象](https://baike.baidu.com/item/面向对象/2262089)的概念，再加上它具有简洁的语法规则，使得它操作编辑非常简单，实用性很强
 - 数据库连接的广泛性，PHP可以与很多主流的数据库建立起连接，如[MySQL](https://baike.baidu.com/item/MySQL/471251)、[ODBC](https://baike.baidu.com/item/ODBC/759553)、[Oracle](https://baike.baidu.com/item/Oracle/301207)等，PHP是利用编译的不同函数与这些数据库建立起连接的，[PHPLIB](https://baike.baidu.com/item/PHPLIB/1972303)就是常用的为一般事务提供的基库。
 - 面向过程和面向对象并用，在PHP语言的使用中，可以分别使用面向过程和面向对象， 而且可以将PHP面向过程和面向对象两者一起混用，这是其它很多编程语言是做不到的。

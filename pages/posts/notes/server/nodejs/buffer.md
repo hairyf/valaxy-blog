@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - NodeJS
-tags: 
+tags:
   - NodeJS
 ---
 JS 数组性能比其他语言的数组差，但 Buffer 中的内存不是通过 JavaScript 分配的，而是在底层通过 C++ 申请的，也就是我们可以直接通过 Buffer 来创建内存中的空间。

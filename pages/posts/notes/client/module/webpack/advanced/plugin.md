@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - webpack
-tags: 
+tags:
   - webpack
 date: 2019-11-10 15:00:00
 ---
@@ -72,7 +72,7 @@ const config = {
 ### 函数模式
 
 ~~~js
-const plugin = (compiler) => {}
+function plugin(compiler) {}
 // webpack.config.ts
 const config = {
   plugins: [plugin]
@@ -84,7 +84,7 @@ const config = {
 `Compiler` 模块是 webpack 的主要引擎，它通过 [CLI](https://webpack.docschina.org/api/cli) 传递的所有选项， 或者 [Node API](https://webpack.docschina.org/api/node)，创建出一个 compilation 实例。 它扩展(extend)自 `Tapable` 类，用来注册和调用插件。 大多数面向用户的插件会首先在 `Compiler` 上注册。
 
 ~~~js
-const plugin = (compiler) => {
+function plugin(compiler) {
   // 输出 asset 到 output 目录之前执行
   compiler.hooks.emit.tap('plugin-1', (compilation) => {
     console.log('emit.tab 1')
@@ -109,7 +109,7 @@ const plugin = (compiler) => {
 
 ~~~js
 // 获取 compilation
-const plugin = (compiler) => {
+function plugin(compiler) {
   compiler.hooks.thisCompilation.tab('plugin', (compilation) => {
     console.log(compilation)
   })
@@ -152,7 +152,7 @@ export default Plugin
 
 ~~~ts
 // plugin/copy-webpack-plugin.ts
-import path from 'path'
+import path from 'node:path'
 import type { Compiler, WebpackPluginInstance } from 'webpack'
 import { sources } from 'webpack'
 import { validate } from 'schema-utils'

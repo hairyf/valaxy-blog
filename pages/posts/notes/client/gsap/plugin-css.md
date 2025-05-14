@@ -29,8 +29,8 @@ gsTransform 是 GSAP 在运行期间提供的 transform 的完整信息，它将
 function showValues() {
   output.innerHTML
   = `x: ${box._gsTransform.x.toFixed(2)}<br>`
-  + `y: ${box._gsTransform.y.toFixed(2)}<br>`
-  + `rotation: ${box._gsTransform.rotation.toFixed(2)}`
+    + `y: ${box._gsTransform.y.toFixed(2)}<br>`
+    + `rotation: ${box._gsTransform.rotation.toFixed(2)}`
 }
 ```
 

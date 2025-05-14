@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Official Account
-tags: 
+tags:
   - Official Account
 ---
 
@@ -45,10 +45,10 @@ app.get('/search', async (req, res) => {
   const timestamp = Date.now()
   const { url } = require('./config')
   const js_sdk_sign = [
-        `jsapi_ticket=${ticket}`,
-        `noncestr=${noncestr}`,
-        `timestamp=${timestamp}`,
-        `url=${url}/search` // 哪个路由页面需要就把哪个路由的查询字符串拼接
+    `jsapi_ticket=${ticket}`,
+    `noncestr=${noncestr}`,
+    `timestamp=${timestamp}`,
+    `url=${url}/search` // 哪个路由页面需要就把哪个路由的查询字符串拼接
   ].sort().join('&')
   // 渲染页面, 传入签名, 随机字符串, 当前时间戳
   res.render('search', { signature, noncestr, timestamp })
@@ -88,7 +88,7 @@ app.get('/search', async (req, res) => {
           wx.config({
           // 开启调试模式,调用的所有api的返回值会在客户端alert出来，
           // 若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
-            debug: true, 
+            debug: true,
             appId: 'wxa2a6b98bb1a339d6',   // 必填，公众号的唯一标识
             timestamp: '<%= timestamp %>', // 必填，生成签名的时间戳
             nonceStr: '<%= noncestr %>',   // 必填，生成签名的随机串
@@ -124,8 +124,11 @@ app.get('/search', async (req, res) => {
 wx.ready(() => {
   wx.checkJsApi({
     jsApiList: [// 需要检测的 JS 接口列表，所有 JS 接口列表见附录2,
-      'onMenuShareQQ', 'onMenuShareQZone', 'startRecord',
-      'stopRecord', 'translateVoice'
+      'onMenuShareQQ',
+      'onMenuShareQZone',
+      'startRecord',
+      'stopRecord',
+      'translateVoice'
     ],
     success(res) {
       // 以键值对的形式返回，可用的api值true，不可用为false

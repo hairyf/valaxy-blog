@@ -30,11 +30,10 @@ waline: true
   color: '...' # 方块颜色
 ```
 
-
 <br />
 <br />
 
-<hairy-links 
+<hairy-links
   :links="[
     {
       name: '優萌初華',

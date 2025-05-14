@@ -153,4 +153,3 @@ HTML 提供了许多可一起使用的元素，这些元素能用来创建一个
 <script async="async">console.log('defer-1')</script>
 <script async="async">console.log('defer-1')</script>
 ~~~
-

@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Uniapp
-tags: 
+tags:
   - Mini Program
 ---
 
@@ -64,16 +64,15 @@ vue create -p dcloudio/uni-preset-vue my-project
 
 #↓↓↓↓↓↓#
 Preset options:
-? 请选择 uni-app 模板  
+? 请选择 uni-app 模板
   默认模板
-> 默认模板(TypeScript) 
-  Hello uni-app        
+> 默认模板(TypeScript)
+  Hello uni-app
   登录模板
   看图模板
-  新闻/资讯类模板      
+  新闻/资讯类模板
   自定义模板
 ~~~
-
 
 ## 常见问题
 

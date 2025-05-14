@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Official Account
-tags: 
+tags:
   - Official Account
 ---
 
@@ -46,4 +46,3 @@ POST 服务器响应微信服务器类型：
 > 注意：调用删除菜单接口需要向 params 传入 access_token，调用创建菜单需要向请求体传入 json 数据。
 
 ![](https://pic.imgdb.cn/item/62f4ce7a16f2c2beb1d50208.jpg)
-

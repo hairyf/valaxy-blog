@@ -4,7 +4,7 @@ date: 2019-10-07 18:00:00
 categories:
   - Notes
   - Git
-tags: 
+tags:
   - Git
 ---
 
@@ -12,7 +12,7 @@ Git 可以给历史中的某一个提交打上标签，以示重要。 比较有
 
 <!-- more -->
 
-## 列出标签 
+## 列出标签
 
 `git tag`
 
@@ -28,11 +28,11 @@ Git 可以给历史中的某一个提交打上标签，以示重要。 比较有
 
 ### 创建附注标签
 
-[打开文本编辑器添加注释]`git tag -a v1.4`  
-[可以指定分支]`git tag -a v1.4 commitHash` 	
-[可以单行注释]`git tag -a v1.4 commitHash -m 'my version 1.4'` 
+[打开文本编辑器添加注释]`git tag -a v1.4`
+[可以指定分支]`git tag -a v1.4 commitHash`
+[可以单行注释]`git tag -a v1.4 commitHash -m 'my version 1.4'`
 
-## 查看标签 
+## 查看标签
 
 `git show` 可以显示任意类型的对象（git 对象 树对象 提交对象 tag 对象）
 

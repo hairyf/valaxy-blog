@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - Mini Program
-tags: 
+tags:
   - Mini Program
 date: 2020-04-01 16:00:00
 ---
@@ -158,8 +158,6 @@ Component({
 })
 ~~~
 
-
-
 ### 使用组件
 
 使用已注册的自定义组件前，首先要在页面的 `json` 文件中进行引用声明。此时需要提供每个自定义组件的标签名和对应的自定义组件文件路径
@@ -179,7 +177,7 @@ Component({
   <!-- 以下是对一个自定义组件的引用 -->
   <component-tag-name inner-text="Some text">
   	<!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
-    <view>这里是插入到组件slot中的内容</view>  
+    <view>这里是插入到组件slot中的内容</view>
   </component-tag-name>
 </view>
 ~~~

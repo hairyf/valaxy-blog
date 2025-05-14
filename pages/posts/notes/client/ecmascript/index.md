@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - ECMAScript
-tags: 
+tags:
   - ECMAScript
 ---
 

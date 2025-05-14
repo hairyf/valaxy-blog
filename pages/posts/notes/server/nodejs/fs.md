@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - NodeJS
-tags: 
+tags:
   - NodeJS
 ---
 
@@ -14,7 +14,7 @@ tags:
 <!-- more -->
 
 ~~~js
-const fs = require('fs')
+const fs = require('node:fs')
 ~~~
 
 同步与异步：
@@ -126,7 +126,6 @@ var fd = fs.open('hello.txt', 'w', (err, fd) => {
       if (!err)
         console.log('写入成功')
       fs.close(fd, () => { console.log('文件已关闭') })// 关闭文件
-
     })
   }
   else { console.log(err) }
@@ -260,7 +259,6 @@ var rs = fs.createReadStream('test.mp4')
 var ws = fs.createWriteStream('HuoGuoP.mp4')
 rs.pipe(ws)
 ~~~
-
 
 ## 其他操作
 

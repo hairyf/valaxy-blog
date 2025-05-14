@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - vueCore
-tags: 
+tags:
   - vue
   - core
 date: 2021-07-26
@@ -20,7 +20,7 @@ date: 2021-07-26
 
 ![image-20220324194644589](./images/image-20220324194644589.png)
 
-diff 算法就是程序中进行精细化对比，实现最小量的更新。  
+diff 算法就是程序中进行精细化对比，实现最小量的更新。
 
 <!-- more -->
 
@@ -49,7 +49,7 @@ const patch = init([
   eventListenersModule // attaches event listeners
 ])
 
-const function_ = () => {}
+function function_() {}
 
 const container = document.querySelector('#container')
 

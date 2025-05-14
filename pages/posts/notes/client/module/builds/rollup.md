@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - bundler
-tags: 
+tags:
   - grunt
 ---
 
@@ -50,11 +50,11 @@ $ rollup main.js --file bundle.js --format cjs
 对于浏览器和 Node.js:
 
 ```bash
-# UMD 格式需要一个包名 
+# UMD 格式需要一个包名
 $ rollup main.js --file bundle.js --format umd --name "myBundle"
 ```
 
-除此之外，`Rollup` 上面的打包 `--format` 还支持这些选项 `amd`、`cjs`、`system`、`es`、`iife`、`umd` 
+除此之外，`Rollup` 上面的打包 `--format` 还支持这些选项 `amd`、`cjs`、`system`、`es`、`iife`、`umd`
 
 ## Config API
 
@@ -101,7 +101,7 @@ $ rollup main.js --file bundle.js --format umd --name "myBundle"
 export default { entry: 'main.js', plugins: [resolve(), commonjs()] }
 ```
 
-### 外链(external *`-e`/`--external`*) 
+### 外链(external *`-e`/`--external`*)
 
 两者任一 `Function` 需要一个 `id` 并返回 `true`（外部引用）或 `false`（不是外部的引用）， 或者 `Array` 应该保留在bundle的外部引用的模块ID。ID应该是：
 
@@ -154,13 +154,11 @@ var MyBundle = (function ($) {
 rollup -i src/main.js ... -g jquery:$,lodash:_
 ```
 
-
 ## JavaScript API
 
 Rollup 提供 JavaScript 接口那样可以通过 Node.js 来使用。你可以很少使用，而且很可能使用命令行接口，除非你想扩展 Rollup 本身，或者用于一些难懂的任务，例如用代码把文件束生成出来，主要有两个 API （rollup.rollup，rollup.watch）。
 
 文档：https://www.rollupjs.com/guide/javascript-api
-
 
 ## Custom Plugin
 

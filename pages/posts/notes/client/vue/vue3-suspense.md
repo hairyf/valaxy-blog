@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - vue
-tags: 
+tags:
   - vue
 date: 2021-03-25 16:00:00
 ---
@@ -57,14 +57,14 @@ export default {
 所以，看起来会像这样。
 
 ~~~html
-<Suspense> 
-  <template #default> 
-    <article-info/> 
-  </template> 
-  <template #fallback> 
-    <div>正在拼了命的加载…</div> 
-  </template> 
-</Suspense> 
+<Suspense>
+  <template #default>
+    <article-info/>
+  </template>
+  <template #fallback>
+    <div>正在拼了命的加载…</div>
+  </template>
+</Suspense>
 ~~~
 
 ## 捕获异步组件错误
@@ -78,25 +78,25 @@ export default {
 如果我们处理了一个错误以显示错误消息，则上面的组件将是这样。
 
 ~~~html
-<template> 
-  <div v-if="errMsg"> {{ errMsg }} </div> 
-  <Suspense v-else> 
-    <template #default> 
-      <article-info /> 
-    </template> 
-    <template #fallback> 
-      <div>正在拼了命的加载…</div> 
-    </template> 
-  </Suspense> 
-</template> 
-<script> 
-import { onErrorCaptured } from 'vue' 
-setup () { 
-  const errMsg = ref(null) 
-  onErrorCaptured(e => { 
-    errMsg.value = '呃，出了点问题！' 
-    return true 
-  })} 
-  return { error } 
-</script> 
+<template>
+  <div v-if="errMsg"> {{ errMsg }} </div>
+  <Suspense v-else>
+    <template #default>
+      <article-info />
+    </template>
+    <template #fallback>
+      <div>正在拼了命的加载…</div>
+    </template>
+  </Suspense>
+</template>
+<script>
+import { onErrorCaptured } from 'vue'
+setup () {
+  const errMsg = ref(null)
+  onErrorCaptured(e => {
+    errMsg.value = '呃，出了点问题！'
+    return true
+  })}
+  return { error }
+</script>
 ~~~

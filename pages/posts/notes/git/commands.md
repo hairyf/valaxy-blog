@@ -4,7 +4,7 @@ date: 2019-10-08 17:00:00
 categories:
   - Notes
   - Git
-tags: 
+tags:
   - Git
 ---
 
@@ -19,7 +19,7 @@ tags:
   > `git hash-object -w 文件名`	(修改了多少个文件目录中的文件，次命令就要被执行多少次)
   >
   > 	↓
-  >	
+  >
   > 	`git ipdata-index ....` 		(存入暂存区)
 
 - git commit
@@ -31,7 +31,7 @@ tags:
   > `git write-tree`		创建树对象
   >
   > 	↓
-  >	
+  >
   > 	`git commit-tree`	  提交对象
 
 <!-- more -->
@@ -221,7 +221,7 @@ git remote prune origin
 
 ## 代码别名
 
-Git 并不会在你输入部分命令时自动推断出你想要的命令。 如果不想每次都输入 完整的 Git 命令，可以通过 git config 文件来轻松地为每一个命令设置一个别名。 `$ git config --global alias.co checkout` 
+Git 并不会在你输入部分命令时自动推断出你想要的命令。 如果不想每次都输入 完整的 Git 命令，可以通过 git config 文件来轻松地为每一个命令设置一个别名。 `$ git config --global alias.co checkout`
 
 ~~~sh
 [查看分支] $ git config --global alias.br branch

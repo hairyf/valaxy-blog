@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - MySQL
-tags: 
+tags:
   - MySQL
 ---
 
@@ -39,7 +39,7 @@ CREATE TABLE Course(
   -- 先修课(外键 Cno)
   Cpno char(4),
   -- 学分
-  Ccredit smallint, 
+  Ccredit smallint,
   -- Key Cpno 是 Course 的外键 Cno
   foreign key(Cpno) references Course(Cno)
 );
@@ -85,7 +85,7 @@ INSERT INTO course VALUES ('1', '数据库',       '5',    4);
 INSERT INTO course VALUES ('3', '信息系统',     '1',    4);
 
 -- 插入选课表
-INSERT INTO SC VALUES 
+INSERT INTO SC VALUES
   ('201215121', '1', 92),
   ('201215121', '2', 85),
   ('201215121', '3', 88),
@@ -135,7 +135,7 @@ SELECT * FROM customers
 -- 查询没有联系方式为空的客户
 SELECT * FROM customers
   WHERE cust_contact IS NULL;
- 
+
 -- 查询成绩高于 89 的学生的学号与姓名信息
 SELECT Sno, Sname
   FROM student
@@ -151,7 +151,7 @@ SELECT DISTINCT sno FROM sc
 
 ```sql
 -- 查询所有选修了 1 号课程的学生姓名
-SELECT Sname FROM student 
+SELECT Sname FROM student
   WHERE EXISTS(
     SELECT * FROM sc
     WHERE sno = student.sno AND cno = '1'
@@ -220,7 +220,7 @@ LIMIT 1, 3;
 
 ```sql
 SELECT 商品编号 FROM 商品编号
-FROM 价格 BETWEEN 10 and 15; 
+FROM 价格 BETWEEN 10 and 15;
 
 SELECT 商品编号, 采购日期, 采购数量 FROM 采购
 WHERE 编号 IN (SELECT 编号 FROM 采购员 WHERE 采购员='刘聪');

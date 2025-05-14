@@ -3,6 +3,6 @@ import antfu from '@antfu/eslint-config'
 
 export default antfu({
   rules: {
-    'no-var': 'off'
-  }
+    'no-var': 'off',
+  },
 })

@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Bundler
-tags: 
+tags:
   - Grunt
 ---
 
@@ -85,34 +85,34 @@ npm i grunt-contrib-concat --save-dev
 
 ~~~javascript
 // src/js/test1.js
-(function(){console.log('test1')})
+(function () { console.log('test1') })
 ~~~
 
 ~~~javascript
 // src/js/test2.js
-(function(){console.log('test1')})
+(function () { console.log('test1') })
 ~~~
 
 配置任务：
 
 ~~~javascript
 module.exports = function (grunt) {
-	// 初始化配置grunt任务
-	grunt.initConfig({ //主要编码处
-		concat: {
-		  options: { //可选项配置
-		    separator: ';'   //js文件使用;连接合并
-		  },
-		  build: { //此名称任意
-		    src:  ["src/js/*.js"],  	//合并哪些js文件 文件夹/*.js代表该文件夹所有js文件
-		    dest: "build/js/build.js" 	//输出的js文件目录
-		  }
-		}
-	});
-	// 加载插件任务(grunt-contrib-concat)
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	// 注册构建任务(concat)
-	grunt.registerTask('default', ["concat"]);
+  // 初始化配置grunt任务
+  grunt.initConfig({ // 主要编码处
+    concat: {
+      options: { // 可选项配置
+        separator: ';' // js文件使用;连接合并
+      },
+      build: { // 此名称任意
+        src: ['src/js/*.js'], // 合并哪些js文件 文件夹/*.js代表该文件夹所有js文件
+        dest: 'build/js/build.js' // 输出的js文件目录
+      }
+    }
+  })
+  // 加载插件任务(grunt-contrib-concat)
+  grunt.loadNpmTasks('grunt-contrib-concat')
+  // 注册构建任务(concat)
+  grunt.registerTask('default', ['concat'])
 }
 ~~~
 
@@ -122,10 +122,10 @@ module.exports = function (grunt) {
 
 ~~~javascript
 // build/js/built.js
-(function(){
-	console.log('test1')
-});(function(){
-	console.log('test2')
+(function () {
+  console.log('test1')
+}); (function () {
+  console.log('test2')
 })
 ~~~
 
@@ -139,10 +139,10 @@ npm i grunt-contrib-concat grunt-contrib-uglify --save-dev
 
 ~~~javascript
 // build/js/built.js
-(function(){
-	console.log('test1')
-});(function(){
-	console.log('test2')
+(function () {
+  console.log('test1')
+}); (function () {
+  console.log('test2')
 })
 ~~~
 
@@ -174,7 +174,6 @@ module.exports = function (grunt) {
 ~~~
 
 ## 语法检测(JavaScript)
-
 
 ```sh
 npm i grunt-contrib-jshint --save-dev
@@ -249,7 +248,6 @@ cssmin:{	// grunt.initConfig{cssmin}
 grunt.loadNpmTasks('grunt-contrib-cssmin');
 grunt.registerTask('default', ['concat', 'uglify', 'jshint',"cssmin"]);
 ~~~
-
 
 实际代码：
 

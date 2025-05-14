@@ -4,7 +4,7 @@ date: 2022-03-02
 categories:
   - Notes
   - Standard
-tags: 
+tags:
   - JavaScript
 ---
 
@@ -58,13 +58,13 @@ const navList = {/* ... */}
 
 ~~~js
 // 错误
-const GetUserInfo = () => { /* ... */ }
-const set_shopList = () => { /* ... */ }
-const initnavilist = () => { /* ... */ }
+function GetUserInfo() { /* ... */ }
+function set_shopList() { /* ... */ }
+function initnavilist() { /* ... */ }
 // 正确
-const getUserInfo = () => { /* ... */ }
-const setShopList = () => { /* ... */ }
-const initNavList = () => { /* ... */ }
+function getUserInfo() { /* ... */ }
+function setShopList() { /* ... */ }
+function initNavList() { /* ... */ }
 ~~~
 
 - 常量（不会再次进行修改）命名则采用大写加下划线命名（RECEIVE_USER_INFO）
@@ -111,7 +111,7 @@ const util = require('./util')
 module.exports = util
 
 // 正确
-export const paramsAnaly = (url: string) => { /* ... */ }
+export function paramsAnaly(url: string) { /* ... */ }
 ~~~
 
 ## Promise

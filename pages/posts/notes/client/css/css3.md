@@ -48,10 +48,10 @@ body {}
 CSS 属性选择器通过已经存在的属性名或属性值匹配元素。
 
 ```scss
-// 含有name标签 
+// 含有name标签
 div[name]
 	--> <div name></div>
-// 值为cm 
+// 值为cm
 div[name="cm"]
 	--> <div name="cm"></div>
 // 值有完整的cm值
@@ -342,7 +342,7 @@ transition: ([,property] duration timing-function [,delay]);
 transition: (过渡属性 过渡时间 时间曲线 延迟启动过渡)
 transition-property: width | height | ......
 transition-duration: 1s | 2s | 0.4s
-transition-timing-function: 
+transition-timing-function:
 	linear // 相同速度
 	ease		// 慢速->快速->慢速
 	ease-in	// 慢速->同速
@@ -418,7 +418,6 @@ transform: translate3d(100px,100px,100px); // X,Y,Z 平移 100px
 transform:scaleZ(2) translateZ(100px); // --> Z轴前进 200px
 ```
 
-
 ## 营造舞台效果
 
 通过设置景深(perspective)、3D 舞台赋予元素层次空间，使得可以立体显示。
@@ -465,7 +464,7 @@ transform-origin: 0% 100%;
 ```scss
 animation: name duration [,timing-function] [,delay] [,iteration-count] [,direction];
 animation: 名称 动画时间 时间曲线 开始延迟 播放次数 反向播放
-	timing-function: 
+	timing-function:
       linear // 相同速度
       ease		// 慢速->快速->慢速
       ease-in	// 慢速->同速
@@ -543,11 +542,11 @@ var()函数可以代替元素中任何属性中的值的任何部分。var()函�
 :root {
   --main-bg-color: coral;
 }
- 
+
 #div1 {
   background-color: var(--main-bg-color);
 }
- 
+
 #div2 {
   --main-bg-color: red;
   background-color: var(--main-bg-color);
@@ -559,7 +558,7 @@ var()函数可以代替元素中任何属性中的值的任何部分。var()函�
 媒体查询（Media queries）非常实用，尤其是当你想要根据设备的大致类型（如打印设备与带屏幕的设备）或者特定的特征和设备参数（例如屏幕分辨率和浏览器视窗宽度）来修改网站或应用程序时。
 
 ```scss
-@media [设备关键字] [条件关键字] (条件1) [条件关键字] (条件2) { 
+@media [设备关键字] [条件关键字] (条件1) [条件关键字] (条件2) {
   a{/*样式内容*/}
 }
 	设备关键字:all | screen | print | speech

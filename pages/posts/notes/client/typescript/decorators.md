@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - TypeScript
-tags: 
+tags:
   - TypeScript
 ---
 
@@ -122,11 +122,12 @@ const http = new HttpClient()
 
 ~~~ts
 function get(params: any) {
-  /** 方法装饰器
-     * @param {string} target  HttpClient.prototype-->方法的原型对象
-     * @param {string} methodName  成员的名称
-     * @param {object} desc  成员方法的描述信息
-     */
+  /**
+   * 方法装饰器
+   * @param {string} target  HttpClient.prototype-->方法的原型对象
+   * @param {string} methodName  成员的名称
+   * @param {object} desc  成员方法的描述信息
+   */
   return function (target: any, methodName: any, desc: any) {
     // 方法描述器具备类描述器特征, 可以添加, 修改类
     target.apiUrl = 'xxx'
@@ -156,11 +157,12 @@ http.getData(123, 123, 123)
 
 ~~~ts
 function logParams(params: any) {
-  /** 方法参数装饰器
-     * @param {string} target  HttpClient.prototype-->方法的原型对象
-     * @param {string} methodName  方法名称
-     * @param {object} paramsIndex  参数当前的索引
-     */
+  /**
+   * 方法参数装饰器
+   * @param {string} target  HttpClient.prototype-->方法的原型对象
+   * @param {string} methodName  方法名称
+   * @param {object} paramsIndex  参数当前的索引
+   */
   return function (target: any, methodName: any, paramsIndex: any) {
     // 方法参数描述器具备类描述器特征, 可以添加, 修改类
     target.apiUrl = 'xxx'

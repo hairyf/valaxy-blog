@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Other
-tags: 
+tags:
   - Flutter
 ---
 
@@ -20,7 +20,7 @@ tags:
 ```js
 const users = {}
 const app = express()
-const server = require('http').createServer(app)
+const server = require('node:http').createServer(app)
 const io = require('socket.io').listen(server)
 // 将socket.io绑定到服务器上，使得任何连接到服务器的客户端都具有实时通信的功能
 

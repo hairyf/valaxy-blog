@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - HTML
-tags: 
+tags:
   - JavaScript
   - HTML5
 date: 2018-07-30

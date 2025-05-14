@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - react
-tags: 
+tags:
   - react
 ---
 
@@ -50,7 +50,7 @@ render {
 				<NavLink to='/about'>About</NavLink><br />
 				<NavLink to='/home'>Home</NavLink>
 		</div>
-     
+
 		<div>
 			<Switch>{/* 3.定义路由显示区域 */}
 					<Route path='/about' component={About}/>
@@ -76,7 +76,7 @@ react-router-dom 有三种参数的传递，基本特点都在于参数与地址
 
 定义路由组件：
 ```jsx
-<Route path="/demo/test/:name/:age" component={Test}/>
+<Route path="/demo/test/:name/:age" component={Test} />
 ```
 定义传递参数：
 ```jsx
@@ -98,7 +98,7 @@ react-router-dom 有三种参数的传递，基本特点都在于参数与地址
 
 定义传递参数：
 ```jsx
-<Link to={{ path: "/demo/test", query: { name: 'tom', age: 18 } }}>详情</Link>
+<Link to={{ path: '/demo/test', query: { name: 'tom', age: 18 } }}>详情</Link>
 ```
 
 ### state
@@ -107,7 +107,7 @@ react-router-dom 有三种参数的传递，基本特点都在于参数与地址
 
 定义传递参数：
 ```jsx
-<Link to={{ path: "/demo/test", state: { name: 'tom', age: 18 } }}>详情</Link>
+<Link to={{ path: '/demo/test', state: { name: 'tom', age: 18 } }}>详情</Link>
 ```
 
 > query 跟 state 用一个重要的区别，那就是在页面跳转之后，重新刷新当前页面，query 会消失，而 state 不会消失，即依然保存在 location 中，但浏览器重新打开依旧会销毁状态。
@@ -120,7 +120,7 @@ react-router-dom 有三种参数的传递，基本特点都在于参数与地址
 
 ~~~jsx
 function MyNavLink(props) {
-  return (<NavLink {...props} activeClassName='acc'/>);
+  return (<NavLink {...props} activeClassName="acc" />)
 }
 ~~~
 
@@ -185,17 +185,21 @@ export default withRouter(Header)
 ~~~jsx
 const Login = lazy(() => import('@/pages/Loading'))
 
-const withFallback = (component) => {
-  return <>
-    <Suspense fallback={<h1>loading.....</h1>}>
-      {component}
-    </Suspense>
-  </>
+function withFallback(component) {
+  return (
+    <>
+      <Suspense fallback={<h1>loading.....</h1>}>
+        {component}
+      </Suspense>
+    </>
+  )
 }
-const Routes = <>
-  <Switch>
+const Routes = (
+  <>
+    <Switch>
       <Route path="/xxx" component={Xxxx} />
-      <Redirect to="/login" component={withFallback(Login)}/>
-  </Switch>
-</>
+      <Redirect to="/login" component={withFallback(Login)} />
+    </Switch>
+  </>
+)
 ~~~

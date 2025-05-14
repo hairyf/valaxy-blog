@@ -4,13 +4,12 @@ categories:
   - Notes
   - Client
   - vue
-tags: 
+tags:
   - vue
 date: 2021-03-25 14:00:00
 ---
 
 Vue Router 4.0 提供了 Vue 3 支持， 虽然 vue-router 4 大多数 API 保持不变，但是在 vue3 中以插件形式存在，所以在使用时有一定的变化。
-
 
 路由组件装载着需要的内容，通常这类组件放在 `src/pages` 文件夹内`(about.vue、home.vue)`
 

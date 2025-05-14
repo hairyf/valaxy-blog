@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - JavaScript
-tags: 
+tags:
   - JavaScript
   - HTML5
 date: 2018-08-01
@@ -78,7 +78,6 @@ div.dataset.sdl = "wc"
 | [src](https://www.w3school.com.cn/tags/att_video_src.asp)    | `url`      | 要播放的视频的 URL。                                         |
 | [width](https://www.w3school.com.cn/tags/att_video_width.asp) | `pixels`   | 设置视频播放器的宽度。                                       |
 
-
 ### 音视频兼容
 
 ~~~html
@@ -94,19 +93,19 @@ div.dataset.sdl = "wc"
 
 ~~~js
 var video = document.querySelector('video')
-video.duration			// 媒体总时间
-video.currentTime		// 媒体现播放时间(读/写)
-video.volume				// 媒体音量(读/写)
-video.muted					// 媒体是否静音(读/写)
-video.paused				// 媒体是否暂停(读)
-video.width		 // 媒体宽度
-video.height	 // 媒体高度
-video.videoWidth		// 视频宽分辨率
-video.videoHeight		// 视频高分辨率
+video.duration // 媒体总时间
+video.currentTime // 媒体现播放时间(读/写)
+video.volume // 媒体音量(读/写)
+video.muted // 媒体是否静音(读/写)
+video.paused // 媒体是否暂停(读)
+video.width // 媒体宽度
+video.height // 媒体高度
+video.videoWidth // 视频宽分辨率
+video.videoHeight // 视频高分辨率
 // ----> 媒体函数
-video.play()		// 媒体播放
-video.pause()		// 媒体暂停
-video.load()		// 媒体重载
+video.play() // 媒体播放
+video.pause() // 媒体暂停
+video.load() // 媒体重载
 ~~~
 
 ### 事件回调
@@ -194,7 +193,7 @@ Canvas 对象表示一个 HTML 画布元素 - `<canvas>`。它没有自己的行
   //////////////////////////////
   ctx.rect()
   ctx.restore()
-</script>				
+</script>
 ~~~
 
 ### 矩形(rect)
@@ -268,8 +267,8 @@ arc(x, y, radius, startAngle, endAngle, anticlockwise)
   ctx.beginPath()
   ctx.arc(150, 150, 100, 0, ang(360))
   ctx.stroke()
-  ctx.restore() 
-</script>		
+  ctx.restore()
+</script>
 ~~~
 
 ### 弧线(moveTo|arcTo)
@@ -293,13 +292,13 @@ ctx.moveTo(x0,y0) | ctx.arcTo(x1,y1,x2,y2,r)
   ctx.beginPath()
 
   // 起点
-  ctx.moveTo(150,100) 
+  ctx.moveTo(150,100)
   // 中点 终点 半径
   ctx.arcTo(200, 100, 200, 200, 50)
 
   ctx.stroke();
   ctx.restore();
-</script>		
+</script>
 ~~~
 
 ### 贝塞尔曲线(quadraticCurveTo)
@@ -308,9 +307,9 @@ ctx.moveTo(x0,y0) | ctx.arcTo(x1,y1,x2,y2,r)
 
 ctx.moveTo(x0,y0) | ctx.quadraticCurveTo(x1,y1,x2,y2)
 
-- 以`x0,y0`为起点		
-- 以`x1,y1`为中点		
-- 以`x2,y2`为终点	
+- 以`x0,y0`为起点
+- 以`x1,y1`为中点
+- 以`x2,y2`为终点
 
 ~~~html
 <canvas class="test" width="400" height="300"></canvas>
@@ -320,7 +319,7 @@ ctx.moveTo(x0,y0) | ctx.quadraticCurveTo(x1,y1,x2,y2)
   var ctx = testNode.getContext("2d")
   ctx.save()
   ctx.beginPath()
-  ctx.moveTo(150,100) // 起点 
+  ctx.moveTo(150,100) // 起点
   ctx.quadraticCurveTo(200, 100, 200, 200) // 中点 终点
 
   ctx.stroke();ctx.restore()
@@ -351,4 +350,3 @@ ctx.bezierCurveTo(1000,50, 0,550, 1000,550)
 ctx.stroke();ctx.restore()
 </script>
 ~~~
-

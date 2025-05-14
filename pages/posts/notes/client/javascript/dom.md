@@ -58,13 +58,13 @@ console.log(getStyle(domObj, 'width')) // "350px"
 // 当前元素的定位父元素, 如果父元素都没定位, 则获取body
 dom.offsetParent
 // 元素可视区高宽度, 不包括边框
-dom.clientHeight;			dom.offsetWidth
+dom.clientHeight; dom.offsetWidth
 // 当前元素相对其定位元素的水平与垂直的偏移量
-dom.offsetLeft;				dom.offsetTop
+dom.offsetLeft; dom.offsetTop
 // 元素总高宽度, 包括溢出高宽度
-dom.scrollWidth;			dom.scrollHeight
+dom.scrollWidth; dom.scrollHeight
 // 溢出的滚动条的偏移值
-dom.scrollLeft;				dom.scrollTop
+dom.scrollLeft; dom.scrollTop
 // 浏览器滚动条的偏移值
 document.documentElement.scrollLeft || document.body.scrollLeft
 document.documentElement.scrollTop || document.body.scrollTop
@@ -81,8 +81,8 @@ const isEnd = dom.scrollHeight - dom.scrollTop === dom.clientHeight
 ## DOM 增删改查
 
 ~~~html
-<div class="dom"> 
-  <span>我是子元素</span> 
+<div class="dom">
+  <span>我是子元素</span>
   我是普通文本
 </div>
 ~~~
@@ -104,7 +104,7 @@ dom.replaceChild(dom_obj)
 dom_obj.parentNode.removeChild(dom_obj)
 
 // 元素的代码字符串与文本字符串 (可读写)
-dom.innerHTML;				dom.innerText
+dom.innerHTML; dom.innerText
 // 添加子元素: 添加html代码
 dom.innerHTML += '<div>子元素</div>'
 // 添加或修改元素文本
@@ -164,7 +164,7 @@ Event 对象代表事件的状态，比如事件在其中发生的元素、键�
 dom.onclick = function (event) {
   event = event || window.event // 兼容ie8
   // 该元素距离视口的偏移量
-  event.clientX;			event.clientY
+  event.clientX; event.clientY
   // 触发此事件的元素 (事件的目标节点)
   event.target
   // 当前 Event 对象表示的事件的名称
@@ -314,4 +314,3 @@ dom.onmousedown = function (event) {
   return false // 兼容谷歌和IE浏览器 清除默认行为
 }
 ~~~
-

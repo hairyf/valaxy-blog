@@ -122,7 +122,7 @@ function fibonacci(n) { // 5
   return n <= 2 ? 1 : fibonacci(n - 1) + fibonacci(n - 2)
 }
 const onmessage = function (event) {
-  const num = event.data 		// 分线程接收主线程发送的数据
+  const num = event.data // 分线程接收主线程发送的数据
   postMessage(fibonacci(num)) // 分线程向主线程返回数据
   // alert(result) 不能再分线程调用,分线程没有window对象
 }
@@ -135,7 +135,7 @@ const input = document.querySelector('input')
 document.querySelector('button').onclick = function () {
   const num = input.value
   const worker = new Worker('worker.js')// 引用分线程
-  worker.postMessage(num) 		// 主线程向分线程发送数据
+  worker.postMessage(num) // 主线程向分线程发送数据
   worker.onmessage = function (event) { // 主线程接收分线程返回的数据
     alert(event.data)
   }

@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - NodeJS
-tags: 
+tags:
   - NodeJS
 ---
 
@@ -19,7 +19,7 @@ NodeJS 自身就可以用来构建服务器，而且 http|s 模块是由 C++ 实
 
 ~~~js
 // 引入本地服务器API
-const http = require('http')
+const http = require('node:http')
 // 创建服务器实例
 const server = http.createServer()
 // 绑定接收请求事件
@@ -63,4 +63,3 @@ server.on('request', (req, res) => {
   res.end('hello word')
 })
 ~~~
-

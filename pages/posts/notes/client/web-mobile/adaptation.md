@@ -39,7 +39,7 @@ html.style.fontSize = document.documentElement.clinetWidth / 16 + 'px'
 // 假如我们要在总宽750px的div上放一个200px宽高的盒子，也就是750px = 16rem，那么就是(200 / 750) * 16 ≈ 4.26rem
 </script>
 
-<!-- 
+<!--
 设置了html的字体大小，但子元素有权重问题，一旦以某种方式更改了字体覆盖了html的字体大小，那么适配将不起效果，
 所以要在适配标签中假如!important
 -->

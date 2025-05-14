@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - TypeScript
-tags: 
+tags:
   - TypeScript
 ---
 
@@ -40,17 +40,17 @@ user_name = 0 // 报错
 let somThing: string | number = '112132'
 somThing = 0
 // 如果变量的声明和初始化是在同一行, 可以省略掉变量类型的声明
-let user_name_1 = 'uzi' // --> let user_name_1:string = 'uzi'
+const user_name_1 = 'uzi' // --> let user_name_1:string = 'uzi'
 ~~~
 
 基本类型：
 
 ~~~typescript
-let aName: string = '貂蝉'
-let dAge: number = 18
-let isSingLeDog: boolean = true
-let undef: undefined = undefined
-let nul: null = null
+const aName: string = '貂蝉'
+const dAge: number = 18
+const isSingLeDog: boolean = true
+const undef: undefined = undefined
+const nul: null = null
 ~~~
 
 ## 数组类型
@@ -69,23 +69,23 @@ const arrHeroAge: Array<number> = [17, 231, 23]
 ~~~typescript
 // TS中函数必须指定返回值类型, 如果不指定, 默认会自动指定类型
 function fun_1(): string {
-    return '讨厌~~'
+  return '讨厌~~'
 }
-let content_1: string = fun_1()
+const content_1: string = fun_1()
 
 // TS中形参必须指定类型, 且与实参参数与数量必须一致
 function fun_2(u_name: string, u_age: number): string {
-    return `您的名称是:${u_name}, 年龄是:${u_age}`
+  return `您的名称是:${u_name}, 年龄是:${u_age}`
 }
-let content_2: string = fun_2('毛先生', 15)
+const content_2: string = fun_2('毛先生', 15)
 ~~~
 
 ~~~typescript
 // TS函数中指定可选类型, 可选参数可传, 也可不传
-function fun_3(u_name?:string) { console.log(u_name) }
+function fun_3(u_name?: string) { console.log(u_name) }
 fun_3()
 // 当指定了初始值, 也可不需要传入参数
-function fun_4(u_name:string = '毛先生') { console.log(u_name) }
+function fun_4(u_name: string = '毛先生') { console.log(u_name) }
 fun_4()
 ~~~
 
@@ -101,13 +101,13 @@ fun_5(6, 8, 456, 4561, 123)
 
 ~~~typescript
 // ts中, 方法的重载, 定义多个方法, 参数统一接受
-function getInfo(name:string):string;
-function getInfo(age:number):number;
-function getInfo(str:any):any{
-    if (typeof str === 'string')
-        return `我叫：${str}`
-    else
-        return `我的年龄是：${str}`
+function getInfo(name: string): string
+function getInfo(age: number): number
+function getInfo(str: any): any {
+  if (typeof str === 'string')
+    return `我叫：${str}`
+  else
+    return `我的年龄是：${str}`
 }
 ~~~
 
@@ -119,4 +119,3 @@ function getInfo(str:any):any{
 // @ts-nocheck: 忽略文件所有内容
 // @ts-check: 让 js 文件拥有注释类型
 ~~~
-

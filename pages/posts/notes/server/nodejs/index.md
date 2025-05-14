@@ -5,11 +5,11 @@ categories:
   - Notes
   - Server
   - NodeJS
-tags: 
+tags:
   - NodeJS
 ---
 
-Node.js 发布于2009年5月，由 Ryan Dahl 开发，是一个基于 [Chrome](https://baike.baidu.com/item/Google%20Chrome/5638378?fromtitle=Chrome&fromid=5633839) [V8](https://baike.baidu.com/item/V8/6178125) 引擎的 JavaScript 运行环境，使用了一个事件驱动、非阻塞式I/O模型，让 JavaScript 运行在服务端的开发平台，它让 JavaScript 成为与 PHP、Python、Perl、Ruby 等服务端语言平起平坐的脚本语言。 
+Node.js 发布于2009年5月，由 Ryan Dahl 开发，是一个基于 [Chrome](https://baike.baidu.com/item/Google%20Chrome/5638378?fromtitle=Chrome&fromid=5633839) [V8](https://baike.baidu.com/item/V8/6178125) 引擎的 JavaScript 运行环境，使用了一个事件驱动、非阻塞式I/O模型，让 JavaScript 运行在服务端的开发平台，它让 JavaScript 成为与 PHP、Python、Perl、Ruby 等服务端语言平起平坐的脚本语言。
 
 <!-- more -->
 
@@ -81,7 +81,6 @@ Node.js 通常运行在命令行中，所以我们先掌握基本的命令行指
 - `.`  表示当前目录
 - `..` 表示上一级目录
 
-
 ## 开启调试模式
 
 ~~~
@@ -89,4 +88,3 @@ node --inspect-brk file.js
 ~~~
 
 打开浏览器，点击控制台的 node 标签
-

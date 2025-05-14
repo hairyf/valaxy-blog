@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - NodeJS
-tags: 
+tags:
   - NodeJS
 ---
 
@@ -47,7 +47,7 @@ tags:
 
 ~~~js
 // 扩展模块
-var fs = require('fs')
+var fs = require('node:fs')
 var math = require('./math')
 // 核心模块
 console.log(math.add(123, 456))
@@ -57,10 +57,10 @@ console.log(fs)
 我们可以通过 `exports` 来向外部暴露变量和方法只需要将需要暴露给外部的变量或方法设置为exports的属性即可
 
 ~~~javascript
-//向外部暴露属性或方法
-exports.x = "我是02.module.js中的x";
-exports.y = "我是y";
-exports.fn = function () {};
+// 向外部暴露属性或方法
+exports.x = '我是02.module.js中的x'
+exports.y = '我是y'
+exports.fn = function () {}
 ~~~
 
 ## 全局对象（global）

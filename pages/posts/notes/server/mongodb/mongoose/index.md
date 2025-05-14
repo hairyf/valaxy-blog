@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - MongoDB
-tags: 
+tags:
   - MongoDB
 ---
 
@@ -48,9 +48,8 @@ mongoose.connect('mongodb://localhost/test', {
 
 ~~~js
 // 在 mongoose 对象中，有一个属性叫做 connection，该对象表示的就是数据库连接
-mongoose.connection.once('open', () => {}) 	// 成功
+mongoose.connection.once('open', () => {}) // 成功
 mongoose.connection.once('close', () => {}) // 断开
-
 ~~~
 
 断开数据连接：
@@ -63,7 +62,6 @@ mongoose.disconnect()
 ### 创建模式（Schema）
 
 Mongoose 中任何任何事物都是从 `Schema` 开始的。每一个 `Schema` 对应 MongoDB 中的一个集合（collection）。`Schema` 中定义了集合中文档（document）的格式。
-
 
 ~~~javascript
 // 将 Schema 赋值给一个变量
@@ -93,7 +91,6 @@ const stuSchema = new Schema({
 
 ### 创建模型（Model）
 
-
 Model 代表的是数据库中的集合，通过 Model 才能对数据库进行操作。
 
 ~~~js
@@ -119,7 +116,6 @@ StuModel.create({
 }, (err) => {
   if (!err)
     console.log('插入成功')
-
 })
 ~~~
 
@@ -162,7 +158,6 @@ StuModel.update({ name: '孙悟空' }, { $set: { age: 20 } })
 ~~~js
 StuModel.update({ name: '猪八戒' }, { $unset: { address: '哈哈哈' } }, { multi: true })
 ~~~
-
 
 ## 查询模型（find）
 

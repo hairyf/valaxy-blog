@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - vue
-tags: 
+tags:
   - vue
 date: 2021-03-24 16:00:00
 ---
@@ -194,6 +194,5 @@ const asyncPageWithOptions = defineAsyncComponent({
   loadingComponent: LoadingComponent
 })
 ```
-
 
 ## 组合式 API

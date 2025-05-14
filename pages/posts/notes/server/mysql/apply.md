@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - MySQL
-tags: 
+tags:
   - MySQL
 ---
 
@@ -60,7 +60,6 @@ USE <数据库名称>;
 ## 删除数据库
 DROP DATABASE <库名称>;
 ~~~
-
 
 ## 创建表
 ~~~sh
@@ -149,7 +148,6 @@ UPDATE <表名称> SET
 <字段名称1> <排序方式>,
 <字段名称2> <排序方式>;
 ~~~
-
 
 ## 查询数据
 

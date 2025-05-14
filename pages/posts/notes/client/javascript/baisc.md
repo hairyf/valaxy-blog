@@ -130,7 +130,7 @@ let a = 123 // true
 a = -123 // true
 a = 0 // false
 a = Infinity // true
-a = NaN // false
+a = Number.NaN // false
 if (a) { /* .. */ }
 ~~~
 
@@ -184,9 +184,9 @@ String(value4) // "undefined"
 // 判断是否是有限大的数
 console.log(isFinite(Infinity))
 // 判断是否是NaN
-console.log(isNaN(NaN))
+console.log(isNaN(Number.NaN))
 // 将字符串转换为对应的数值
-console.log(parseInt('60441sdad'))
+console.log(Number.parseInt('60441sdad'))
 ~~~
 
 ## 内置关键字
@@ -198,12 +198,11 @@ console.log(typeof '600') // 'string'
 console.log({} instanceof Object)
 ~~~
 
-
 ## 函数指针
 
 面向对象语言中 this 表示当前对象的一个引用，但在 JavaScript 中 this 不是固定不变的，它会随着执行环境的改变而改变。
 
-我们还可以通过函数原型的 `call`、`apply`、`bind` 函数显式的设定 this, 它们具有以下特点: 
+我们还可以通过函数原型的 `call`、`apply`、`bind` 函数显式的设定 this, 它们具有以下特点:
 
 - 都能指定函数中的 this
 - call()/apply()是立即调用函数, 但参数传入的方式不一样
@@ -255,13 +254,13 @@ String.prototype.replace(/RegExp/, 'xxx')
  > s   匹配元字符.(除换行符意外的任意单个字符)
 - 正则表达式模式
  > [abc]	查找方括号之间的任何字符。
- > [^xyz] 	不匹配这个集合中的任何一个字符 
+ > [^xyz] 	不匹配这个集合中的任何一个字符
  > [0-9]	查找任何从 0 至 9 的数字。
  > (x|y)	查找由 | 分隔的任何选项
  > (x) 	匹配x里面的内容
- > {n} 	精确匹配n次 
- > {n,} 	匹配n次以上 
- > {n,m} 	匹配n-m次 
+ > {n} 	精确匹配n次
+ > {n,} 	匹配n次以上
+ > {n,m} 	匹配n-m次
 - 元字符
  > \d	查找数字。
  > \D	查找非数字字符

@@ -4,7 +4,7 @@ date: 2022-03-05
 categories:
   - Notes
   - Standard
-tags: 
+tags:
   - TypeScript
 ---
 
@@ -53,7 +53,7 @@ const date: any = dayjs()
 // src/types/custom.d.ts
 /** 全局接口: 用户数据 */
 declare interface UserInfo {
-	//....
+  // ....
 }
 ~~~
 
@@ -63,16 +63,16 @@ declare interface UserInfo {
 
 ~~~ts
 // 错误
-const getUserInfo = (data: any) => {
+function getUserInfo(data: any) {
   return http.post('/login', data)
 }
 // 正确
-const getUserInfo = (phone: number, code: number) => {
+function getUserInfo(phone: number, code: number) {
   return http.post('/login', { phone, code })
 }
 
 // 错误
-const getUserInfo = (params: any) => {
+function getUserInfo(params: any) {
   return http.get('/list', { params })
 }
 // 正确
@@ -82,7 +82,7 @@ interface ListOpts {
   limit: number
 }
 // api/index.ts
-const getList = (params: ListOpts) => {
+function getList(params: ListOpts) {
   return http.get('/list', { params })
 }
 ~~~
@@ -93,11 +93,11 @@ const getList = (params: ListOpts) => {
 
 ~~~typescript
 // 正确
-const getUserInfo = () => {
-  return http.post<UserInfo>('/login');
-};
+function getUserInfo() {
+  return http.post<UserInfo>('/login')
+}
 // 正确
-const getDetails = () => {
-  return http.post('/details');
-};
+function getDetails() {
+  return http.post('/details')
+}
 ~~~

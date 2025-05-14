@@ -98,7 +98,7 @@ Less 是一门 CSS 预处理语言,它扩展了 CSS 语言,增加了变量、Mix
 .triangle(C){ /* .. */ } // 匹配C
 
 // 使用
-#warp { 
+#warp {
   .triangle(T, 15px, 15px)
 }
 ~~~

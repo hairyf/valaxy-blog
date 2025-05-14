@@ -1,6 +1,6 @@
 ---
 title: Solidity 智能合约语言
-categories: 
+categories:
   - Notes
   - BlockChain
   - Solidity
@@ -27,7 +27,6 @@ Solidity 是一门面向合约的、为实现智能合约而创建的高级编�
 - [Truffle](https://github.com/trufflesuite/truffle) (JavaScript/Solidity) - 提供了完整的开发、测试、调试工具链，可以与本地或远程网络进行交互。
 - [Brownie](https://github.com/eth-brownie/brownie) (Python/Solidity) - 以简洁的 Python 语法为调试和测试提供了便捷的工具链。
 
-
 除了开发框架外，更好地进行调试还需要熟悉一些工具：
 
 1. [Remix IDE](https://remix.ethereum.org/)。Remix 会提供完整的 IDE、编译工具、部署调试的测试节点环境、账户等，可以很方便地进行测试，Remix 还可以通过 MetaMask 插件与测试网、主网进行直接交互，部分生产环境也会使用它进行编译部署。
@@ -41,7 +40,6 @@ Solidity 合约是以 `.sol` 为后缀的文件，无法直接执行，需要编
 ![](https://image.pseudoyu.com/images/compile_solidity.png)
 
 编译完成后，由合约账户进行部署到链上，其他账户就可通过钱包与合约进行交互，实现链上业务逻辑。
-
 
 ## 基本数据类型
 
@@ -195,7 +193,7 @@ contract Struct {
 常量则是一种不可以改变值的变量，使用常量可以节约 gas 费用，我们可以通过以下方式来定义
 
 ```solidity
-string public constant MY_CONSTANT = "0707"; 
+string public constant MY_CONSTANT = "0707";
 ```
 
 `immutable` 则是一种特殊的类型，他的值可以在 `constructor` 中初始化，但不可再次改变，灵活使用这几种类型可以有效节省 gas 费并保障数据安全。

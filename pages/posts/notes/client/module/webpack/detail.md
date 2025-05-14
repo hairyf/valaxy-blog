@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - webpack
-tags: 
+tags:
   - webpack
 date: 2019-10-10 16:00:00
 ---
@@ -86,18 +86,18 @@ date: 2019-10-10 16:00:00
 
 ~~~javascript
 // webpack.config.ts -> resolve: { alias:{...} }
-alias: {$css: resolve(__dirname, 'src/css')}
 // index.js
 import '$css/index.css'
+alias: { $css: resolve(__dirname, 'src/css') }
 ~~~
 
 省略文件后缀。
 
 ~~~javascript
 // webpack.config.ts -> resolve: { extensions:[...] }
-extensions: ['.js', '.json', '.jsx', '.css']
 // index.js
 import '$css/index'
+extensions: ['.js', '.json', '.jsx', '.css']
 ~~~
 
 配置多个模块目录（慎用）
@@ -183,8 +183,6 @@ proxy: { // 一旦devServer(5000)服务器接受到 /api/xxx 的请求，就会�
 - name：可以使用命名规则
 `name: true`
 
-
-
 ## 划分分割组(cacheGroups)
 
 `optimization: { splitChunks: { cacheGroups:{....} } }`
@@ -197,7 +195,7 @@ cacheGroups: { // 分割chunk的组
 	vendors: { test: /[\\/]node_modules[\\/]/, priority: -10 },
   // minChunks：要提取的chunk最少被引用次数，priority：优先级
   // euseExistingChunk：如果当前要打包的模块，和之前已经被提取的模块是同一个，就会复用，而不是重新打包模块
-	default: { minChunks: 2,priority: -20, euseExistingChunk: true } 
+	default: { minChunks: 2,priority: -20, euseExistingChunk: true }
 }
 ~~~
 
@@ -206,7 +204,7 @@ cacheGroups: { // 分割chunk的组
 optimization.runtimeChunk 将当前模块的记录其他模块的 hash 单独打包为一个文件，可以解决修改 a 文件导致 b 文件的 `contenthash` 变化。
 
 ~~~javascript
-runtimeChunk: {name: entrypoint => `runtime-${entrypoint.name}`}
+runtimeChunk: { name: entrypoint => `runtime-${entrypoint.name}` }
 ~~~
 
 ## 压缩器(minimizer)
@@ -214,14 +212,14 @@ runtimeChunk: {name: entrypoint => `runtime-${entrypoint.name}`}
 配置生产环境的压缩方案 `optimization: {minimizer:[.....]}`
 
 ~~~javascript
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 // 配置生产环境的压缩方案：js 和 css
 new TerserWebpackPlugin({
-	// 开启缓存
-	cache: true,
-	// 开启多进程打包
-	parallel: true,
-	// 启动 source-map
-	sourceMap: true
+  // 开启缓存
+  cache: true,
+  // 开启多进程打包
+  parallel: true,
+  // 启动 source-map
+  sourceMap: true
 })
 ~~~

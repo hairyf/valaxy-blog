@@ -47,8 +47,8 @@ import Vue from '/@modules/vue'
 
 ```js
 // server.js
-const fs = require('fs')
-const path = require('path')
+const fs = require('node:fs')
+const path = require('node:path')
 const Koa = require('koa')
 
 const app = new Koa()
@@ -82,7 +82,6 @@ function rewriteImports(content) {
 
     else
       return $0
-
   })
 }
 
@@ -231,7 +230,7 @@ if (query.type === 'style') {
     };
 
     function updateStyle(content) {
-      // 方法1 
+      // 方法1
       let style = new CSSStyleSheet();
       style.replaceSync(content);
       document.adoptedStyleSheets = [

@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - Mini Program
-tags: 
+tags:
   - Mini Program
 date: 2020-04-01 14:00:00
 ---
@@ -88,6 +88,4 @@ probject.config.json		项目配置文件
     "position": "bottom"
   }
 }
-
 ~~~
-

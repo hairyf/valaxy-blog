@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - MongoDB
-tags: 
+tags:
   - MongoDB
 ---
 
@@ -61,14 +61,13 @@ db.stus.insertMany([doc])
 
 `db.stus.insert({ _id:"hello", name: "猪八戒", age:28 });`
 
-
 ### 优化添加大数据
 
 mongo 内置方法优化差，尽量包装好数据在添加进集合中。
 
 ~~~js
 // 向 numbers 中插入 20000 条数据
-for (let i = 0; i < 20000; i++) { 	// 15.2s
+for (let i = 0; i < 20000; i++) { // 15.2s
   db.numbers.insert({ num: i })
 }
 const arr = []

@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - Express
-tags: 
+tags:
   - Express
 ---
 
@@ -84,7 +84,6 @@ const app = new Koa()
 const router = require('koa-router')()
 
 router.get('/search', async (ctx) => {
-
   // 将cookie设置name为value, 后面还可以跟一个配置对象
   ctx.cookies.set('name', 'value', {
     signed: true, // 是否使用加密签名(默认false)

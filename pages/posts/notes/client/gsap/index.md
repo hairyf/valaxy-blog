@@ -40,8 +40,8 @@ gsap.to('.box', { rotation: 27, x: 100, duration: 1 })
 
 ## 时间线
 
-[Timeline](https://greensock.com/docs/v3/GSAP/Timeline) 
-是 Tweens 的容器。它是 gaps 的排序工具 ，可及时将动画定位到任何您想要的位置，然后使用 
+[Timeline](https://greensock.com/docs/v3/GSAP/Timeline)
+是 Tweens 的容器。它是 gaps 的排序工具 ，可及时将动画定位到任何您想要的位置，然后使用
 [pause()](https://greensock.com/docs/v3/GSAP/Timeline/pause())、
 [play()](https://greensock.com/docs/v3/GSAP/Timeline/play())、
 [progress()](https://greensock.com/docs/v3/GSAP/Timeline/progress())、

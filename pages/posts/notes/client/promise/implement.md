@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Promise
-tags: 
+tags:
   - Promise
 ---
 
@@ -84,7 +84,6 @@ class Promise {
       // 如果成功函数已经定义, 代表需要异步执行成功回调 onResolved 并传入数据
       if (this.onResolved)
         setTimeout(() => this.onResolved(value))
-
     }
     // 获取失败函数
     const reject = (reason) => {
@@ -246,7 +245,7 @@ class Promise {
     // 创建一个计数器
     let resolveCount = 0
     // 创建数组指定长度
-    const values = new Array(promises.length)
+    const values = Array.from({ length: promises.length })
     return new Promise((resolve, reject) => {
       promises.forEach((item, index) => {
         Promise.resolve(item).then(

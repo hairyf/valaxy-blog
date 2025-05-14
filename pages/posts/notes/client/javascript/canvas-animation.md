@@ -22,7 +22,6 @@ date: 2018-07-26
 
 <!-- more -->
 
-
 ## 构造原型(CanvasAnimation)
 
 ```js

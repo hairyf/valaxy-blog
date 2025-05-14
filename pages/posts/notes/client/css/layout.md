@@ -63,7 +63,7 @@ CSS布局可以包含页眉，页脚，左窗格，右窗格和正文部分。
 
 ```css
 #container {
-  padding-left: 200px; 
+  padding-left: 200px;
   padding-right: 150px;
 }
 #left{ width: 200px; }
@@ -183,7 +183,6 @@ right 只要一条代码，将元素的右边界往左拉。
 ```
 
 ![双飞翼布局](https://tva1.sinaimg.cn/large/006C2ocely8h4ujff7qqaj30qo00xt8n.jpg)
-
 
 ## 粘黏布局
 

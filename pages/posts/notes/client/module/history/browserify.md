@@ -42,22 +42,22 @@ Browserify 可以让你使用类似于 node 的 require() 的方式来组织浏�
 
 ~~~javascript
 // module1.js
-module.exports = {foo() {}}
+module.exports = { foo() {} }
 // module2.js
-module.exports = {foo() {}}
+module.exports = { foo() {} }
 // module3.js
-module.exports = {foo() {}}
+module.exports = { foo() {} }
 ~~~
 
 ## 引入模块代码
 
 ~~~javascript
-//引用文件模块
-let module1 = require('./module1')
-let module2 = require('./module2')
-let module3 = require('./module3')
+// 引用文件模块
+const uniq = require('uniq')
+const module1 = require('./module1')
+const module2 = require('./module2')
+const module3 = require('./module3')
 // 引入uniq模块
-let uniq = require('uniq')
 ~~~
 
 ## 打包处理js
@@ -67,5 +67,5 @@ let uniq = require('uniq')
 ## 页面使用引入
 
 ~~~html
-<script type="text/javascript" src="js/dist/bundle.js"></script> 
+<script type="text/javascript" src="js/dist/bundle.js"></script>
 ~~~

@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - react
-tags: 
+tags:
   - react
 ---
 
@@ -28,10 +28,17 @@ class Example extends Component {
   }
 
   render() {
-    return (<>
-            <p>You clicked {this.state.count} times</p>
-            <button onClick={this.addCount.bind(this)}>Click me</button>
-        </>)
+    return (
+      <>
+        <p>
+          You clicked
+          {this.state.count}
+          {' '}
+          times
+        </p>
+        <button onClick={this.addCount.bind(this)}>Click me</button>
+      </>
+    )
   }
 
   addCount() { // 每次加一, 需访问 this.state
@@ -48,10 +55,17 @@ Hooks：
 import React, { useState } from 'react'
 function CountHooks() {
   const [count, setCount] = useState(0)
-  return (<>
-        <p>You clicked {count} times</p>
-        <button onClick={() => { setCount(count + 1) }}>click me</button>
-    </>)
+  return (
+    <>
+      <p>
+        You clicked
+        {count}
+        {' '}
+        times
+      </p>
+      <button onClick={() => { setCount(count + 1) }}>click me</button>
+    </>
+  )
 }
 export default CountHooks
 ~~~
@@ -73,11 +87,22 @@ function Example() {
     showSex = false
   }
   const [work, setWork] = useState('前端工程师')
-  return (<>
-        <p>Mr_Mao 今年：{age} </p>
-        <p>性别：{sex} </p>
-        <p>工作是：{work} </p>
-    </>)
+  return (
+    <>
+      <p>
+        Mr_Mao 今年：
+        {age}
+      </p>
+      <p>
+        性别：
+        {sex}
+      </p>
+      <p>
+        工作是：
+        {work}
+      </p>
+    </>
+  )
 }
 export default Example
 ~~~
@@ -95,10 +120,17 @@ function CountHooks() {
     console.log(`useEffect=>You clicked ${count} times`)
   })
   // ---关键代码---------end-------
-  return (<>
-        <p>You clicked {count} times</p>
-        <button onClick={() => { setCount(count + 1) }}>click me</button>
-    </>)
+  return (
+    <>
+      <p>
+        You clicked
+        {count}
+        {' '}
+        times
+      </p>
+      <button onClick={() => { setCount(count + 1) }}>click me</button>
+    </>
+  )
 }
 export default CountHooks
 ~~~
@@ -121,10 +153,17 @@ function CountHooks() {
     }
   })
   // ---关键代码---------end-------
-  return (<>
-        <p>You clicked {count} times</p>
-        <button onClick={() => { setCount(count + 1) }}>click me</button>
-    </>)
+  return (
+    <>
+      <p>
+        You clicked
+        {count}
+        {' '}
+        times
+      </p>
+      <button onClick={() => { setCount(count + 1) }}>click me</button>
+    </>
+  )
 }
 export default CountHooks
 ~~~
@@ -175,14 +214,19 @@ function Counter() {
 function CountHooks() {
   const [count, setCount] = useState(0)
   return (
-        <div>
-            <p>You clicked {count} times</p>
-            <button onClick={() => { setCount(count + 1) }}>click me</button>
-            {/* 创建一个上下文组件, value存放需要传递的值, 标签内传入组件 */}
-            <CountContext.Provider value={count}>
-                <Counter />
-            </CountContext.Provider>
-        </div>
+    <div>
+      <p>
+        You clicked
+        {count}
+        {' '}
+        times
+      </p>
+      <button onClick={() => { setCount(count + 1) }}>click me</button>
+      {/* 创建一个上下文组件, value存放需要传递的值, 标签内传入组件 */}
+      <CountContext.Provider value={count}>
+        <Counter />
+      </CountContext.Provider>
+    </div>
   )
 }
 export default CountHooks
@@ -209,15 +253,16 @@ function Example8() {
     console.log('textRef.current:', textRef.current)
   })
   // ----------关键代码--------------end
-  return <>
-        {/* 保存input的ref到inputEl */}
-        <input ref={inputEl} type="text" />
-        <button onClick={onButtonClick}>在input上展示文字</button>
-        <br />
-        <br />
-        <input value={text} onChange={(e) => { setText(e.target.value) }} />
+  return (
+    <>
+      {/* 保存input的ref到inputEl */}
+      <input ref={inputEl} type="text" />
+      <button onClick={onButtonClick}>在input上展示文字</button>
+      <br />
+      <br />
+      <input value={text} onChange={(e) => { setText(e.target.value) }} />
     </>
-
+  )
 }
 export default Example8
 ~~~
@@ -233,11 +278,13 @@ import React, { useMemo, useState } from 'react'
 function Example() {
   const [xiaohong, setXiaohong] = useState('小红待客状态')
   const [zhiling, setZhiling] = useState('志玲待客状态')
-  return <>
-        <button onClick={() => { setXiaohong(new Date().getTime()) }}>小红</button>
-        <button onClick={() => { setZhiling(`${new Date().getTime()},志玲向我们走来了`) }}>志玲</button>
-        <ChildComponent name={xiaohong}>{zhiling}</ChildComponent>
+  return (
+    <>
+      <button onClick={() => { setXiaohong(new Date().getTime()) }}>小红</button>
+      <button onClick={() => { setZhiling(`${new Date().getTime()},志玲向我们走来了`) }}>志玲</button>
+      <ChildComponent name={xiaohong}>{zhiling}</ChildComponent>
     </>
+  )
 }
 function ChildComponent({ name, children }) {
   function changeXiaohong(name) {
@@ -246,10 +293,12 @@ function ChildComponent({ name, children }) {
   }
   // 每当父组件状态发生改变都会执行该方法, 这样会导致性能出现问题
   const actionXiaohong = changeXiaohong(name)
-  return <>
-        <div>{actionXiaohong}</div>
-        <div>{children}</div>
+  return (
+    <>
+      <div>{actionXiaohong}</div>
+      <div>{children}</div>
     </>
+  )
 }
 
 export default Example
@@ -267,10 +316,10 @@ function ChildComponent({ name, children }) {
   }
   const actionXiaohong = useMemo(() => changeXiaohong(name), [name])
   return (
-        <>
-            <div>{actionXiaohong}</div>
-            <div>{children}</div>
-        </>
+    <>
+      <div>{actionXiaohong}</div>
+      <div>{children}</div>
+    </>
   )
 }
 ```
@@ -318,14 +367,19 @@ function ReducerDemo() {
       default: return state
     }
   }, 0)
-  return <>
-        <div>
-            <h2>现在的分数是{count}</h2>
-            {/* 点击进行派发, 改变count的状态 */}
-            <button onClick={() => dispatch('add')}>Increment</button>
-            <button onClick={() => dispatch('sub')}>Decrement</button>
-        </div>
+  return (
+    <>
+      <div>
+        <h2>
+          现在的分数是
+          {count}
+        </h2>
+        {/* 点击进行派发, 改变count的状态 */}
+        <button onClick={() => dispatch('add')}>Increment</button>
+        <button onClick={() => dispatch('sub')}>Decrement</button>
+      </div>
     </>
+  )
 }
 export default ReducerDemo
 ~~~
@@ -341,7 +395,7 @@ export const ColorContext = createContext({})
 // 定义action改变状态的常量
 export const UPDATE_COLOR = 'UPDATE_COLOR'
 // 定义一个纯函数reducer状态库
-const reducer = (state, action) => {
+function reducer(state, action) {
   switch (action.type) {
     case UPDATE_COLOR:
       return state.color
@@ -349,15 +403,17 @@ const reducer = (state, action) => {
       return state
   }
 }
-export const Color = (props) => {
+export function Color(props) {
   const [color, dispatch] = useReducer(reducer, 'blue')
-  return <>
-        {/* 全局上下文中传入对象, 该对象可全局中每个组件使用useContext引用 */}
-        {/* 传入使用useReducer定义的状态与派发方法, 形成全局都能看到与调用的状态库 */}
-        <ColorContext.Provider value={{ color, dispatch }}>
-            {props.children}
-        </ColorContext.Provider>
+  return (
+    <>
+      {/* 全局上下文中传入对象, 该对象可全局中每个组件使用useContext引用 */}
+      {/* 传入使用useReducer定义的状态与派发方法, 形成全局都能看到与调用的状态库 */}
+      <ColorContext.Provider value={{ color, dispatch }}>
+        {props.children}
+      </ColorContext.Provider>
     </>
+  )
 }
 ~~~
 
@@ -394,7 +450,14 @@ function useWinSize() {
 }
 function Example9() {
   const size = useWinSize()
-  return <div>页面Size:{size.width}x{size.height}</div>
+  return (
+    <div>
+      页面Size:
+      {size.width}
+      x
+      {size.height}
+    </div>
+  )
 }
 export default Example9
 ~~~

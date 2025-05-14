@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - PHP
-tags: 
+tags:
   - PHP
 ---
 
@@ -20,10 +20,10 @@ if ($count_1 == $count_2) {
   echo '数值匹配成功'; // 输出语句, 浏览器访问时自动被编译为字符串
   unset($count_1); // 卸除变量
   echo $count_1; // 变量卸除后, 变量一则不存在, echo无任何效果
-    
+
   // 错误抑制符
   @('wadwada'+'wdwandia');
-    
+
   // 模板字符串
   echo "count_1:{$count_1}"
 }

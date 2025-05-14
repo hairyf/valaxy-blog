@@ -4,7 +4,7 @@ categories:
   - Notes
   - Client
   - webpack
-tags: 
+tags:
   - webpack
 date: 2019-11-10 17:00:00
 ---
@@ -18,7 +18,7 @@ date: 2019-11-10 17:00:00
 ~~~ts
 // lib/webpack/core.ts
 
-import path from 'path'
+import path from 'node:path'
 import type { DeepRequired } from '@tuimao/core'
 import { merge } from 'lodash'
 import fs from 'fs-extra'
@@ -97,7 +97,6 @@ export function webpack(config: Configuration) {
 }
 ~~~
 
-
 整段代码可以看到，收集的 deps 还没有处理，这里先不着急，先把功能模块分离了。
 
 ## 分离源码逻辑
@@ -119,7 +118,7 @@ export function webpack(config: Configuration) {
 源码配置：`webpack/core.ts`
 
 ~~~ts
-import path from 'path'
+import path from 'node:path'
 
 /** 基本地址 */
 export const basePath = process.cwd()
@@ -149,7 +148,7 @@ export const defaultConfig = {
 解析方法：`webpack/parser.ts`
 
 ~~~ts
-import path from 'path'
+import path from 'node:path'
 import fs from 'fs-extra'
 
 // @babel/parser 用于将字符串转换为 ast
@@ -168,7 +167,7 @@ import { transformFromAstSync } from '@babel/core'
  * @param path 路径
  * @param options {ParserOptions}
  */
-export const readFileAstSync = (path: string, options?: ParserOptions) => {
+export function readFileAstSync(path: string, options?: ParserOptions) {
   const file = fs.readFileSync(path, 'utf-8')
   return parse(file, options || { sourceType: 'module' })
 }
@@ -177,7 +176,7 @@ export const readFileAstSync = (path: string, options?: ParserOptions) => {
  * 读取 entry ast 中 module 并收集依赖
  * @param entry
  */
-export const readFileAstModuleDeps = (entry: string) => {
+export function readFileAstModuleDeps(entry: string) {
   const ast = readFileAstSync(entry)
   // 获取到文件文件夹路径
   const dirname = path.dirname(entry)
@@ -205,7 +204,7 @@ export const readFileAstModuleDeps = (entry: string) => {
  * 将 ast 经过 @babel/preset-env 处理返回代码
  * @param ast
  */
-export const transformPresetEnvCode = (ast: Node) => {
+export function transformPresetEnvCode(ast: Node) {
   const { code } = transformFromAstSync(ast, null, { presets: ['@babel/preset-env'] })
   return code || ''
 }
@@ -242,7 +241,7 @@ export default Compiler
 ## 代码生成(generate)
 
 ~~~ts
-import path from 'path'
+import path from 'node:path'
 import fs from 'fs-extra'
 import type { ConfigurationRead } from './core'
 import { readFileAstModuleDeps, readFileAstSync, transformPresetEnvCode } from './parser'
@@ -347,4 +346,3 @@ class Compiler {
 
 export default Compiler
 ~~~
-

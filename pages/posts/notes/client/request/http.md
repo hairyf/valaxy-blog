@@ -31,7 +31,7 @@ HTTP是一种用于获取诸如 HTML 文档之类的资源的协议。它是 Web
 - `Cookie: BAIDUID=AD3B0FA706E; BIDUPSID=AD3B0FA706;`
 - `Content-Type: application/x-www-form-urlencoded 或者 application/json`
 
-**请求体** 
+**请求体**
 - `username=tom&pwd=123`
 - `{"username": "tom", "pwd": 123}`
 
@@ -40,8 +40,8 @@ HTTP是一种用于获取诸如 HTML 文档之类的资源的协议。它是 Web
 **状态行**
 - `status statusText`
 
-**响应头** 
-- `Content-Type: text/html;charset=utf-8` 
+**响应头**
+- `Content-Type: text/html;charset=utf-8`
 - `Set-Cookie: BD_CK_SAM=1;path=/`
 
 **响应体**
@@ -156,7 +156,6 @@ Watching...
 ```
 
 此时，你可以打开你的浏览器，然后输入：http://localhost:53000/course
-
 
 ## 访问数据
 

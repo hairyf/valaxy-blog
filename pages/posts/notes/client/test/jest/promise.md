@@ -15,18 +15,18 @@ tags:
 
 ~~~js
 import axios from 'axios'
-export const fetchData = (fn) => {
+export function fetchData(fn) {
   axios.get('http://a.jspang.com/jestTest.json')
     .then(response => fn(response.data))
 }
-export const pmsFetchData = () => (
-  axios.get('http://a.jspang.com/jestTest.json')
+export function pmsFetchData() {
+  return axios.get('http://a.jspang.com/jestTest.json')
     .then(response => response.data)
-)
-export const fetchThreeData = () => (
-  axios.get('http://a.jspang.com/jestTest.json')
+}
+export function fetchThreeData() {
+  return axios.get('http://a.jspang.com/jestTest.json')
     .then(response => response.data)
-)
+}
 ~~~
 
 ## 异步回调测试
@@ -43,7 +43,6 @@ test('异步方法测试', (done) => {
   })
 })
 ~~~
-
 
 ## 异步 async 测试
 

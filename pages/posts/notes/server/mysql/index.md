@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - MySQL
-tags: 
+tags:
   - MySQL
 ---
 
@@ -36,4 +36,3 @@ mysql [-h主机名称 -p端口号] -u用户名 -p密码
 ## 退出数据库
 exit | ctrl+c
 ~~~
-

@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - TypeScript
-tags: 
+tags:
   - TypeScript
 ---
 
@@ -60,7 +60,7 @@ function a(): Obj[Extract<keyof Obj, string>] {
 ### ReturnType 获取函数返回值
 
 ~~~ts
-const getUserInfo = () => {}
+function getUserInfo() {}
 type returnType = ReturnType<typeof getUserInfo>
 ~~~
 

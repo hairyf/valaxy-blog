@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Uniapp
-tags: 
+tags:
   - Mini Program
 ---
 
@@ -35,23 +35,23 @@ keytool -genkey -alias testalias -keyalg RSA -keysize 2048 -validity 36500 -keys
 回车后会提示：
 
 ```sh
-Enter keystore password:  //输入证书文件密码，输入完成回车  
-Re-enter new password:   //再次输入证书文件密码，输入完成回车  
-What is your first and last name?  
-  [Unknown]:  //输入名字和姓氏，输入完成回车  
-What is the name of your organizational unit?  
-  [Unknown]:  //输入组织单位名称，输入完成回车  
-What is the name of your organization?  
-  [Unknown]:  //输入组织名称，输入完成回车  
-What is the name of your City or Locality?  
-  [Unknown]:  //输入城市或区域名称，输入完成回车  
-What is the name of your State or Province?  
-  [Unknown]:  //输入省/市/自治区名称，输入完成回车  
-What is the two-letter country code for this unit?  
-  [Unknown]:  //输入国家/地区代号（两个字母），中国为CN，输入完成回车  
-Is CN=XX, OU=XX, O=XX, L=XX, ST=XX, C=XX correct?  
-  [no]:  //确认上面输入的内容是否正确，输入y，回车  
+Enter keystore password:  //输入证书文件密码，输入完成回车
+Re-enter new password:   //再次输入证书文件密码，输入完成回车
+What is your first and last name?
+  [Unknown]:  //输入名字和姓氏，输入完成回车
+What is the name of your organizational unit?
+  [Unknown]:  //输入组织单位名称，输入完成回车
+What is the name of your organization?
+  [Unknown]:  //输入组织名称，输入完成回车
+What is the name of your City or Locality?
+  [Unknown]:  //输入城市或区域名称，输入完成回车
+What is the name of your State or Province?
+  [Unknown]:  //输入省/市/自治区名称，输入完成回车
+What is the two-letter country code for this unit?
+  [Unknown]:  //输入国家/地区代号（两个字母），中国为CN，输入完成回车
+Is CN=XX, OU=XX, O=XX, L=XX, ST=XX, C=XX correct?
+  [no]:  //确认上面输入的内容是否正确，输入y，回车
 
-Enter key password for <testalias>  
+Enter key password for <testalias>
         (RETURN if same as keystore password):  //确认证书密码与证书文件密码一样（HBuilder|HBuilderX要求这两个密码一致），直接回车就可以
 ```

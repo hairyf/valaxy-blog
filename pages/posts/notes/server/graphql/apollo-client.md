@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - GraphQL
-tags: 
+tags:
   - Apollo Client
 ---
 
@@ -58,7 +58,6 @@ function getTargetOracles(target: string) {
 }
 ```
 
-
 ## 与 VSCode 配合
 
 `Apollo GraphQL` 可以实现前端的代码提示。
@@ -81,5 +80,3 @@ module.exports = {
   },
 }
 ```
-
-

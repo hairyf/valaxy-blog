@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - Python
-tags: 
+tags:
   - Python
 ---
 

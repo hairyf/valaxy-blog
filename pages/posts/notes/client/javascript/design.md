@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - JavaScript
-tags: 
+tags:
   - JavaScript
 ---
 
@@ -42,7 +42,6 @@ xiaoB.eat('banana')
 Js 通过函数和原型，模拟了传统面向对象编程中类的概念实现了面向对象的编程模式。
 
 面向对象的编程思想，主要为了实现三件事，封装，继承和多态。
-
 
 ## 工厂模式
 
@@ -261,7 +260,6 @@ var MacroCommand = function () {
     execute() {
       for (var i = 0, command; command = this.commandsList[i++];)
         command.execute()
-
     }
   }
 }
@@ -313,31 +311,31 @@ macroCommand.add(macroCommand2)
 macroCommand.execute()
 ~~~
 
-
 ## 观察者模式
 
 观察者模式又叫发布订阅和消息模式。是设计模式中非常著名也是非常重要的一种模式。这种模式一般会定义一个主题和众多个个体，这里主题可以想象为一个消息中心，里面有各种各样的消息，众多个体可以订阅不同的消息，当未来消息中心发布某条消息的时候，订阅过他的个体就会得到通知。
 
 ~~~javascript
-/** 观察者构造函数;
-  * 观察者模式又叫发布订阅和消息模式。是设计模式中非常著名也是非常重要的一种模式。
-  * 这种模式一般会定义一个主题和众多个个体，这里主题可以想象为一个消息中心，里面有各种各样的消息，
-  * 众多个体可以订阅不同的消息，当未来消息中心发布某条消息的时候，订阅过他的个体就会得到通知。
-  * 使用方式:
-  * 订阅消息-> $watcher.subscribe(type, execute)
-  * @param {string} type -> 消息名称
-  * @param {Function} execute -> 接受消息的回调函数
-  * @param {Boolean} _isInit -> 当消息存在时, 是否初始化执行(默认执行)
-  * @returns {observe} 返回订阅者实例, 用于取消订阅
-  *
-  * 发布消息-> $watcher.publish(type, value, _isSave)
-  * @param {string} type 消息名称
-  * @param {any} value 消息数据
-  * @param {boolean} _isSava 是否保存消息(占用内存)
-  *
-  * 取消订阅 -> $watcher.unsubscribe(_observe)
-  * @param {observe} 订阅消息返回的订阅者实例(销毁数据，清除缓存)
-  */
+/**
+ * 观察者构造函数;
+ * 观察者模式又叫发布订阅和消息模式。是设计模式中非常著名也是非常重要的一种模式。
+ * 这种模式一般会定义一个主题和众多个个体，这里主题可以想象为一个消息中心，里面有各种各样的消息，
+ * 众多个体可以订阅不同的消息，当未来消息中心发布某条消息的时候，订阅过他的个体就会得到通知。
+ * 使用方式:
+ * 订阅消息-> $watcher.subscribe(type, execute)
+ * @param {string} type -> 消息名称
+ * @param {Function} execute -> 接受消息的回调函数
+ * @param {boolean} _isInit -> 当消息存在时, 是否初始化执行(默认执行)
+ * @returns {observe} 返回订阅者实例, 用于取消订阅
+ *
+ * 发布消息-> $watcher.publish(type, value, _isSave)
+ * @param {string} type 消息名称
+ * @param {any} value 消息数据
+ * @param {boolean} _isSava 是否保存消息(占用内存)
+ *
+ * 取消订阅 -> $watcher.unsubscribe(_observe)
+ * @param {observe} 订阅消息返回的订阅者实例(销毁数据，清除缓存)
+ */
 class Watcher {
   constructor(config = { debugging: false }) {
     this.observes = {} // 订阅者对象集合
@@ -413,7 +411,6 @@ class Watcher {
       this.id = this.Guid()
       if (typeof execute == 'function')
         this.execute = execute
-
     }
 
     execute(message) {
@@ -459,7 +456,7 @@ watcher.publish('user_info', { name: '鄧脂龍', age: 80 })
 const fromStrategu = (function () {
   const strategy = {
     notEmpty: val => val.length ? '' : '请填写内容',
-    isNumber: val => /^[0-9]+(\.[0-9]+)$/.test(val) ? '' : '请填写一个数字',
+    isNumber: val => /^\d+(\.\d+)$/.test(val) ? '' : '请填写一个数字',
     isPhone: val => /^(?:(?:\+|00)86)?1[3-9]\d{9}$/.test(val) ? '' : '手机号格式不正确',
   }
   return {
@@ -476,5 +473,3 @@ const fromStrategu = (function () {
   }
 })()
 ~~~
-
-

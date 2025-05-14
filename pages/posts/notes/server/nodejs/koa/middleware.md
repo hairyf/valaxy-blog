@@ -5,7 +5,7 @@ categories:
   - Notes
   - Server
   - Express
-tags: 
+tags:
   - Express
 ---
 
@@ -16,7 +16,7 @@ Koa 和 Express 一样是一个自身功能极简，完全是由路由和中间�
 ## 设置模板资源渲染
 
 ~~~js
-const path = require('path')
+const path = require('node:path')
 const Koa = require('koa')
 const views = require('koa-views')
 const app = new Koa()
@@ -57,7 +57,6 @@ app.listen(3000, () => console.log('服务器启动成功'))
 ~~~
 
 ## static 中间件
-
 
 **安装**：`npm i koa-static --save`
 

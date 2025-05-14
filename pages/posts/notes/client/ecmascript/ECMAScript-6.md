@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - ECMAScript
-tags: 
+tags:
   - ECMAScript
   - ES6
 ---
@@ -19,10 +19,11 @@ ECMAScript 6（简称ES6）是于2015年6月正式发布的JavaScript语言的�
 与var类似， 用于声明一个变量。在块级作用域内有效，不能重复声明，不会预处理，不存在提升
 
 ~~~javascript
-for (let i=0; i<btns.length; i++) {
-	btns[i].onclick = function () {
-		console.log(i) 			// 因为是块级作用域，所以事件能拿到for循环i的值
-}}
+for (let i = 0; i < btns.length; i++) {
+  btns[i].onclick = function () {
+    console.log(i) // 因为是块级作用域，所以事件能拿到for循环i的值
+  }
+}
 ~~~
 
 ## const关键字
@@ -40,7 +41,7 @@ KEY = 'DB' // 报错
 
 ~~~javascript
 // 对象的解构赋值
-let {n, a} = {n:'tom', a:12} // n = tom 	a = 12 
+let {n, a} = {n:'tom', a:12} // n = tom 	a = 12
 // 数组的解构赋值
  let [a,b] = [1, 'atguigu']; // a = 1   	b = atguigu
 ~~~
@@ -50,16 +51,16 @@ let {n, a} = {n:'tom', a:12} // n = tom 	a = 12
 简化字符串的拼接
 
 ~~~javascript
-let a = 900
-let str = `这个月消费了${a}元` // 这个月消费了900元
+const a = 900
+const str = `这个月消费了${a}元` // 这个月消费了900元
 ~~~
 
 ## 简化对象属性写法
 
 ~~~javascript
-let username = '弟兄姐妹'
-let age = 410
-let obj = {username,age}
+const username = '弟兄姐妹'
+const age = 410
+const obj = { username, age }
 // obj.username = 弟兄姐妹
 // obj.age = 410
 ~~~
@@ -67,9 +68,9 @@ let obj = {username,age}
 ## 简化对象方法写法
 
 ~~~javascript
-let obj = {
-	getName() {console.log('函数1执行')},
-  getName2() {console.log('函数2执行')}
+const obj = {
+  getName() { console.log('函数1执行') },
+  getName2() { console.log('函数2执行') }
 }
 ~~~
 
@@ -81,27 +82,27 @@ let obj = {
 
 ~~~javascript
 // 1.没有形参的情况
-let fun1 = () => console.log('我是箭头函数')
+const fun1 = () => console.log('我是箭头函数')
 fun1()
 // 2.只有一个形参的情况,()可以省略
-let fun2 = a => console.log(a)
+const fun2 = a => console.log(a)
 fun2('xxx')
 // 3.两个,或两个以上的情况,()不可以省略
-let fun3 = (x, y) => console.log(x, y)
-fun3(31,56)
+const fun3 = (x, y) => console.log(x, y)
+fun3(31, 56)
 ~~~
 
 **函数体的情况**
 
 ~~~javascript
 // 1.函数体只有一条语句或是表达式的时候,{}可以省略---->会自动返回执行结果
-let fun4 = (x, y) => x + y;
+const fun4 = (x, y) => x + y
 console.log(fun4(36, 64))
 // 2.函数体不止有一条语句或是表达式的时候,{}不可以省略
-let fun5 = (x, y) => {
-		console.log(x, y)
-		return x + y
-	}
+function fun5(x, y) {
+  console.log(x, y)
+  return x + y
+}
 console.log(fun5(36, 64))
 ~~~
 
@@ -110,23 +111,23 @@ console.log(fun5(36, 64))
 **取代arguments** ，比 arguments 灵活,只能是最后部分形参参数
 
 ~~~javascript
-function fun(...values) {console.log(values)} // values = [6,7,8,9,1,6,3,5]
-fun(6,7,8,9,1,6,3,5)
+function fun(...values) { console.log(values) } // values = [6,7,8,9,1,6,3,5]
+fun(6, 7, 8, 9, 1, 6, 3, 5)
 ~~~
 
 **数组中插入另一个数组的元素**
 
 ~~~javascript
-let arr1 = [1,3,5];
-let arr2 = [2,...arr1,6]; // [2,1,3,5,6]
-arr2.push(...arr1);	// [2,1,3,5,6,1,3,5]
+const arr1 = [1, 3, 5]
+const arr2 = [2, ...arr1, 6] // [2,1,3,5,6]
+arr2.push(...arr1)	// [2,1,3,5,6,1,3,5]
 ~~~
 
 ## 形参默认值
 
 ~~~javascript
-function point(x=0, y=0) {
-		console.log(x,y)
+function point(x = 0, y = 0) {
+  console.log(x, y)
 };point() // 0 0
 ~~~
 
@@ -145,16 +146,16 @@ console.log(a, b, c) // false true true
 ## generator(状态机函数)
 
 ~~~javascript
-function* myGenerator () {
-		console.log('开始执行')
-		let result = yield 'hello'
-		console.log(result) 
-		console.log('暂停后,继续执行')
-		yield 'gener'
-		console.log('执行完毕')
-		return '返回的结果'
+function* myGenerator() {
+  console.log('开始执行')
+  const result = yield 'hello'
+  console.log(result)
+  console.log('暂停后,继续执行')
+  yield 'gener'
+  console.log('执行完毕')
+  return '返回的结果'
 }
-let MG = myGenerator()
+const MG = myGenerator()
 console.log(MG.next()) // 开始执行
 console.log(MG.next('aaaaaaaaaaaaaaaaaaaaa')) // aaaaaaaaaaaaaaaaaaaaa hello 暂停后进行执行
 console.log(MG.next()) // 执行完成 返回的结果
@@ -164,15 +165,16 @@ console.log(MG.next()) // 执行完成 返回的结果
 
 ~~~javascript
 class Person {
-	// 类的构造方法
-	constructor(name, age) {
-	    this.name = name
-			this.age = age
-	}
-	// 类的一般方法
-	showName() {console.log(this.name, this.age)}
+  // 类的构造方法
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+  }
+
+  // 类的一般方法
+  showName() { console.log(this.name, this.age) }
 }
-let person = new Person('大学生', 60)
+const person = new Person('大学生', 60)
 ~~~
 
 **class继承父类属性与方法**
@@ -180,16 +182,17 @@ let person = new Person('大学生', 60)
 ~~~javascript
 // 继承父类属性与方法
 class StarPerson extends Person {
-	constructor(name, age, salary){
-		super(name, age) 		// 调用父类的构造函数
-		this.salary = salary	// 在父类的元素上新添加salary元素
-	}
-	showName() {
-		console.log('调用子类方法')
-		console.log(this.name, this.age, this.salary)
-	}
+  constructor(name, age, salary) {
+    super(name, age) // 调用父类的构造函数
+    this.salary = salary	// 在父类的元素上新添加salary元素
+  }
+
+  showName() {
+    console.log('调用子类方法')
+    console.log(this.name, this.age, this.salary)
+  }
 }
-let p1 = new StarPerson('小学生', 70, 3000000000)
+const p1 = new StarPerson('小学生', 70, 3000000000)
 ~~~
 
 **class static 定义静态方法**
@@ -230,18 +233,18 @@ for in, for of遍历时不会遍历symbol属性。
 
 ~~~javascript
 // symbol可以添加标识Symbol([标识]),number,string
-let key = Symbol('key')
-let obj = {
-	[key]: 60, // ES6语法
-	username: '徐晓东',
-	age: 60
+const key = Symbol('key')
+const obj = {
+  [key]: 60, // ES6语法
+  username: '徐晓东',
+  age: 60
 }
 console.log(obj[key])	// obj[sym] = 60
 // 获取对象中的sym属性，ES6有特定方法
 console.log(Object.getOwnPropertySymbols(obj))
 // Symbol的for方法声明Symbol
-let s5 = Symbol.for('test') // 没有这个变量则声明一个 
-let s6 = Symbol.for('test') // 如果已经存在了.则获取这个sym
+const s5 = Symbol.for('test') // 没有这个变量则声明一个
+const s6 = Symbol.for('test') // 如果已经存在了.则获取这个sym
 ~~~
 
 ## symbol.iterator(遍历器)
@@ -278,7 +281,6 @@ const targetData = {
 }
 for (const i of targetData)
   console.log(i)
-
 ~~~
 
 **状态机自定义送代器**
@@ -331,7 +333,7 @@ function getNews (method, url) {
 		request.open(method,url); // 规定发送格式
 		request.send(null); // 发送请求
 		request.onreadystatechange = () => { // 响应函数
-		if(request.readyState == 4 && request.status == 200 || request.status == 304) { 
+		if(request.readyState == 4 && request.status == 200 || request.status == 304) {
 				resolve(request.responseText)
 		}else{reject('暂时不存在此信息')}// 响应不可用,将数据传入promise的回调函数reject中
 	})
@@ -339,7 +341,7 @@ function getNews (method, url) {
 }}
 getNews('GET', 'http://localhost:3000/news?id=2')
 			.then((data)=>{		// 接收第一个数据
-				console.log(JSON.parse(data)) 
+				console.log(JSON.parse(data))
 				let url = JSON.parse(data).commentsUrl // 接收下一个ajax
 				return getNews('GET', `http://localhost:3000${url}`) // 定义下一个请求，并将其返回
 			}, (error)=>{console.log(error)})

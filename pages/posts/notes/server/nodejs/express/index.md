@@ -5,10 +5,9 @@ categories:
   - Notes
   - Server
   - Express
-tags: 
+tags:
   - Express
 ---
-
 
 Express 是一个保持最小规模的灵活的 Node.js Web 应用程序开发框架，为 Web 和移动应用程序提供一组强大的功能。
 可以选择的各种 HTTP 实用工具和中间件，快速方便地创建强大的 API。Express 还提供精简的基本 Web 应用程序功能，而不会隐藏了解和青睐的 Node.js 功能。许多流行的开发框架 都基于 Express 构建。
@@ -74,7 +73,6 @@ app.get('/search', (req, res) => {
 
 ~~~js
 app.get('/search', (req, res) => {
-
   // 将cookie设置name为value, 后面还可以跟一个配置对象
   res.cookie('name', 'value', {
     domain: '.example.com', // Cookie的域名. 默认为应用程序的域名
@@ -160,7 +158,6 @@ $ express -h
 ```js
 // bin/www的配置(默认端口设置)
 var port = normalizePort(process.env.PORT || '3000')
-
 ```
 
 ~~~sh

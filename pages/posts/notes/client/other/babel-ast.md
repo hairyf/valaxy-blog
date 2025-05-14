@@ -5,7 +5,7 @@ categories:
   - Notes
   - Client
   - Other
-tags: 
+tags:
   - Babel
 ---
 
@@ -238,8 +238,6 @@ traverse(ast, {
 })
 ~~~
 
-
-
 ## 更新节点（Update）
 
 使用几个常用的`NodePath``API`：`replace`、`insert`、`remove`。具体也可以看babel-handbook中的[Manipulation章节](https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#toc-manipulation)。
@@ -329,9 +327,4 @@ console.log(outcode)
 
 ### 对象插入操作
 
-
-
-
-
 ## 删除节点（删除节点）
-

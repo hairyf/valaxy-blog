@@ -30,7 +30,6 @@ UIVew: 1px 在不同像素比中，对应的物理像素数量是不一样的，
 }
 ~~~
 
-
 ## Touch Events
 
 - 手指按下(touchstart)
@@ -77,7 +76,6 @@ item.addEventListener('touchstart', (ev) => {
 ~~~js
 var a = document.querySelectorAll('a')
 for (let i = 0; i < a.length; i++) {
-
   // ! 当a标签按下时,定义一个判断,代表鼠标还未滑动
   a.addEventListener('touchstart', function () { this.isMoved = false })
 
@@ -89,7 +87,6 @@ for (let i = 0; i < a.length; i++) {
     if (!this.isMoved)
       location.href = this.href
   })
-
 }
 ~~~
 
@@ -283,7 +280,6 @@ button { webkit-appearance:none }
 ~~~
 
 ## Font Boosting 禁止
-
 
 在浏览器中，如果浏览器觉得字体太小了，会自动的调整字体的大小。这个行为被称为`Font Boosting`。
 `Font Boosting` 仅在未限定尺寸的文本流中有效，给元素指定宽高，就可以避免 `Font Boosting` 被触发。但是文本内容不可能都指定宽高。不过还好，可以指定 `max-height` 就可以无副作用的禁掉 `Font Boosting` 特性。

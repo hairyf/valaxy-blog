@@ -26,7 +26,7 @@ categories: Valaxy Theme Hairy
 ```md
 ---
 title: 标题
-categories: 
+categories:
   - aaa
   - bbb
   - ccc
@@ -43,7 +43,7 @@ tag 可以表示文章内容标签。
 ---
 title: 标题
 # 多个标签
-tags: 
+tags:
   - aaa
   - bbb
   - ccc

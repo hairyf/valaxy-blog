@@ -23,9 +23,9 @@ var bar = { a() {} } // 不会报错
 **要求回调函数使用箭头函数**
 
 ~~~javascript
-function bar() {} 				// 不是回调函数，不会报错
-setTimeout(function(){}, 1000)  // 报错
-setTimeout(() => {}, 1000)		// 不报错
+function bar() {} // 不是回调函数，不会报错
+setTimeout(() => {}, 1000) // 报错
+setTimeout(() => {}, 1000) // 不报错
 // setTimeout 的第一个参数就是回调函数，不用箭头函数会报错
 ~~~
 
@@ -36,8 +36,8 @@ setTimeout(() => {}, 1000)		// 不报错
 **禁止变量声明与外层作用域的变量同名**
 
 ~~~javascript
-function sum (num) {
- var num = 2;
+function sum(num) {
+  var num = 2
 // 报错，因为 num 变量作为参数已经申明过了
 }
 ~~~
@@ -223,4 +223,3 @@ function sum (num) {
   "yoda": [2, "never"]// 禁止尤达条件
 }
 ~~~
-
